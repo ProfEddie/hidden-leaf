@@ -8,11 +8,12 @@ import"../../css/magnific-popup.css"
 import"../../css/flaticon.css"
 import"../../css/style.css"
 import SectionTop from './SectionTop'
+import IconSection from './IconSection'
 function Home() {
   return (
     <div className="Home">
      <SectionTop/>
-  
+     <IconSection/>
     </div>
   );
 }
