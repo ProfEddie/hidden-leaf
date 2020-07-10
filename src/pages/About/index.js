@@ -7,13 +7,19 @@ import"../../css/owl.theme.default.min.css"
 import"../../css/magnific-popup.css"
 import"../../css/flaticon.css"
 import"../../css/style.css"
-
-function Home() {
+import TopSection from './TopSection'
+import MiddleSection from './MiddleSection'
+import MiddleSection1 from './MiddleSection1'
+import MiddleSection2 from './MiddleSection2'
+function About() {
   return (
     <div className="About">
-     About
-    </div>
+      <TopSection/>
+      <MiddleSection/>
+      <MiddleSection1/>
+      <MiddleSection2/>
+     </div>
   );
 }
 
-export default Home;
+export default About;
