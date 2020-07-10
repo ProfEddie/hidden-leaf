@@ -7,6 +7,7 @@ import"./css/magnific-popup.css"
 import"./css/flaticon.css"
 import"./css/style.css"
 import Header from "./Components/header"
+import Register from "./Components/Register"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import {
@@ -28,6 +29,7 @@ function App() {
           <Home />
         </Route>
       </Switch>
+      <Register/>
     </Router>
   );
 }
