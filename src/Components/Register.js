@@ -7,7 +7,7 @@ import"../css/owl.theme.default.min.css"
 import"../css/magnific-popup.css"
 import"../css/flaticon.css"
 import"../css/style.css"
-import backgroundImage from '../images/bg_2.jpg'
+import backgroundImage from '../images/konoha7.jpg'
 export default function Register() { 
     return ( 
         <section className="ftco-appointment ftco-section img" style={{backgroundImage: `url(${backgroundImage})`}}>
@@ -25,7 +25,7 @@ export default function Register() {
                                     <span className="flaticon-medal"></span>
                                 </div>
                                 <div className="text pl-3">
-                                    <h2>Award Winning</h2>
+                                    <h2>Best Ninja</h2>
                                     <p>A small river named Duden flows by their place and supplies</p>
                                 </div>
                             </div>
@@ -36,7 +36,7 @@ export default function Register() {
                                     <span className="flaticon-auction"></span>
                                 </div>
                                 <div className="text pl-3">
-                                    <h2>60 Years of Experience</h2>
+                                    <h2>Best Ninja</h2>
                                     <p>A small river named Duden flows by their place and supplies</p>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@ export default function Register() {
                                     <span className="flaticon-lawyer"></span>
                                 </div>
                                 <div className="text pl-3">
-                                    <h2>Best Attorneys team</h2>
+                                    <h2>Best Ninja</h2>
                                     <p>A small river named Duden flows by their place and supplies</p>
                                 </div>
                             </div>
@@ -56,7 +56,7 @@ export default function Register() {
                 </div>
             </div>
             <div className="col-md-6 half ftco-animate fadeInUp ftco-animated">
-                <h2 className="mb-4">Free Case Consultation</h2>
+                <h2 className="mb-4">Free Register</h2>
                 <form action="#" className="appointment">
                     <div className="row">
                             <div className="col-md-6">
@@ -75,13 +75,18 @@ export default function Register() {
                               <div className="select-wrap">
                       <div className="icon"><span className="fa fa-chevron-down"></span></div>
                       <select name="" id="" className="form-control">
-                          <option value="">Practice Areas</option>
-                        <option value="">Business Law</option>
-                        <option value="">Criminal Law</option>
-                        <option value="">Family Law</option>
-                        <option value="">Judicial Law</option>
-                        <option value="">Personal Injury</option>
-                        <option value="">Real Estate Law</option>
+                          <option value="">You are from</option>
+                        <option value="">Konohagakure no Sato</option>
+                        <option value="">Sunagakure no Sato</option>
+                        <option value="">Kirigakure no Sato</option>
+                        <option value="">Iwagakure no Sato</option>
+                        <option value="">Kumogakure no Sato</option>
+                        <option value="">Uzushiogakure no Sato</option>
+                        <option value="">Otogakure no Sato</option>
+                        <option value="">Kusagakure no Sato</option>
+                        <option value="">Takigakure no Sato</option>
+                        <option value="">Hoshigakure no Sato</option>
+
                       </select>
                     </div>
                       </div>
@@ -89,7 +94,7 @@ export default function Register() {
                             </div>
                             <div className="col-md-12">
                                 <div className="form-group">
-                      <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Message"></textarea>
+                      <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Overview"></textarea>
                     </div>
                             </div>
                             <div className="col-md-12">

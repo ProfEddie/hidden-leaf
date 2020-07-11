@@ -7,7 +7,7 @@ import"../../css/owl.theme.default.min.css"
 import"../../css/magnific-popup.css"
 import"../../css/flaticon.css"
 import"../../css/style.css"
-import backgroundImage from '../../images/about-1.jpg'
+import backgroundImage from '../../images/konoha3.jpg'
 
  export default function MiddleSection (){ 
     return (
@@ -25,7 +25,7 @@ import backgroundImage from '../../images/about-1.jpg'
 						<div className="bg-light px-3 px-md-5 py-5 ">
 		          <div className="heading-section">
 		          	<span className="subheading">Welcome to Law Firm</span>
-		            <h2 className="mb-3">Why to Put Trust Your Trust In Law Firm</h2>
+		            <h2 className="mb-3">Why to Put Trust Konoha chunnin exam?</h2>
 
 		            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 		          </div>
@@ -37,7 +37,7 @@ import backgroundImage from '../../images/about-1.jpg'
 			    						<span className="flaticon-lawyer"></span>
 			    					</div>
 			    					<div className="text pl-2">
-			    						<h2>Expert Attorneys</h2>
+			    						<h2>Cool ninja</h2>
 			    						<p>A small river named Duden flows by their place and supplies</p>
 			    					</div>
 			    				</div>
@@ -48,7 +48,7 @@ import backgroundImage from '../../images/about-1.jpg'
 			    						<span className="flaticon-discount"></span>
 			    					</div>
 			    					<div className="text pl-2">
-			    						<h2>Great Discount</h2>
+			    						<h2>Cool ninja</h2>
 			    						<p>A small river named Duden flows by their place and supplies</p>
 			    					</div>
 			    				</div>
@@ -59,7 +59,7 @@ import backgroundImage from '../../images/about-1.jpg'
 			    						<span className="flaticon-auction"></span>
 			    					</div>
 			    					<div className="text pl-2">
-			    						<h2>Legal Advisory</h2>
+			    						<h2>Cool ninja</h2>
 			    						<p>A small river named Duden flows by their place and supplies</p>
 			    					</div>
 			    				</div>
@@ -70,7 +70,7 @@ import backgroundImage from '../../images/about-1.jpg'
 			    						<span className="flaticon-handcuffs"></span>
 			    					</div>
 			    					<div className="text pl-2">
-			    						<h2>Quick Charges</h2>
+			    						<h2>Cool ninja</h2>
 			    						<p>A small river named Duden flows by their place and supplies</p>
 			    					</div>
 			    				</div>

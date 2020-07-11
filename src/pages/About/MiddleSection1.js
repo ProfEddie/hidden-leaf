@@ -19,7 +19,7 @@ export default function MiddleSection1(){
             	<span className="icon flaticon-checklist"></span>
               <div className="text align-items-center">
                 <strong className="number" data-number="3000">3,000</strong>
-                <span>Trusted Clients</span>
+                <span>Gennin</span>
               </div>
             </div>
           </div>
@@ -28,7 +28,7 @@ export default function MiddleSection1(){
             	<span className="icon flaticon-checklist"></span>
               <div className="text align-items-center">
                 <strong className="number" data-number="1000">1,000</strong>
-                <span>Honor's &amp; Awards</span>
+                <span>Mission Completed</span>
               </div>
             </div>
           </div>
@@ -37,7 +37,7 @@ export default function MiddleSection1(){
             	<span className="icon flaticon-checklist"></span>
               <div className="text align-items-center">
                 <strong className="number" data-number="2000">2,000</strong>
-                <span>Expert Lawyers</span>
+                <span>Jounin Shinobi</span>
               </div>
             </div>
           </div>
@@ -46,7 +46,7 @@ export default function MiddleSection1(){
             	<span className="icon flaticon-checklist"></span>
               <div className="text align-items-center">
                 <strong className="number" data-number="10540">10,540</strong>
-                <span>Successful Cases</span>
+                <span>Chunnin</span>
               </div>
             </div>
           </div>
