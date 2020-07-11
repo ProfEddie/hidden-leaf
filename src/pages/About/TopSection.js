@@ -7,7 +7,7 @@ import"../../css/owl.theme.default.min.css"
 import"../../css/magnific-popup.css"
 import"../../css/flaticon.css"
 import"../../css/style.css"
-import backgroundImage from '../../images/bg_5.jpg'
+import backgroundImage from '../../images/konoha6.jpg'
 
 
 function TopSection() {

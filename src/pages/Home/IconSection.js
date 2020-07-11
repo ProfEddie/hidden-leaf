@@ -19,7 +19,7 @@ function IconSection() {
     						<span class="flaticon-lawyer"></span>
     					</div>
     					<div class="text">
-    						<h2>Expert Attorneys</h2>
+    						<h2>Cool ninja</h2>
     						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
     					</div>
     				</div>
@@ -30,7 +30,7 @@ function IconSection() {
     						<span class="flaticon-auction"></span>
     					</div>
     					<div class="text">
-    						<h2>Case Dismissed</h2>
+    						<h2>Cool ninja</h2>
     						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
     					</div>
     				</div>
@@ -41,7 +41,7 @@ function IconSection() {
     						<span class="flaticon-court"></span>
     					</div>
     					<div class="text">
-    						<h2>Court Performance</h2>
+    						<h2>Cool ninja</h2>
     						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
     					</div>
     				</div>
@@ -52,7 +52,7 @@ function IconSection() {
     						<span class="flaticon-court"></span>
     					</div>
     					<div class="text">
-    						<h2>Court Performance</h2>
+    						<h2>Cool ninja</h2>
     						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
     					</div>
     				</div>
