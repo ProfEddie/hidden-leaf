@@ -1,0 +1,42 @@
+#Home {
+    overflow: hidden;
+    height: 100vh;
+}
+
+#section-container {
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-type: mandatory;
+  scroll-snap-type: y mandatory;
+}
+
+.child-section {
+    border-bottom: 1px solid white;
+    padding: 1rem;
+    scroll-snap-align: center;
+    text-align: center;
+    position: relative;
+    justify-content:center;
+    width: 100%;
+}
+
+#home-section {
+  width:100%
+}
+
+
+#home-section img{
+  width:100%
+}
+
+@media only screen and (max-width: 1097px) {
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+}
+
+
