@@ -6,31 +6,13 @@ import"./css/owl.theme.default.min.css"
 import"./css/magnific-popup.css"
 import"./css/flaticon.css"
 import"./css/style.css"
-import Header from "./Components/header"
-import Register from "./Components/Register"
 import Home from "./pages/Home"
-import About from "./pages/About"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
-
 
 function App() {
   return (
-   <Router>
-      <Header/>
-       <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-      <Register/>
-    </Router>
+    <div className="App">
+      <Home />
+    </div>
   );
 }
 
