@@ -88,40 +88,63 @@ text-align: justify;
   color: black;
   margin-left: auto;
   margin-right: auto;
+  width: 50%;
+  margin-bottom: 71px;
+
 }
 
 #note-section p{
-  background-color: gray;
+ 
   color: black;
   margin-top: 60px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 50px;
-  padding-bottom: 50px; 
-  max-width: 800px;
+  width: 609px;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  z-index: 9;
+  padding: 50px;
   text-align: justify;
   
+  
+}
+#note-section h2{
+  background-color: #b2b2b2;
+  width: 750px;
+  height: 370px;
+  z-index: 8;
+}
+
+#box{
+  display: flex;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #b2b2b2;
 }
 
 #note-section img{
-  width: 10%;
-  border-radius: 300px;
+
+  border-radius: 350px;
   display: flex;
   position: absolute;
-  z-index: 1000;
-  margin-left: 190px;
-  margin-top: 280px;
+  margin-right: 50px;
+  z-index: 9;
+  left: -67px;
+
 }
 
 #note-section-container {
   display: flex;
-  position: absolute;
-  vertical-align: middle;
+  position: relative;
+  flex-direction: row;
+  max-width: 900px;
+  margin: 0 auto
+}
+#note-section{
+  display: flex;
+  position: relative;
   flex-direction: column;
-  align-self: center;
+  padding-bottom: 100px;
 }
 
 

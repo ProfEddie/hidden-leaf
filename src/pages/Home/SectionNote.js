@@ -6,9 +6,13 @@ function SectionNote()
 {
     return(
         <section className = "child-section" id="note-section">
-            <img src={require("../../images/img-note.png")} alt="img_3"/>
+            <h1>LƯU Ý DÀNH CHO THÍ SINH</h1>
+
             <div id="note-text-container">
-                <h1>LƯU Ý DÀNH CHO THÍ SINH</h1>
+                
+                <div id="box">
+                <img src={require("../../images/img-note.png")} alt="img_3"/>
+
                 <p>
                     (i) Các đội thi được xem là hợp lệ nếu đăng ký dự thi tại Website chính thức
                     của cuộc thi từ ngày <span style={{fontWeight: 'bold'}} >17.04.2020</span> đến trước 
@@ -29,7 +33,11 @@ function SectionNote()
                     <br></br>
                 
                     (iv) Linh trên Website, Email và Fanpage được đề cập ở phần liên hệ.
-                </p>
+                   
+                    
+                    </p>
+
+                </div>
             </div>
         </section>
     )
