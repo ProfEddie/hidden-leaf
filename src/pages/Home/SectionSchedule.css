@@ -61,7 +61,7 @@
     padding: 5px;
     background-color: transparent;
     z-index: 11;
-
+    left: 233px;
  }
 
  .circle-dot {
@@ -149,3 +149,68 @@
 }
 
 
+@media only screen and (max-width: 626px) {
+    #content-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        opacity: 0.5;
+        width: 315px;
+        position: absolute;
+        bottom: -73px;
+        height:150px;
+        left: 0;
+    
+    }
+    #content-0 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: -67px;
+        left: 0;
+        background-color: black;
+        opacity: 0.5;
+        width: 315px;
+        position: absolute;
+        height:150px;
+    }
+    #content-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        opacity: 0.5;
+        width: 315px;
+        position: absolute;
+        bottom: 117px;
+        height:150px;
+        left: 0;
+    }
+    .circle {
+        width: 34px;
+        height: 34px;
+        border: 2px solid white;
+        border-radius: 100%;
+        padding: 5px;
+        background-color: transparent;
+        z-index: 11;
+        left: -15px;
+    }
+    #schedule-items {
+        width: 500px;
+        margin: auto;
+        display: flex;
+        position: relative;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #schedule-content {
+       margin: auto;
+       margin-left: auto;
+    }
+}
