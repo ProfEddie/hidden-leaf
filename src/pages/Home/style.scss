@@ -7,6 +7,33 @@ p{
   text-align: left;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+  /* -moz-box-shadow:   0px 4px 0px 3px #f0bc00;
+  -webkit-box-shadow: 0px 4px 0px 3px #f0bc00;
+  box-shadow:         0px 4px 0px 3px #f0bc00; */
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background:  #F7D147;
+  width: 50px;
+  border-radius: 5px;
+} */
+
 #section-container {
   overflow: scroll;
   height: 100vh;
@@ -115,21 +142,23 @@ text-align: justify;
 #box{
   display: flex;
   position: relative;
-  width: 70%;
+  width: 868px;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
   background-color: #b2b2b2;
+  border-radius: 10px;
 }
 
 #note-section img{
 
-  border-radius: 350px;
+  width: 158px;
+  border-radius: 100%;
   display: flex;
   position: absolute;
   margin-right: 50px;
   z-index: 9;
-  left: -67px;
+  left: -82px;
 
 }
 
@@ -169,6 +198,11 @@ text-align: justify;
 }
 
 @media only screen and (max-width: 512px) {
+
+  #Home {
+    overflow: none;
+  }
+  
   #about-section{
     padding-top: 54px;
     width:100%;
@@ -189,6 +223,11 @@ text-align: justify;
     width: 95%;
   }
   
+#section-container {
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-type: none;
+}
 }
 
 
