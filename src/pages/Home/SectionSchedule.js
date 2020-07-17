@@ -1,5 +1,5 @@
 import React from 'react';
-import './SectionSchedule.css'
+import './SectionSchedule.scss'
 
 function SectionSchedule()
 {
@@ -25,16 +25,19 @@ function SectionSchedule()
              <div id="schedule-content">
                  <h5 className="schedule-title">THỂ LỆ VÒNG THI</h5>
                  <div id="schedule-items">
-                    <div id="vertical-bar"></div>
-                    <div className="circle" id="dot-1">
-                       <div className="circle-dot"></div>
-                    </div>
-                    <div className="circle" id="dot-2">
-                      <div className="circle-dot"></div>
-                    </div>
-                    <div className="circle" id="dot-3">
-                      <div className="circle-dot"></div>
-                    </div>
+                     <div id="item-container">
+                         <div id="vertical-bar"></div>
+                        <div className="circle" id="dot-1">
+                           <div className="circle-dot"></div>
+                        </div>
+                        <div className="circle" id="dot-2">
+                          <div className="circle-dot"></div>
+                        </div>
+                        <div className="circle" id="dot-3">
+                          <div className="circle-dot"></div>
+                        </div>
+                     </div>
+                    
                     {data.map((item, index) => (
                         <div className="shedule-content-container" id={`content-${index}-container`} key={index}>
                             <div className="shedule-content-text" id={`content-${index}`} key={index}>

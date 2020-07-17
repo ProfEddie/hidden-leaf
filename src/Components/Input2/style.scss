@@ -1,0 +1,39 @@
+.customized-input-container-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .customized-input-2 {
+        margin-left: 10px;
+        height: 37px;
+        border: none;
+        transition: all 0.3s ease;
+        margin-bottom:10px;
+    }
+
+    *:focus {
+        outline: none;
+        border-bottom: 2px solid #F7D147;
+        width: 190px;
+    }
+    
+    
+    .form-label-2 {
+        font-size: 13px;
+        color: black;
+    }
+}
+
+// .customized-input-2 {
+//     margin-left: 10px;
+//     border: none;
+//     transition: all 1s ease-in-out
+// }
+
+// .customized-input-2 :focus {
+//     border-bottom: 2px solid black;
+//     width: 10px;
+// }
+
+// .form-label-2 {
+//     color: black;
+// }
