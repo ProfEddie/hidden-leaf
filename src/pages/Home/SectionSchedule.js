@@ -1,5 +1,5 @@
 import React from 'react';
-import './SectionSchedule.css'
+import './SectionSchedule.scss'
 
 function SectionSchedule()
 {

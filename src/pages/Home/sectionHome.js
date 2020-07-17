@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css'
+import './style.scss'
 function SectionHome() {
   return (
     <section className="child-section" id="home-section">

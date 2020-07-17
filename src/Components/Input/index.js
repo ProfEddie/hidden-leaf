@@ -1,16 +1,11 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 
 export default function StyledInput(props) {
     return (
         <div class="customized-input-container">
-           <label style={{
-               top: '5px',
-               position: 'absolute',
-               left: '17px',
-               color: 'black'
-           }}>hello</label> 
-           <input class="customized-input" id={props.inputId}/>
+           <label className='form-label'>{props.label}</label> 
+           <input class="customized-input" id={props.inputId} type={props.type} required={props.isRequired}/>
         </div>
     )
 }

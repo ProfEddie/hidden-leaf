@@ -1,0 +1,109 @@
+#form-section {
+    z-index:1;
+    display:flex;
+    margin-top: 100px;
+    width:100%;
+    height: 140%;
+    background: black;
+    
+    position: relative;
+    transform:skew(0deg,-8deg);
+  -ms-transform:skew(0deg,-8deg); /* IE 9 */
+  -webkit-transform:skew(0deg,-8deg); 
+  justify-content:center;
+  align-items: flex-start;
+  p {
+    font-size: 15px;
+    color: #000000;
+  }
+}
+
+#form-section-content {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form {
+    background-color:white;
+    width: 502px;
+    height: 453px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.submit-button {
+    color: #000000;
+    background-color:#F7D147;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-shadow:   0px 4px 15px 3px #f7db79;
+    -webkit-box-shadow: 0px 4px 15px 3px #f7db79;
+    box-shadow:         0px 4px 15px 3px #f7db79;
+}
+
+#form-section-container {
+    margin-top: 100px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    transform:skew(0deg,8deg);
+    -ms-transform:skew(0deg,8deg); /* IE 9 */
+    -webkit-transform:skew(0deg,8deg); 
+}
+
+#member-form {
+    border: 1px solid #000000;
+    border-radius: 15px;
+    max-height: 195px;
+    height: 195px;
+    width: 343px;
+    padding: 10px 15px;
+    overflow-y: scroll;
+    scroll-snap-points-y: repeat(305px);
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    p {
+        margin-bottom: 10px;
+
+    }
+}
+
+.form-group {
+  scroll-snap-points-y: repeat(305px);
+  scroll-snap-type: mandatory;
+  scroll-snap-type: y mandatory;
+
+}
+
+.form-group-content {
+    scroll-snap-align: start;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-self: flex-start;
+}
+
+.input-container {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 1097px) {
+    #form-section-content{
+        flex-direction: column
+    }
+    .form {
+        margin-bottom: 30px;
+    }
+}

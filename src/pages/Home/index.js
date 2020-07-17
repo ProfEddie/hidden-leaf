@@ -5,7 +5,7 @@ import SectionAbout from './SectionAbout'
 import SectionNote from './SectionNote'
 import SectionSchedule from './SectionSchedule'
 import SectionForm from './SectionForm'
-import './style.css'
+import './style.scss'
 
 export default function Home() {
   return (
