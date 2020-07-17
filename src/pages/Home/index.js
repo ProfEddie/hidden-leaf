@@ -5,6 +5,7 @@ import SectionAbout from './SectionAbout'
 import SectionNote from './SectionNote'
 import SectionSchedule from './SectionSchedule'
 import SectionForm from './SectionForm'
+import SectionFooter from './SectionFooter'
 import './style.scss'
 
 export default function Home() {
@@ -17,13 +18,8 @@ export default function Home() {
         <SectionSchedule/>
         <SectionNote/>
        <SectionForm/>
-        <section className="child-section" style={{width:'100%', height:'60vh', backgroundColor:'white'}}>
-          section 3
-        </section><section className="child-section" style={{width:'100%', height:'60vh', backgroundColor:'yellow'}}>
-          section 4
-        </section><section className="child-section" style={{width:'100%', height:'60vh', backgroundColor:'white'}}>
-          section 5
-        </section>
+       <SectionFooter/>
+       
       </div>
       
 
