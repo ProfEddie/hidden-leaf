@@ -15,18 +15,24 @@ app.get('/ping', function (req, res) {
 });
 app.use('/v1', router)
 
-console.log(process.env.NODE_ENV)
+let sequelize
+if (process.env.NODE_ENV === 'production') {
+  sequelize = new Sequelize(process.env.POSTGRE_PRODUCTION_URL)
+}
+else {
+  sequelize = new Sequelize(process.env.POSTGRE_LOCAL_URL)
+}
 
 
-
-// async function test () {
-//   try {
-//     await sequelize.authenticate();
-//     console.log('Connection has been established successfully.');
-//   } catch (error) {
-//     console.error('Unable to connect to the database:', error);
-//   }
-// }
+async function test () {
+  try {
+    await sequelize.authenticate();
+    console.log('Connection has been established successfully.');
+  } catch (error) {
+    console.error('Unable to connect to the database:', error);
+  }
+}
+test();
 
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
