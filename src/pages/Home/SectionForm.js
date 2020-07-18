@@ -7,7 +7,7 @@ export default function SectionForm() {
     return (
         <section className="child-section" id="form-section">
          <div id="form-section-container">
-          <h3 style={{color: 'white', marginBottom:'50px'}}>FORM</h3>
+            <h3 style={{color: 'white', marginBottom:'50px'}}>FORM</h3>
          <div id="form-section-content">
              <form className="form" id="register-form">
                  <p>ĐĂNG KÝ DỰ THI</p>
@@ -38,7 +38,6 @@ export default function SectionForm() {
 													<CustomizedInput2 inputId='email-group-1' label='Email' type='email' isRequired={true}/>
 													<CustomizedInput2 inputId='phone-num-group-1' label='SĐT' type='tel' isRequired={true}/>
 													<CustomizedInput2 inputId='student-card-group-1' label='Thẻ sinh viên' type='url' isRequired={true}/>
-
                       </div>
                        <p>Thành viên 3</p>
                        <div className="input-container">
@@ -79,7 +78,27 @@ export default function SectionForm() {
                  <input type='submit' className='submit-button' value='Đăng ký'/>
              </form>
           </div>
+					<div className="title">Đề Bài Vòng 1</div>
          </div>
+				 
+				 <div id='form-event-container'>
+					 <div>
+              
+					 </div>
+					 <div id="event-container"> 
+               <div></div>
+               <div>
+								 <h3>Sự kiện</h3>
+								 <div>
+
+								 </div>
+								 <div>
+									 
+								 </div>
+							 </div>
+					 </div>
+
+				 </div>
          
         </section>
     )
