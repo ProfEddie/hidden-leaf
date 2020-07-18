@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": null,
+    "database": "marketing-arena",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "ltoyxsjuboqwbj",
+    "password": "9a3639e11ab889e04ad0b5d0aa2234593db8494223fcd1dc4f633a28974bcd8d",
+    "database": "de4h6ksiavn8gf",
+    "host": "ec2-34-192-173-173.compute-1.amazonaws.com",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "ltoyxsjuboqwbj",
+    "password": "9a3639e11ab889e04ad0b5d0aa2234593db8494223fcd1dc4f633a28974bcd8d",
+    "database": "de4h6ksiavn8gf",
+    "host": "ec2-34-192-173-173.compute-1.amazonaws.com",
+    "dialect": "postgres"
+  }
+}

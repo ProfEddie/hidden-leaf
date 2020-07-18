@@ -37,7 +37,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "start:dev": "nodemon server",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "migrate": "npx sequelize-cli db:migrate",
+    "migrate:undo": "npx sequelize-cli db:migrate:undo"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -53,5 +55,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
   }
 }
