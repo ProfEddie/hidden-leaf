@@ -6,6 +6,7 @@ import SectionNote from './SectionNote'
 import SectionSchedule from './SectionSchedule'
 import SectionForm from './SectionForm'
 import SectionFooter from './SectionFooter'
+import SectionSponsor from './SectionSponsor'
 import './style.scss'
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <SectionSchedule/>
         <SectionNote/>
        <SectionForm/>
+       <SectionSponsor/>
        <SectionFooter/>
        
       </div>
