@@ -1,15 +1,27 @@
 import React from 'react';
 import CustomizedInput from '../../Components/Input'
 import CustomizedInput2 from '../../Components/Input2'
+// import axios from 'axios';
 import './SectionForm.scss'
 
 export default function SectionForm() {
+    function handleSubmitRegister(event) {
+      alert('A name was submitted');
+      event.preventDefault();
+    }
+
+    function handleSubmitGroup(event) {
+      alert('A name was submitted');
+      event.preventDefault();
+    }
+    
     return (
         <section className="child-section" id="form-section">
+        
          <div id="form-section-container">
-            <h3 style={{color: 'white', marginBottom:'50px'}}>FORM</h3>
+            <h3  style={{color: 'white', marginBottom:'50px'}}>FORM</h3>
          <div id="form-section-content">
-             <form className="form" id="register-form">
+             <form className="form" id="register-form" onSubmit={handleSubmitRegister}>
                  <p>ĐĂNG KÝ DỰ THI</p>
 								 <div className="form-group" 
 								       style={
@@ -18,8 +30,8 @@ export default function SectionForm() {
                           justifyContent: 'center',
 													alignItems: 'center'
 									}}>
-                   <CustomizedInput inputId='team-name' label='Tên team' type='text'/>
-                   <CustomizedInput inputId='team-leader' label='Tên leader' type='text'/>
+                   <CustomizedInput inputId='team-name' label='Tên team' type='text' isRequired={true}/>
+                   <CustomizedInput inputId='team-leader' label='Tên leader' type='text' isRequired={true}/>
                    <div id="member-form">
                        <p>Thành viên 1</p>
                         <div className="input-container">
@@ -53,7 +65,7 @@ export default function SectionForm() {
                  <input type='submit' className='submit-button' value='Đăng ký'/>
 
              </form>
-             <form className="form" id="group-form">
+             <form className="form" id="group-form" onSubmit={handleSubmitGroup}>
                  <p >ĐĂNG KÝ GHÉP NHÓM</p>
                  <div className="form-group" style={{maxHeight:'305px', overflowY: "scroll"}}>
 									 <div className="form-group-content">
