@@ -3,9 +3,8 @@
     display:flex;
     margin-top: 300px;
     width:100%;
-    height: 140%;
     background: #F7D147;
-   
+   height: 939px;
     position: relative;
     transform:skew(0deg,-8deg);
   -ms-transform:skew(0deg,-8deg); /* IE 9 */
@@ -22,7 +21,7 @@
 
 #schedule-content {
     width: 80%;
-    height: 100vh;
+    height: 68%;
     display: flex;
     margin: auto;
     position: relative;
@@ -98,13 +97,14 @@
  }
 
  #content-0 {
+    border: none;
+    outline: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     top: -67px;
-    background-color: black;
-    opacity: 0.5;
+    background-color: #7C681F;
     width: 315px;
     position: absolute;
     left: -67px;
@@ -115,12 +115,13 @@
  }
 
  #content-1 {
+    border: none;
+    outline: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    opacity: 0.5;
+    background-color: #7C681F;
     width: 315px;
     position: absolute;
     bottom: 117px;
@@ -131,12 +132,14 @@
     color: #ffffff;
 }
 #content-2 {
+    border: none;
+    outline: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    opacity: 0.5;
+    background-color: #7C681F;
+
     width: 315px;
     position: absolute;
     left: -67px;
@@ -151,44 +154,21 @@
 
 @media only screen and (max-width: 626px) {
     #content-2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: black;
-        opacity: 0.5;
-        width: 315px;
-        position: absolute;
         bottom: -73px;
         height:150px;
-        left: 0;
-    
+        left: 3px;
+       
     }
     #content-0 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+
         top: -67px;
-        left: 0;
-        background-color: black;
-        opacity: 0.5;
-        width: 315px;
-        position: absolute;
-        height:150px;
+        left: 3px;
     }
     #content-1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: black;
-        opacity: 0.5;
-        width: 315px;
-        position: absolute;
+
         bottom: 117px;
         height:150px;
-        left: 0;
+        left: 3px;
     }
     .circle {
         width: 34px;

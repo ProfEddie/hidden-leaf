@@ -7,11 +7,9 @@ import SectionSchedule from './SectionSchedule'
 import SectionForm from './SectionForm'
 import SectionFooter from './SectionFooter'
 import SectionSponsor from './SectionSponsor'
-import { useLax } from 'use-lax';
 import './style.scss'
 
 export default function Home() {
-  useLax()
   return (
     <div id="Home">
      
@@ -21,10 +19,10 @@ export default function Home() {
         <SectionAbout/>
         <SectionSchedule/>
         <SectionNote/>
-       <SectionForm/>
-       <SectionSponsor/>
+        <SectionForm/>
+        <SectionSponsor/>
       
-       <SectionFooter/>
+        <SectionFooter/>
        
       </div>
       

@@ -18,11 +18,11 @@ export default function SectionForm() {
     return (
         <section className="child-section" id="form-section">
         
-         <div id="form-section-container">
+         <div id="form-section-container" >
             <h3  style={{color: 'white', marginBottom:'50px'}}>FORM</h3>
-         <div id="form-section-content">
-             <form className="form" id="register-form" onSubmit={handleSubmitRegister}>
-                 <p>ĐĂNG KÝ DỰ THI</p>
+         <div id="form-section-content" data-aos="fade-up">
+             <form className="form" id="register-form" onSubmit={handleSubmitRegister} >
+                 <p >ĐĂNG KÝ DỰ THI</p>
 								 <div className="form-group" 
 								       style={
 												 {height: '312px',display: 'flex',
