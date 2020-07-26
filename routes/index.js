@@ -1,17 +1,15 @@
 const express = require('express');
 const router = express.Router()
-const models = require("../models/")
+const candidate = require('./candidate')
+const admin = require('./admin')
+const event = require('./event')
+const group = require('./group')
 
 
-router.get("/hello", (req, res) => {
-    res.send("hi")
-})
-
-router.get("/hi", async (req,res) => {
-    const test = await models.Event.findAll();
-    console.log(test)
-    res.send("hi")
-})
+router.use('/candidate', candidate)
+router.use('/login', admin)
+// router.use('/event', event)
+// router.use('/group', group)
 
 
 module.exports = router
