@@ -1,0 +1,40 @@
+#home-section {
+  position: relative;
+  width: 100%;
+}
+
+.home-img {
+  position: absolute;
+}
+
+#title-container {
+   position: relative;
+   width: 637px;
+   height: 460px;
+}
+
+#img-1 {
+   width: 40%;
+   z-index: 3;
+   top: 15%;
+   left: 9.7%;
+}
+
+#img-8 {
+    right: 0px;
+    width: 282px;
+    bottom: -49px;
+}
+
+#img-2 {
+  
+  width: 573px;
+  height: 130px;
+}
+
+#img-9 {
+  z-index: 2;
+  width: 60%;
+  top: -309px;
+  left: -276px;
+}
