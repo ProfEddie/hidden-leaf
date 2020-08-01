@@ -1,0 +1,76 @@
+#rule-section {
+    background-color: #FFCF00;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    
+    #img-2 {
+        position: absolute;
+        bottom: -173px;
+        left: -11px;
+        width: 33.33%;
+        
+    }
+    #img-6 {
+        position: absolute;
+        width: 8.15%;
+        bottom: 10.7%;
+        left: 35%;
+    }
+
+    #rule-content {
+        width: 59.2%;
+        height: 1050px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        #img-1 {
+            align-self:flex-end;
+            width: 54.79%;
+            margin-right: 50px;
+        }
+
+        #rule-text { 
+            position: relative;
+            padding-top: 63px;
+            padding-left: 143px;
+            padding-right: 64px;
+            height: 574px;
+            background: url('../../../svg/rule-1.svg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            object-fit: contain;
+            p {
+               font-family: AvenirNextLTPro-medium;
+               font-size: 12px;
+               margin-bottom: 23px
+            }
+            #img-5 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 25%;
+            }
+            #img-7 {
+                position: absolute;
+                bottom: 100px;
+                left: 118px;
+                width: 26%;
+                transform: rotate(-8deg);
+                -ms-transform: rotate(-8deg);
+                -webkit-transform: rotate(-8deg);
+            }
+          
+        }
+       
+    }
+
+}
+
+
