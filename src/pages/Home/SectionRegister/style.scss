@@ -12,9 +12,11 @@
             width: 516px;
         }
         #form-container {
-           display:flex;
-           justify-content: center;
-           align-items: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1290px;
+            margin-top: 80px;
            #img-2 {
                width: 169px;
            }

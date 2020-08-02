@@ -1,0 +1,15 @@
+.register-input {
+    width:321px;
+    height: 53px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    font-family: AvenirNextLTPro-medium;
+    padding-left: 20px;
+    max-width: 320px;
+}
+
+.register-input:focus {
+    border: none;
+    outline: none;
+}
