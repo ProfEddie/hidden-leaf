@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+$main-yellow: #FFCF00;
+$text-black: #000000;
+$text-grey: #b3b3b3;
+$number-black:#4f4f4f;
+$background-red: #d82402;
+$background-grey: #f5f5f5;
+
+@font-face {
+  font-family: "AvenirNextLTPro-Bold";
+  src: url("./fonts/AvenirNextLTPro-Bold.woff")format("woff");
+}
+@font-face {
+  font-family: "AvenirNextLTPro-BoldItalic";
+  src: url("./fonts/AvenirNextLTPro-BoldItalic.woff")format("woff");
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro-Demi";
+  src: url("./fonts/AvenirNextLTPro-Demi.woff")format("woff");
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro-DemiIt";
+  src: url("./fonts/AvenirNextLTPro-DemiIt.woff")format("woff");
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro-DemiItalic";
+  src: url("./fonts/AvenirNextLTPro-DemiItalic.woff")format("woff");
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro-Italic";
+  src: url("./fonts/AvenirNextLTPro-Italic.woff")format("woff");
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro-Light";
+  src: url("./fonts/AvenirNextLTPro-Light.woff")format("woff");
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro-LightItalic";
+  src: url("./fonts/AvenirNextLTPro-LightItalic.woff")format("woff");
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro-Medium";
+  src: url("./fonts/AvenirNextLTPro-Medium.woff")format("woff");
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro-MediumItalic";
+  src: url("./fonts/AvenirNextLTPro-MediumItalic.woff")format("woff");
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro-Regular";
+  src: url("./fonts/AvenirNextLTPro-Regular.woff")format("woff");
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro-ThinItalic";
+  src: url("./fonts/AvenirNextLTPro-ThinItalic.woff")format("woff");
+}
+
+@font-face {
+  font-family: "utm-bebas";
+  src: url("./fonts/utm-bebas.woff")format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-Thin";
+  src: url("./fonts/Montserrat-Thin.woff")format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("./fonts/Montserrat-Black.woff")format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("./fonts/Montserrat-Bold.woff")format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-BoldItalic";
+  src: url("./fonts/Montserrat-BoldItalic.woff")format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("./fonts/Montserrat-ExtraBold.woff")format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraLight";
+  src: url("./fonts/Montserrat-ExtraLight.woff")format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("./fonts/Montserrat-Medium.woff")format("woff");
+}
+
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("./fonts/Montserrat-Regular.woff")format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("./fonts/Montserrat-SemiBold.woff")format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-Thin";
+  src: url("./fonts/Montserrat-Thin.woff")format("woff");
+}
+
+
+
+#root {}

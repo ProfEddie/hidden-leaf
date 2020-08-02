@@ -1,0 +1,76 @@
+#note-section{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 173px;
+    #img-3 {
+        top: -267px;
+        left: -191px;
+    }
+    #img-4 {
+        width: 247px;
+        bottom: 55px;
+        right: -124px;
+    }
+    .note-img {
+        position: absolute;
+    }
+    #note-text-container {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        max-width: 1680px;
+        margin: 0 auto;
+        #img-2{
+            width: 246px;
+            border-radius: 100%;
+            display: flex;
+            position: absolute;
+            z-index: 0;
+            right: -120px;
+            top: 60px;
+        }
+        #box{
+            padding-left: 135px;
+            padding-right: 93px;
+            padding-bottom: 33px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 621px;
+            height: 489px;
+            margin: 0 auto;
+            justify-content: center;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            #img-1{
+                width: 180px;
+                border-radius: 100%;
+                display: flex;
+                position: absolute;
+                margin-right: 50px;
+                z-index: 9;
+                left: -90px;
+              
+            }
+           
+            #note-content {
+                font-family: Montserrat-Regular;
+                font-size: 14px;
+            }
+            #note-title {
+                margin-bottom: 52px;
+                font-family: utm-bebas;
+                font-size:26px
+            }
+            span {
+                font-family:Montserrat-bold
+            }
+        }
+          
+    }
+}
+  
+
+

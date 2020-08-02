@@ -1,0 +1,23 @@
+#register-section {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    #register-content {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        #img-1 {
+            width: 516px;
+        }
+        #form-container {
+           display:flex;
+           justify-content: center;
+           align-items: center;
+           #img-2 {
+               width: 169px;
+           }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+$main-yellow: #FFCF00;
+$text-black: #000000;
+$text-grey: #b3b3b3;
+$number-black:#4f4f4f;
+$background-red: #d82402;
+$background-grey: #f5f5f5;
+
+:export {
+    mainyellow:$main-yellow;
+    textblack: $text-black;
+    textgrey: $text-grey;
+    numberblack: $number-black;
+    backgroundred: $background-red;
+    backgroundgrey:  $background-grey;
+}

@@ -1,32 +1,26 @@
 import React from 'react';
 import Header from '../../Components/Header'
-import SectionHome from './sectionHome'
-import SectionAbout from './SectionAbout'
+import SectionHome from './SectionHome'
+import SectionMA from './SectionMA'
+import SectionRule from './SectionRule'
+import SectionAward from './SectionAward'
 import SectionNote from './SectionNote'
-import SectionSchedule from './SectionSchedule'
-import SectionForm from './SectionForm'
-import SectionFooter from './SectionFooter'
-import SectionSponsor from './SectionSponsor'
+import SectionRegister from './SectionRegister'
+
 import './style.scss'
 
 export default function Home() {
   return (
     <div id="Home">
-     
       <Header/>
-      <div id="section-container">
-        <SectionHome/>
-        <SectionAbout/>
-        <SectionSchedule/>
+      <SectionHome/>
+      <SectionMA/>
+      <SectionRule/>
+      <div id='bended-content'>
+        <SectionAward/>
         <SectionNote/>
-        <SectionForm/>
-        <SectionSponsor/>
-      
-        <SectionFooter/>
-       
+        <SectionRegister/>
       </div>
-      
-
     </div>
   );
 }
