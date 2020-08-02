@@ -6,7 +6,7 @@ export default function AboutSection() {
         <div className="child-section" id="about-section">
             <div id="imgs">
                <img id="img-1" src={require('../../../images/aboutUs/4.png')} alt="about_1"></img>
-               <p style={{backgroundColor:"gold", position:"absolute", zIndex:"3", width:"8%", height:"11%", top:"5%", left:"-4%"}}></p>
+               <p></p>
                <img id="img-circle" src={require('../../../images/aboutUs/1.png')} alt="about_circle"></img>
                <img id="img-dot" src={require('../../../images/aboutUs/2.png')} alt="about_dot"></img>
             </div>
