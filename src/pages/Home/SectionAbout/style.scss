@@ -1,91 +1,93 @@
-
-
 #about-section {
     display: flex;
     position: relative;
-    width: 100%;
     flex-direction: row;
-    height: 800px;
-}
+    padding-bottom: 100px;
+    #imgs{
+        position: relative;
+        width: 341px;
+        height: 442px;
+        margin-left: 104px;
+        
+        background-color: black;
+        #img-1 { 
+            width: 288px;
+            z-index: 2;
+            position: absolute;
+            top: 51px;
+            left: 40px;
+        }
 
-#imgs{
-    position: relative;
-    width: 27%;
-    height: 55%;
-    margin-left: 104px;
-    margin-right: 104px;
-    background-color: black;
-}
-
-#not-image{
-    display: flex;
-    flex-direction: column;
-    width: 700px;
-    height: 443px;
-    margin-right: 100px;
-    align-items: center;
+        p{
+            background-color: gold;
+            position: absolute;
+            z-index: 3;
+            width: 24px;
+            height: 218px;
+            top: 16px;
+            left: -12px;
+        }
+        
+        #img-circle
+        {
+            width: 127px;
+            position: absolute;
+            top: 23px;
+            left: 70px;
+        }
+        
+        #img-dot
+        {
+            width: 351px;
+            position: absolute;
+            left: 31px;
+            top: 141px;
+        }
+    }
     
-}
+    #not-image{
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        height: 443px;
+        margin-left: 96px;
 
-#graph{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 700px;
-}
-
-#img-1 { 
-    width: 84%;
-    z-index: 3;
-    position: absolute;
-    top: 12%;
-    left: 11.5%;
-}
-
-#img-circle
-{
-    width: 37%;
-    position: absolute;
-    top: 6.5%;
-    left: 20%;
-}
-
-#img-dot
-{
-    width: 102%;
-    position: absolute;
-    left: 9%;
-    top: 34%;
-}
-
-#img-2 { 
-    position: absolute;
-    width: 12%;
-    height: 9%;
-    top: -4%;
-    left: 37%;
-
-}
-
-#img-3 {
-    position: absolute;
-    left: -5%;
-    top: 22%;
-    width: 58%;
-}
-
-#img-4 {
-    position: absolute;
-    width: 19%;
-    top: 48%;
-    left: 71%;
-}
-
-#about-section p{
-    padding-top: 182px;
-    position: relative;
-    margin-right: auto;
+        align-items: center;
+        #img-2 { 
+            width: 215px;
+            position: absolute;
+            left: 467px;
+            top: -36px;
+        
+        }
+        #graph{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            
+            width: 700px;
+            #img-3 {
+                position: absolute;
+                width: 364px;
+                top: 80px;
+                left: -30px;
+            }
+            
+          
+           
+            p{
+                padding-top: 182px;
+               
+               
+            }
+        }
+        #img-4 {
+            width: 301px;
+            position: absolute;
+            top: 371px;
+            left: 911px;
+        }
+      
+    }
 }
 
