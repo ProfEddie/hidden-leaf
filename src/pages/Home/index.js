@@ -13,10 +13,10 @@ import './style.scss'
 export default function Home() {
   return (
     <div id="Home">
-     
-<<<<<<< refs/remotes/origin/dev-3
+
       <Header/>
       <SectionHome/>
+      <SectionAbout/>
       <SectionMA/>
       <SectionRule/>
       <div id='bended-content'>
