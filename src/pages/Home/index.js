@@ -8,8 +8,13 @@ export default function Home() {
   return (
     <div id="Home">
      
+<<<<<<< refs/remotes/origin/dev-3
       <Header/>
       <SectionHome/>
+=======
+       <Header/>
+      <SectionHome/> 
+>>>>>>> fix conflic
       <SectionAbout/>
 
     </div>
