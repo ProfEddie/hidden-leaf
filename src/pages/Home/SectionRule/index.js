@@ -18,8 +18,11 @@ function SectionRule() {
           </div>
           
         </div>
+        <div>
         <img className="rule-img" id="img-2" src={require("../../../images/ma2020/rules/2.png")} alt="circle"/>
           <img className="rule-img" id="img-6" src={require("../../../images/ma2020/rules/6.png")} alt="circle"/>
+        </div>
+       
     </section>
   );
 }

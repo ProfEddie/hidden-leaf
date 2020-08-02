@@ -3,6 +3,10 @@ import Header from '../../Components/Header'
 import SectionHome from './SectionHome'
 import SectionMA from './SectionMA'
 import SectionRule from './SectionRule'
+import SectionAward from './SectionAward'
+import SectionNote from './SectionNote'
+import SectionRegister from './SectionRegister'
+
 import './style.scss'
 
 export default function Home() {
@@ -12,6 +16,11 @@ export default function Home() {
       <SectionHome/>
       <SectionMA/>
       <SectionRule/>
+      <div id='bended-content'>
+        <SectionAward/>
+        <SectionNote/>
+        <SectionRegister/>
+      </div>
     </div>
   );
 }

@@ -1,3 +1,17 @@
 #Home {
     overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#bended-content {
+    background-color: #ffffff;
+    transform: skew(0deg, -8deg);
+    -ms-transform:  skew(0deg, -8deg);
+    -webkit-transform:  skew(0deg, -8deg);
+    height: fit-content;
+    .child-section {
+    transform: skew(0deg, 8deg);
+    -ms-transform:  skew(0deg, 8deg);
+    -webkit-transform:  skew(0deg, 8deg);
+    }
 }

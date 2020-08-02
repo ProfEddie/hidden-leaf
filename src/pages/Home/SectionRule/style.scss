@@ -1,28 +1,31 @@
 #rule-section {
     background-color: #FFCF00;
     width: 100%;
+    height: -moz-fit-content;
     height: fit-content;
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     position: relative;
+    padding-bottom: 131px;
+    margin-bottom: -125px;
     
     #img-2 {
         position: absolute;
-        bottom: -173px;
+        bottom: -4.23%;
         left: -11px;
         width: 33.33%;
-        
+        z-index: 2;
     }
     #img-6 {
         position: absolute;
         width: 8.15%;
-        bottom: 10.7%;
+        bottom: 16.7%;
         left: 35%;
     }
 
     #rule-content {
-        width: 59.2%;
+        width: 994.56px;
         height: 1050px;
         position: relative;
         display: flex;
@@ -39,9 +42,10 @@
         #rule-text { 
             position: relative;
             padding-top: 63px;
-            padding-left: 143px;
+            padding-left: 14.37%;
             padding-right: 64px;
             height: 574px;
+            width: 774px;
             background: url('../../../svg/rule-1.svg');
             background-repeat: no-repeat;
             background-size: 100%;
