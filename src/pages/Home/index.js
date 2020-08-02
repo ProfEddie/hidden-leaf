@@ -6,7 +6,7 @@ import SectionRule from './SectionRule'
 import SectionAward from './SectionAward'
 import SectionNote from './SectionNote'
 import SectionRegister from './SectionRegister'
-
+import SectionEvent from './SectionEvent'
 import SectionAbout from './SectionAbout'
 import './style.scss'
 
@@ -23,7 +23,9 @@ export default function Home() {
         <SectionAward/>
         <SectionNote/>
         <SectionRegister/>
+        
       </div>
+      <SectionEvent/>
     </div>
   );
 }
