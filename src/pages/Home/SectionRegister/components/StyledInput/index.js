@@ -1,10 +1,8 @@
 import React from 'react';
 import './style.scss'
-function StyledInput() {
+function StyledInput(props) {
   return (
-    <div id="input">
-        
-    </div>
+    <input placeholder={props.placeholder} type={props.type || "text"} id={props.id} className="register-input"/>
   );
 }
 
