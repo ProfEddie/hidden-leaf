@@ -12,7 +12,7 @@ function SectionEvent(){
                     với sự góp mặt của các diễn giả đầu ngành dày dặn kinh nghiệm hứa hẹn sẽ
                     giúp các thí sinh thấu hiểu cặn kẽ hơn về yêu cầu và quy trình làm bài, đồng thời 
                     cung cấp nhiều lời khuyên mang tính chuyên môn cũng như trải nghiệm bổ ích.</p>
-                    <button id="top-regist">Đăng kí tham dự Information Day</button>
+                    <button id="top-regist" type="submit" form="group-regiser-form">Đăng kí tham dự Information Day</button>
                 </div>
                     <img className="event-img" id="img-2" src={require("../../../images/events/10.png")} alt="img_2"/>
             </div>
@@ -32,7 +32,7 @@ function SectionEvent(){
                         môn, những tác phẩm sáng tạo xuất sắc nhất,… tất cả
                         những điều đó là những kiến thức vô cùng đáng giá để học hỏi và phát triển bản thân.
                     </p>
-                    <button id="bot-regist">Đăng kí tham dự Gala Night</button>
+                    <button id="bot-regist" type="submit" form="group-regiser-form">Đăng kí tham dự Gala Night</button>
                 </div>
             </div>
         </section>

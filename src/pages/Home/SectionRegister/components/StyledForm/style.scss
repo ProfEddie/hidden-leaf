@@ -1,9 +1,10 @@
-#form {
+.form {
     background-color: #FFCF00;
-    width:460px;
+    width: 460px;
+    height: 481px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 24px;
     -moz-box-shadow:   0px 0px 20px 3px #e4e4e4;
@@ -15,5 +16,11 @@
         font-size:22px;
         margin-bottom:30px;
         margin-top:37px;
+    }
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        max-height: 325px;
+        overflow-y: scroll;
     }
 }
