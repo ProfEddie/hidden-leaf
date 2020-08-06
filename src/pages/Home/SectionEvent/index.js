@@ -2,6 +2,7 @@ import React from 'react'
 import './style.scss'
 import Swal from 'sweetalert2'
 import moment from 'moment'
+import axios from 'axios'
 
 function SectionEvent(){
     function checkValidEmail(email) {
@@ -24,6 +25,12 @@ function SectionEvent(){
     
     function getGroupFormData() {
         try {
+            var reqBody = {
+                Group_name:  document.getElementById(`group-name`).value,
+                Group_leader:  document.getElementById(`group-leader`).value,
+            }
+
+            if (!reqBody.Group_name || !reqBody.Group_leader ) throw new Error(`Bạn chưa điền đầy đủ thông tin cho nhóm!`)
             var data =  [1, 2, 3].map(function(item)  {
                 var data = {
                     Fullname: document.getElementById(`group-member${item}-name`).value || null,
@@ -78,13 +85,7 @@ function SectionEvent(){
                 return data 
             })
            
-            var reqBody = {
-                Group_name:  document.getElementById(`group-name`).value,
-                Group_leader:  document.getElementById(`group-leader`).value,
-                data
-            }
-
-            if (!reqBody.Group_name || !reqBody.Group_leader ) throw new Error(`Bạn chưa điền đầy đủ thông tin cho nhóm!`)
+            reqBody.data = data
             return reqBody
         }
         catch(err) {
@@ -97,6 +98,7 @@ function SectionEvent(){
         }
    
     }
+
     function getMemberFormData() {
         try {
             var data =  [1, 2].map(function(item)  {
@@ -169,18 +171,52 @@ function SectionEvent(){
     }
 
     function handleFormSubmit() {
-        var groupData = getGroupFormData();
-        console.log(groupData)
-        var memberData =getMemberFormData();
-        console.log(memberData)
+        
+       var groupForm= document.getElementById('group-register-form')
+       var memberForm = document.getElementById('member-register-form')
+
+       console.log(groupForm.className)
+       console.log(memberForm.className)
+       if (groupForm.className === 'form active') {
+           let groupData = getGroupFormData();
+           if(groupData) {
+               console.log(groupData)
+               .then(function (response) {
+                console.log(response);
+              })
+              .catch(function (error) {
+                console.log(error);
+              });
+            }
+       }
+       else if (memberForm.className === 'form active') {
+           let memberData = getMemberFormData();
+            if(memberData) {
+              axios.post('/candidate', memberData)
+              .then(function (response) {
+                console.log(response);
+              })
+              .catch(function (error) {
+                console.log(error);
+              });
+            }
+        }
+       else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Bạn vui lòng chọn một trong hai phương thức đăng ký trên nhé!',
+            // footer: '<a href>Why do I have this issue?</a>'
+          })
+       }
     }
     return(
         <section className="child-section" id="event-section">
-            <img className="event-img" id="img-1" src={require("../../../images/events/1.png")} alt="img_1"/>
+            <img className="event-img" id="img-1" src={require("../../../images/events/1.png")} alt="img_1" data-aos="fade-up"/>
             <div id="top">
                 <div id="top-text">
                     <p id="top-title">INFORMATION DAY</p>
-                    <p id="top-body"  data-aos="fade-up">Buổi "Information Day" do Creatio tổ chức ngay khi đề vòng 01 được công bố
+                    <p id="top-body"  data-aos="fade-in">Buổi "Information Day" do Creatio tổ chức ngay khi đề vòng 01 được công bố
                     với sự góp mặt của các diễn giả đầu ngành dày dặn kinh nghiệm hứa hẹn sẽ
                     giúp các thí sinh thấu hiểu cặn kẽ hơn về yêu cầu và quy trình làm bài, đồng thời 
                     cung cấp nhiều lời khuyên mang tính chuyên môn cũng như trải nghiệm bổ ích.</p>
@@ -192,7 +228,7 @@ function SectionEvent(){
                 <img className="event-img" id="img-3" src={require("../../../images/events/11.png")} alt="img_3"/>
                 <div id="bot-text" >
                     <p id="bot-title">GALA NIGHT</p>
-                    <p id="bot-body"  data-aos="fade-up">
+                    <p id="bot-body"  data-aos="fade-in">
                         Đêm Chung kết mang đến cơ hội được tận mắt chứng kiến cuộc tranh tài đặc sắc của 04 đội chơi ưu tú nhất. 
                         Bên cạnh đó, người tham dự
                         Gala Night còn có dịp chiêm ngưỡng các tác phẩm được trưng bày của Top 10 Cuộc thi Thiết kế “PRINT-ART” 

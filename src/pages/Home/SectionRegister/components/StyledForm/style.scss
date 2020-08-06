@@ -1,7 +1,7 @@
 .form {
     background-color: #FFCF00;
     width: 460px;
-    height: 587px;
+    height: 182px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -11,12 +11,21 @@
     -webkit-box-shadow: 0px 0px 20px 3px #e4e4e4;
     box-shadow:         0px 0px 20px 3px #e4e4e4;
     transition: all 0.5s;
+    position: relative;
     #title {
         color: #ffffff;
         font-family:Montserrat-ExtraBold;
         font-size:22px;
         margin-bottom:30px;
         margin-top:37px;
+        cursor: pointer;
+        transition: all 0.5s;
+        border-radius: 10px;
+    }
+    #title:hover {
+        -moz-box-shadow:   0px 0px 20px 3px #e4e4e4;
+        -webkit-box-shadow: 0px 0px 20px 3px #e4e4e4;
+        box-shadow:         0px 0px 20px 3px #e4e4e4;
     }
     .input-container {
         display: flex;
@@ -24,4 +33,12 @@
         max-height: 325px;
         overflow-y: scroll;
     }
+}
+
+.active  {
+    height: 578px;
+}
+
+.hide {
+    height: 269px;
 }

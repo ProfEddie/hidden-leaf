@@ -1,7 +1,9 @@
 import React from 'react';
 import './style.scss'
 import Form from './components/StyledForm'
+import moment from 'moment'
 function SectionRegister() {
+
   var groupRegistForm = [
     {
       placeholder: 'Tên đội thi',
@@ -277,9 +279,13 @@ function SectionRegister() {
         <div id="register-content">
            <img className="register-img" id="img-1" src={require("../../../images/register/1.png")} alt="img_1"/>
            <div id="form-container">
-              <Form title="ĐĂNG KÍ DỰ THI"data={groupRegistForm} formId="group-register-form" onSubmit={handleGroupSubmit}/>
+              <div data-aos="fade-right" data-aos-once="true">
+                <Form title="ĐĂNG KÍ DỰ THI"data={groupRegistForm} formId="group-register-form" onSubmit={handleGroupSubmit} dueDate={moment.duration(moment('2020-08-23').diff(moment()))} />
+              </div>
                 <img className="register-img" id="img-2" src={require("../../../images/register/2.png")} alt="img_2"/>
-              <Form title="ĐĂNG KÍ GHÉP NHÓM" data={memberRegistForm} formId="member-register-form" onSubmit={handleMemberSubmit}/>
+                <div data-aos="fade-left"data-aos-once="true">
+                  <Form title="ĐĂNG KÍ GHÉP NHÓM" data={memberRegistForm} formId="member-register-form" onSubmit={handleMemberSubmit} dueDate={moment.duration(moment('2020-08-21').diff(moment()))} />
+                </div>
            </div>
         </div>
     </section>
