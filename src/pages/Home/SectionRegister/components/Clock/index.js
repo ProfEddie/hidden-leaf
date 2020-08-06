@@ -45,10 +45,10 @@ const renderer = ({days ,hours, minutes, seconds, completed }) => {
   }
 };
 
-function Clock() {
+function Clock({dueDate}) {
   return (
     <Countdown
-      date={Date.now() + 123123123}
+      date={Date.now() + dueDate}
       renderer={renderer}
     />
   );

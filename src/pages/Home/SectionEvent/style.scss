@@ -1,14 +1,13 @@
 #event-section{
     display: flex;
     position: relative;
-    padding-top: 100px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     button {
         cursor: pointer;
+        transition: all 0.5s;
     }
-  
     #img-1{
         width: 300px;
         margin-bottom: 30px;
@@ -21,6 +20,7 @@
         flex-direction: row ;
         margin-bottom: 242px;
         #top-text{
+            position: relative;
             margin-right: 95px;
             margin-bottom: 100px;
             #top-title{
@@ -38,6 +38,7 @@
                 text-align: justify;
             }
             #top-regist{
+                position: absolute;
                 color: white;
                 background-color: #FFCF00;
                 border-radius: 18px;
@@ -50,6 +51,10 @@
                 -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
                 -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
                 box-shadow:         0px 0px 10px 0px #FFCF00;
+            }
+            #top-regist:active {
+                width: 490px;
+                height: 57px;
             }
         }
         #img-2{
@@ -68,7 +73,7 @@
             width: 496px;
         }
         #bot-text{
-            // margin-right: 95px;
+            position: relative;
             text-align: -webkit-right;
             #bot-title{
                 font-family: utm-bebas;
@@ -98,7 +103,563 @@
                 -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
                 -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
                 box-shadow:         0px 0px 10px 0px #FFCF00;
+                position: absolute;
+                right: 0px;
+            }
+            #bot-regist:active {
+                background-color: #f5c800;
+                width: 490px;
+                height: 57px;
             }
         }
     }
 }
+
+@media screen and(max-width: 1125px)
+{
+    #event-section{
+        display: flex;
+        position: relative;
+        padding-top: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        button {
+            cursor: pointer;
+        }
+      
+        #img-1{
+            width: 300px;
+            margin-bottom: 30px;
+        }
+        #top{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            flex-direction: column ;
+            margin-bottom: 100px;
+            #top-text{
+                margin-right: 95px;
+                margin-bottom: 100px;
+                #top-title{
+                    font-family: utm-bebas;
+                    font-size:42px
+                }
+                #top-body{
+                    width: 727px;
+                    line-height: 33px;
+                    text-align: right;
+                    font-family: AvenirNextLTPro-Medium;
+                    margin-top: 50px;
+                    font-size: 20px;
+                    margin-bottom: 50px;
+                    text-align: justify;
+                }
+                #top-regist{
+                    color: white;
+                    background-color: #FFCF00;
+                    border-radius: 18px;
+                    font-family: AvenirNextLTPro-Bold;
+                    width: 444px;
+                    height: 48px;
+                    border:none;
+                    outline:none;
+                    font-size: 25px;
+                    -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
+                    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+                    box-shadow:         0px 0px 10px 0px #FFCF00;
+                }
+            }
+            #img-2{
+                width: 496px;
+            }
+        }
+        
+        #bot{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            flex-direction: column-reverse ;
+            margin-bottom: 190px;
+            #img-3{
+                width: 496px;
+            }
+            #bot-text{
+                // margin-right: 95px;
+                text-align: -webkit-right;
+                #bot-title{
+                    font-family: utm-bebas;
+                    font-size: 42px;
+                }
+                #bot-body{
+                    width: 727px;
+                    padding-left: 95px;
+                    text-align: right;
+                    font-size: 20px;
+                    line-height: 33px;
+                    font-family: AvenirNextLTPro-Medium;
+                    margin-top: 36px;
+                    margin-bottom: 36px;
+                    
+                }
+                #bot-regist{
+                    color: white;
+                    background-color: #FFCF00;
+                    border-radius: 18px;
+                    font-family: AvenirNextLTPro-Bold;
+                    width: 444px;
+                    height: 48px;
+                    font-size: 25px;
+                    border:none;
+                    outline:none;
+                    -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
+                    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+                    box-shadow:         0px 0px 10px 0px #FFCF00;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 864px)
+{
+    #event-section{
+        display: flex;
+        position: relative;
+        padding-top: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        button {
+            cursor: pointer;
+        }
+      
+        #img-1{
+            width: 300px;
+            margin-bottom: 30px;
+        }
+        #top{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            flex-direction: column ;
+            margin-bottom: 100px;
+            #top-text{
+                margin-right: 0px;
+                margin-bottom: 100px;
+                #top-title{
+                    font-family: utm-bebas;
+                    font-size:42px
+                }
+                #top-body{
+                    width: 727px;
+                    line-height: 33px;
+                    text-align: right;
+                    font-family: AvenirNextLTPro-Medium;
+                    margin-top: 50px;
+                    font-size: 20px;
+                    margin-bottom: 50px;
+                    text-align: justify;
+                }
+                #top-regist{
+                    color: white;
+                    background-color: #FFCF00;
+                    border-radius: 18px;
+                    font-family: AvenirNextLTPro-Bold;
+                    width: 444px;
+                    height: 48px;
+                    border:none;
+                    outline:none;
+                    font-size: 25px;
+                    -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
+                    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+                    box-shadow:         0px 0px 10px 0px #FFCF00;
+                }
+            }
+            #img-2{
+                width: 496px;
+            }
+        }
+        
+        #bot{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            flex-direction: column-reverse ;
+            margin-bottom: 190px;
+  
+            #img-3{
+                width: 496px;
+            }
+            #bot-text{
+                 margin-right: 95px;
+                text-align: -webkit-right;
+                #bot-title{
+                    font-family: utm-bebas;
+                    font-size: 42px;
+                }
+                #bot-body{
+                    width: 727px;
+                    padding-left: 95px;
+                    text-align: right;
+                    font-size: 20px;
+                    line-height: 33px;
+                    font-family: AvenirNextLTPro-Medium;
+                    margin-top: 36px;
+                    margin-bottom: 36px;
+                    
+                }
+                #bot-regist{
+                    color: white;
+                    background-color: #FFCF00;
+                    border-radius: 18px;
+                    font-family: AvenirNextLTPro-Bold;
+                    width: 444px;
+                    height: 48px;
+                    font-size: 25px;
+                    border:none;
+                    outline:none;
+                    -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
+                    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+                    box-shadow:         0px 0px 10px 0px #FFCF00;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 775px)
+{
+    #event-section{
+        display: flex;
+        position: relative;
+        padding-top: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        button {
+            cursor: pointer;
+        }
+      
+        #img-1{
+            width: 260px;
+            margin-bottom: 30px;
+        }
+        #top{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            flex-direction: column ;
+            margin-bottom: 100px;
+            #top-text{
+                margin-right: 30px;
+                margin-bottom: 100px;
+                #top-title{
+                    font-family: utm-bebas;
+                    font-size:36px
+                }
+                #top-body{
+                    width: 560px;
+                    line-height: 33px;
+                    text-align: right;
+                    font-family: AvenirNextLTPro-Medium;
+                    margin-top: 50px;
+                    font-size: 15px;
+                    margin-bottom: 50px;
+                    text-align: justify;
+                }
+                #top-regist{
+                    color: white;
+                    background-color: #FFCF00;
+                    border-radius: 18px;
+                    font-family: AvenirNextLTPro-Bold;
+                    width: 444px;
+                    height: 48px;
+                    border:none;
+                    outline:none;
+                    font-size: 20px;
+                    -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
+                    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+                    box-shadow:         0px 0px 10px 0px #FFCF00;
+                }
+            }
+            #img-2{
+                width: 426px;
+            }
+        }
+        
+        #bot{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            flex-direction: column-reverse ;
+            margin-bottom: 190px;
+  
+            #img-3{
+                width: 426px;
+            }
+            #bot-text{
+                 margin-right: 95px;
+                text-align: -webkit-right;
+                padding-bottom: 64px;
+                #bot-title{
+                    font-family: utm-bebas;
+                    font-size: 36px;
+                }
+                #bot-body{
+                    width: 560px;
+                    padding-left: 95px;
+                    text-align: right;
+                    font-size: 15px;
+                    line-height: 33px;
+                    font-family: AvenirNextLTPro-Medium;
+                    margin-top: 36px;
+                    margin-bottom: 36px;
+                    
+                }
+                #bot-regist{
+                    color: white;
+                    background-color: #FFCF00;
+                    border-radius: 18px;
+                    font-family: AvenirNextLTPro-Bold;
+                    width: 444px;
+                    height: 48px;
+                    font-size: 20px;
+                    border:none;
+                    outline:none;
+                    -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
+                    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+                    box-shadow:         0px 0px 10px 0px #FFCF00;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 630px)
+{
+    #event-section{
+        display: flex;
+        position: relative;
+        padding-top: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        button {
+            cursor: pointer;
+        }
+      
+        #img-1{
+            width: 200px;
+            margin-bottom: 10px;
+        }
+        #top{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            flex-direction: column ;
+            margin-bottom: 100px;
+            #top-text{
+                margin-right: 30px;
+                margin-bottom: 100px;
+                #top-title{
+                    font-family: utm-bebas;
+                    font-size:30px
+                }
+                #top-body{
+                    width: 420px;
+                    line-height: 33px;
+                    text-align: right;
+                    font-family: AvenirNextLTPro-Medium;
+                    margin-top: 50px;
+                    font-size: 13px;
+                    margin-bottom: 50px;
+                    text-align: justify;
+                }
+                #top-regist{
+                    color: white;
+                    background-color: #FFCF00;
+                    border-radius: 18px;
+                    font-family: AvenirNextLTPro-Bold;
+                    width: 345px;
+                    height: 48px;
+                    border:none;
+                    outline:none;
+                    font-size: 18px;
+                    -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
+                    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+                    box-shadow:         0px 0px 10px 0px #FFCF00;
+                }
+            }
+            #img-2{
+                width: 344px;
+            }
+        }
+        
+        #bot{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            flex-direction: column-reverse ;
+            margin-bottom: 190px;
+  
+            #img-3{
+                width: 344px;
+            }
+            #bot-text{
+                 margin-right: 95px;
+                text-align: -webkit-right;
+                padding-bottom: 64px;
+                #bot-title{
+                    font-family: utm-bebas;
+                    font-size: 30px;
+                }
+                #bot-body{
+                    width: 420px;
+                    padding-left: 95px;
+                    text-align: right;
+                    font-size: 13px;
+                    line-height: 33px;
+                    font-family: AvenirNextLTPro-Medium;
+                    margin-top: 36px;
+                    margin-bottom: 36px;
+                    
+                }
+                #bot-regist{
+                    color: white;
+                    background-color: #FFCF00;
+                    border-radius: 18px;
+                    font-family: AvenirNextLTPro-Bold;
+                    width: 320px;
+                    height: 48px;
+                    font-size: 18px;
+                    border:none;
+                    outline:none;
+                    -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
+                    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+                    box-shadow:         0px 0px 10px 0px #FFCF00;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 486px)
+{
+    #event-section{
+        display: flex;
+        position: relative;
+        padding-top: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        button {
+            cursor: pointer;
+        }
+      
+        #img-1{
+            width: 180px;
+            margin-bottom: 10px;
+        }
+        #top{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            flex-direction: column ;
+            margin-bottom: 100px;
+            #top-text{
+                margin-right: 0px;
+                margin-bottom: 100px;
+                #top-title{
+                    font-family: utm-bebas;
+                    font-size:26px
+                }
+                #top-body{
+                    width: 295px;
+                    line-height: 18px;
+                    text-align: right;
+                    font-family: AvenirNextLTPro-Medium;
+                    margin-top: 25px;
+                    font-size: 11px;
+                    margin-bottom: 25px;
+                    text-align: justify;
+                }
+                #top-regist{
+                    color: white;
+                    background-color: #FFCF00;
+                    border-radius: 18px;
+                    font-family: AvenirNextLTPro-Bold;
+                    width: 224px;
+                    height: 48px;
+                    border:none;
+                    outline:none;
+                    font-size: 12px;
+                    -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
+                    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+                    box-shadow:         0px 0px 10px 0px #FFCF00;
+                }
+            }
+            #img-2{
+                width: 260px;
+            }
+        }
+        
+        #bot{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            flex-direction: column-reverse ;
+            margin-bottom: 190px;
+  
+            #img-3{
+                width: 260px;
+            }
+            #bot-text{
+                 margin-right: 95px;
+                text-align: -webkit-right;
+                padding-bottom: 64px;
+                #bot-title{
+                    font-family: utm-bebas;
+                    font-size: 26px;
+                }
+                #bot-body{
+                    width: 295px;
+                    padding-left: 95px;
+                    text-align: right;
+                    font-size: 11px;
+                    line-height: 18px;
+                    font-family: AvenirNextLTPro-Medium;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                    
+                }
+                #bot-regist{
+                    color: white;
+                    background-color: #FFCF00;
+                    border-radius: 18px;
+                    font-family: AvenirNextLTPro-Bold;
+                    width: 260px;
+                    height: 48px;
+                    font-size: 18px;
+                    border:none;
+                    outline:none;
+                    -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
+                    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+                    box-shadow:         0px 0px 10px 0px #FFCF00;
+                }
+            }
+        }
+    }
+}
+
+

@@ -6,7 +6,7 @@ function SectionFooter(){
         <section className="child-section" id="footer-section">
             <div id="text">
                 <img className="event-img" id="img-1" src={require("../../../images/footer/2.png")} alt="img_1"/>  
-                    <p id="body">
+                    <div id="body">
                         <p id="hotline" className="text-container">
                           HOTLINE
                           <br></br>
@@ -24,7 +24,7 @@ function SectionFooter(){
                           WEBSITE <span style={{paddingLeft: "109px"}}>marketingarena.info</span>           
                         </p>
                     
-                    </p>
+                    </div>
             </div>
             <img className="event-img" id="img-2" src={require("../../../images/footer/1.png")} alt="img_2"/>
         </section>

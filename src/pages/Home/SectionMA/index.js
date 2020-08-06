@@ -1,24 +1,32 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './style.scss'
 function SectionMA() {
+  const [beat, setBeat] = useState(true)
+  useEffect(() => {
+    const interval = setInterval( async function()  {
+      await setBeat(!beat)
+    }, 1000)
+    return () => clearInterval(interval);
+  }, [beat]);
+  
   return (
     <section className="child-section" id="ma-section">
        <div id="ma-content">
-          <img className="ma-img" id="img-ma-2020" src={require("../../../images/ma2020/MA 2020.png")} alt="circle"/>
+          <img className={`ma-img`} id="img-ma-2020" src={require("../../../images/ma2020/MA 2020.png")} alt="circle" data-aos="fade-down"/>
           <img className="ma-img" id="img-1" src={require("../../../images/ma2020/ruleEachRound/1.png")} alt="circle" data-aos="fade-up"/>
           <div id="subtitle" data-aos="fade-up">
-              <p>Cuộc thi <span style={{color: "#FFCF00"}}>MARKETING ARENA 2020</span> sẽ chính thức khởi động từ ngày <span>16.08.2020 </span>và kết thúc vào ngày <span>27.09.2020</span>. Các đội thi sẽ được thử thách qua <span>03 chặng hành trình</span> chính với<span> 02 sự lựa chọn.</span></p> 
+              <p>Cuộc thi <span style={{fcolor: "#FFCF00"}}>MARKETING ARENA 2020</span> sẽ chính thức khởi động từ ngày <span>16.08.2020 </span>và kết thúc vào ngày <span>27.09.2020</span>. Các đội thi sẽ được thử thách qua <span>03 chặng hành trình</span> chính với<span> 02 sự lựa chọn.</span></p> 
               <p><span>Lưu ý: 20 đội</span>  đăng ký dự thi <span>sớm nhất</span> sẽ được quyền <span>tự do lựa chọn đề</span>, các đội còn lại sẽ được BTC chỉ định đề thi.</p> 
           </div>
           {/* <img className="ma-img" id="img-2" src={require('../../../images/ma2020/2.png')} alt="circle"/> */}
            <div id="rule-each-round-container">
-              <img src={require('../../../images/ma2020/ruleEachRound/2.png')} id="img-2" alt="svg"/>
+              <img src={require('../../../images/ma2020/ruleEachRound/2.png')} id="img-2" className={`ma-img ${beat ? 'up': 'down'}`} alt="svg"/>
               <img src={require('../../../svg/ma-2.svg')} id="svg-2" alt="svg"/>
               {/* <img src={require('../../../svg/ma-1.svg')} id="svg-1" alt="svg"/> */}
               <img src={require('../../../images/ma2020/ruleEachRound/5.png')} id="svg-3" alt="svg"/>
               <img src={require('../../../svg/ma-4.svg')} id="svg-4" alt="svg"/>
               <img src={require('../../../svg/ma-5.svg')} id="svg-5" alt="svg"/>
-              <div id="rounds-container">
+              <div id="rounds-container" >
                 <div className="round-container">
                   <div className="datetime-container">
                     <span>23.08</span>
@@ -34,15 +42,15 @@ function SectionMA() {
                     <p id="title">Information Day</p>
                   </div>
                   <p className="text-container">
-                      Chọn ra <span>Top 10</span> xuất sắc nhất của mỗi đề.
+                      Chọn ra <span>Top 10</span> xuất sắc nhất của <span>mỗi đề </span>.
                     </p>
                 </div>
                 <img className="circle-img" src={require('../../../images/ma2020/ruleEachRound/3.png')} alt="circle"/>
 
                 <div className="round-container">
                     <div id="round-2-container">
-                      <div className="round-2-child" style={{alignItems:'flex-end'}} data-aos="fade-right">
-                        <div className="yellow-full-round"  style={{paddingRight: '22px',alignItems:'flex-end'}}>
+                      <div className="round-2-child" style={{alignItems:'flex-end'}} data-aos="fade-right" data-aos-once="true">
+                        <div className="yellow-full-round"  style={{paddingRight: '22px',alignItems:'flex-end', paddingTop: '4px',paddingBottom: '4px', width: '94%'}}>
                           <p className="title">Vòng 2</p>
                           <p className="subtitle"><span>Xây dựng kế hoạch</span></p>
                           <p className="subtitle">Marketing truyền thông tích hợp</p>
@@ -60,8 +68,8 @@ function SectionMA() {
                         <span>11.09</span>
                       </div>
 
-                      <div className="round-2-child" data-aos="fade-left">
-                        <div className="yellow-full-round" style={{paddingLeft: '22px',alignItems:'flex-start'}} >
+                      <div className="round-2-child" data-aos="fade-left" data-aos-once="true">
+                        <div className="yellow-full-round" style={{paddingLeft: '22px',alignItems:'flex-start', paddingTop: '4px',paddingBottom: '4px', width: '94%'}} >
                           <p className="title">Vòng 2</p>
                           <p className="subtitle"><span>Xây dựng kế hoạch</span></p>
                           <p className="subtitle">Tung sản phẩm mới theo mô hình 6Ps</p>
@@ -117,9 +125,12 @@ function SectionMA() {
                   <div className="datetime-container" style={{justifyContent: 'center'}}>
                     <span style={{color: '#D82400'}}>27.09</span>
                   </div>
-                  <div className="white-full-round" style={{backgroundColor: '#D82400', width: '100%'}}>
+                  <div className="white-full-round" style={{backgroundColor: '#D82400', width: '100%',}}>
                     <p className="title" style={{color: '#ffffff'}} >Gala Night</p>
                   </div>
+                  <p className="text-container">
+                    <span>Đêm chung kết</span> vinh danh những nhà vô địch.
+                  </p>
                 </div>
               </div>
            </div>
