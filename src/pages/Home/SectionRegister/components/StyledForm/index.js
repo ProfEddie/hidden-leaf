@@ -5,12 +5,12 @@ import Clock from '../Clock'
 function StyledForm(props) {
   return (
     <form className="form" id={props.formId} onSubmit={props.onSubmit}>
-        <p id="title">ĐĂNG KÍ DỰ THI</p>
+        <p id="title">{props.title}</p>
         <div className="input-container">
           {
             props.data.map((item, index) => {
               return  (
-                <Input placeholder={item.placeholder} id={item.id} isRequired={item.isRequired} type={item.type} key={index} isDisabled={item.isTitle}/>
+                <Input placeholder={item.placeholder} id={item.id} isRequired={item.isRequired} type={item.type} key={index} className={item.className} isDisabled={item.isTitle}/>
               )
             })
           }
