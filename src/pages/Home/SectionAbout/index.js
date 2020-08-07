@@ -14,7 +14,7 @@ export default function AboutSection() {
                 <img id="img-2" src={require('../../../images/aboutUs/8.png')} alt="about_2"></img>
                 <div id="graph">
                     <img  id="img-3" src={require('../../../images/aboutUs/6.png')} alt="about_3"></img>
-                    <p style={{fontFamily: "AvenirNextLTPro", width: "86%", lineHeight: "23px"}}>
+                    <p style={{lineHeight: "22px"}}>
                        <span style={{fontWeight: "bold"}}>Lòng hiếu kì</span> chính là niềm cảm hứng vô tận của mỗi người
                        trong hành trình khám phá những điều bí ẩn. Một câu hỏi lớn được đặt ra, khơi dậy sự tò mò của các
                        bạn trẻ trong việc tìm kiếm đáp án chính xác - <span style={{fontWeight: "bold", color: "gold"}}>MARKETING ARENA 2020 </span>
