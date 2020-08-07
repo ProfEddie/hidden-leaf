@@ -24,3 +24,10 @@
         }
     }
 }
+
+@media only screen and (max-width: 1384px) {
+
+    #form-container {
+        flex-direction: column;
+    }
+}

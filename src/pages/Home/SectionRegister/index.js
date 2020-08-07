@@ -1,7 +1,9 @@
 import React from 'react';
 import './style.scss'
 import Form from './components/StyledForm'
+import Swal from 'sweetalert2'
 import moment from 'moment'
+import axios from 'axios'
 function SectionRegister() {
 
   var groupRegistForm = [
@@ -35,7 +37,7 @@ function SectionRegister() {
       isRequired: true,
     },{
       placeholder: 'Ngày/Tháng/Năm sinh',
-      type: 'text',
+      type: 'date',
       id: 'group-member1-birthDate',
       className: 'group',
       isTitle: false,
@@ -83,7 +85,7 @@ function SectionRegister() {
       isRequired: true,
     },{
       placeholder: 'Ngày/Tháng/Năm sinh',
-      type: 'text',
+      type: 'date',
       id: 'group-member2-birthDate',
       isTitle: false,
       className: 'group',
@@ -132,7 +134,7 @@ function SectionRegister() {
       isRequired: true,
     },{
       placeholder: 'Ngày/Tháng/Năm sinh',
-      type: 'text',
+      type: 'date',
       id: 'group-member3-birthDate',
       isTitle: false,
       className: 'group',
@@ -184,7 +186,7 @@ function SectionRegister() {
       isRequired: true,
     },{
       placeholder: 'Ngày/Tháng/Năm sinh',
-      type: 'text',
+      type: 'date',
       id: 'member1-birthDate',
       isTitle: false,
       className: 'member',
@@ -232,7 +234,7 @@ function SectionRegister() {
       isRequired: false,
     },{
       placeholder: 'Ngày/Tháng/Năm sinh',
-      type: 'text',
+      type: 'date',
       id: 'member2-birthDate',
       isTitle: false,
       className: 'member',
@@ -268,12 +270,217 @@ function SectionRegister() {
     }
   ]
 
-  function handleGroupSubmit() {
-       console.log('group')
+  function checkValidTel(tel) {
+    const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
+    return re.test(String(tel));
   }
-  function handleMemberSubmit() {
-    console.log('member')
+
+function handleGroupSubmit(e) {
+  e.preventDefault();
+  try {
+      var reqBody = {
+          Group_name:  document.getElementById(`group-name`).value,
+          Group_leader:  document.getElementById(`group-leader`).value,
+      }
+
+      if (!reqBody.Group_name || !reqBody.Group_leader ) throw new Error(`Bạn chưa điền đầy đủ thông tin cho nhóm!`)
+      var data =  [1, 2, 3].map(function(item)  {
+          var data = {
+              Fullname: document.getElementById(`group-member${item}-name`).value || null,
+              Birthdate: document.getElementById(`group-member${item}-birthDate`).value || null,
+              Email: document.getElementById(`group-member${item}-email`).value || null,
+              Phone_number: document.getElementById(`group-member${item}-tel`).value || null,
+              University: document.getElementById(`group-member${item}-university`).value || null,
+              Student_card: document.getElementById(`group-member${item}-student-card`).value || null,
+              isLeader: (reqBody.Group_leader === document.getElementById(`group-member${item}-name`).value) ? true : false,
+          }
+          for (let key in data) {
+              if (!data[key] && key !== 'isLeader')  {
+                  throw new Error(
+                      ` Bạn chưa điền đầy đủ thông tin cho thành viên ${item}.`
+                  )
+              }
+              switch (key) {
+                case 'Phone_number': {
+                  if (!checkValidTel(data[key]))
+                  throw new Error(
+                      `${key.replace('_',' ').toLowerCase()} của thành viên ${item} không hợp lệ.`
+                  )
+                  break;
+                }
+               
+                default: {
+                  break;
+                }
+              }
+          }    
+          return data 
+      })
+      if ( !data.filter((item) => (item.isLeader === true )).length) {
+          throw new Error(
+              `Không tìm thấy tên của nhóm trưởng trong đội của bạn.`
+          )
+      }
+       
+     
+      reqBody.data = data
+      axios.post('/v1/candidate', reqBody)
+      .then(function (response) {
+        Swal.fire(
+          'Success!',
+          'Bạn đã đăng ký thành công!',
+          'success'
+        )
+
+     })
+     .catch(function (error) {
+       console.log(error.response.data)
+       if (error.response.data === 'email must be unique')  {
+        Swal.fire(
+          'Oops!',
+          'Email một thành viên của nhóm bạn đã bị trùng, hãy thử email khác nhé!',
+          'error'
+        )
+       }
+       else if (error.response.data === 'phone_number must be unique')  {
+        Swal.fire(
+          'Oops!',
+          'Số điện thoại một thành viên của nhóm bạn đã bị trùng, hãy thử số khác nhé!',
+          'error'
+        )
+       }
+       else if (error.response.data === 'group_name must be unique')  {
+        Swal.fire(
+          'Oops!',
+          'Tên nhóm đã bị trùng, tìm tên khác cho nhóm của bạn nhé!',
+          'error'
+        )
+       }
+       else {
+        Swal.fire(
+          'Oops!',
+          'Đã có lỗi xảy ra, vui lòng thử lại sau',
+          'error'
+        )
+       }
+      
+     });
+  }
+  catch(err) {
+      Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: err.message,
+          // footer: '<a href>Why do I have this issue?</a>'
+        })
+  }
+
 }
+
+function handleMemberSubmit(e) {
+  e.preventDefault();
+  try {
+      var data =  [1, 2].map(function(item)  {
+          var data = {
+              Fullname: document.getElementById(`member${item}-name`).value || null,
+              Birthdate: document.getElementById(`member${item}-birthDate`).value || null,
+              Email: document.getElementById(`member${item}-email`).value || null,
+              Phone_number: document.getElementById(`member${item}-tel`).value || null,
+              University: document.getElementById(`member${item}-university`).value || null,
+              Student_card: document.getElementById(`member${item}-student-card`).value || null
+          }
+          for (let key in data) {
+              if (data[key] && item === 2) {
+                console.log('trigger')
+               
+                switch (key) {
+                  case 'Phone_number': {
+                    if (!checkValidTel(data[key]))
+                    throw new Error(
+                        `${key.replace('_',' ').toLowerCase()} của thành viên ${item} không hợp lệ.`
+                    )
+                    break;
+                  }
+                  default: {
+                    break;
+                  }
+                }
+                if ((
+                    !document.getElementById(`member${item}-name`).value &&
+                    !document.getElementById(`member${item}-birthDate`).value &&
+                    !document.getElementById(`member${item}-tel`).value && 
+                    !document.getElementById(`member${item}-email`).value &&
+                    !document.getElementById(`member${item}-university`).value && 
+                    !document.getElementById(`member${item}-student-card`).value
+                  ) || (
+                    document.getElementById(`member${item}-name`).value &&
+                    document.getElementById(`member${item}-birthDate`).value &&
+                    document.getElementById(`member${item}-tel`).value && 
+                    document.getElementById(`member${item}-email`).value &&
+                    document.getElementById(`member${item}-university`).value && 
+                    document.getElementById(`member${item}-student-card`).value
+                  )
+                 
+                ) {
+                } else {
+                  document.getElementById(`member${item}-name`).required = true
+                  document.getElementById(`member${item}-birthDate`).required = true
+                  document.getElementById(`member${item}-email`).required = true
+                  document.getElementById(`member${item}-tel`).required = true
+                  document.getElementById(`member${item}-university`).required = true
+                  document.getElementById(`member${item}-student-card`).required = true
+                  throw new Error(
+                    `${key.replace('_',' ').toLowerCase()} của thành viên ${item} không hợp lệ.`
+                  )
+                }
+              }
+             
+          }  
+          return data
+      })
+      var reqBody = {
+          Group_name:  null,
+          Group_leader: null,
+          data
+      }
+      axios.post('/v1/candidate/member', reqBody)
+      .then(function (response) {
+        Swal.fire(
+          'Success!',
+          'Bạn đã đăng ký thành công!',
+          'success'
+        )
+       }
+     )
+     .catch(function (error) {
+      if (error.response.data === 'email must be unique')  {
+        Swal.fire(
+          'Oops!',
+          'Email một thành viên của nhóm bạn đã bị trùng, hãy thử email khác nhé!',
+          'error'
+        )
+       }
+       else if (error.response.data === 'phone_number must be unique')  {
+        Swal.fire(
+          'Oops!',
+          'Số điện thoại một thành viên của nhóm bạn đã bị trùng, hãy thử số khác nhé!',
+          'error'
+        )
+      }
+       else {
+        Swal.fire(
+          'Oops!',
+          'Đã có lỗi xảy ra, vui lòng thử lại sau',
+          'error'
+        )
+       }
+      
+     });
+  }
+  catch(err) {
+  }
+}
+
   return (
     <section className="child-section" id="register-section">
         <div id="register-content">

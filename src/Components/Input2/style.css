@@ -1,0 +1,33 @@
+.customized-input-container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 34px;
+}
+
+.customized-input-container-2 .customized-input-2 {
+  margin-left: 10px;
+  height: 31px;
+  border: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.customized-input-container-2 *:focus {
+  outline: none;
+  border-bottom: 2px solid #F7D147;
+  width: 190px;
+}
+
+.customized-input-container-2 .form-label-2 {
+  font-size: 13px;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */

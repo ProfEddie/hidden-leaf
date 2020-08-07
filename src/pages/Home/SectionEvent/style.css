@@ -1,0 +1,804 @@
+#event-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#event-section button {
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#event-section #img-1 {
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+#event-section #top {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 242px;
+}
+
+#event-section #top #top-text {
+  position: relative;
+  margin-right: 95px;
+  margin-bottom: 100px;
+}
+
+#event-section #top #top-text #top-title {
+  font-family: utm-bebas;
+  font-size: 42px;
+}
+
+#event-section #top #top-text #top-body {
+  width: 727px;
+  line-height: 33px;
+  text-align: right;
+  font-family: AvenirNextLTPro-Medium;
+  margin-top: 50px;
+  font-size: 20px;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+#event-section #top #top-text #top-regist {
+  position: absolute;
+  color: white;
+  background-color: #FFCF00;
+  border-radius: 18px;
+  font-family: AvenirNextLTPro-Bold;
+  width: 444px;
+  height: 48px;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+  box-shadow: 0px 0px 10px 0px #FFCF00;
+}
+
+#event-section #top #top-text #top-regist:active {
+  width: 490px;
+  height: 57px;
+}
+
+#event-section #top #img-2 {
+  width: 496px;
+}
+
+#event-section #bot {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 190px;
+}
+
+#event-section #bot #img-3 {
+  width: 496px;
+}
+
+#event-section #bot #bot-text {
+  position: relative;
+  text-align: -webkit-right;
+}
+
+#event-section #bot #bot-text #bot-title {
+  font-family: utm-bebas;
+  font-size: 42px;
+}
+
+#event-section #bot #bot-text #bot-body {
+  width: 727px;
+  padding-left: 95px;
+  text-align: right;
+  font-size: 20px;
+  line-height: 33px;
+  font-family: AvenirNextLTPro-Medium;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+#event-section #bot #bot-text #bot-regist {
+  color: white;
+  background-color: #FFCF00;
+  border-radius: 18px;
+  font-family: AvenirNextLTPro-Bold;
+  width: 444px;
+  height: 48px;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+  box-shadow: 0px 0px 10px 0px #FFCF00;
+  position: absolute;
+  right: 0px;
+}
+
+#event-section #bot #bot-text #bot-regist:active {
+  background-color: #f5c800;
+  width: 490px;
+  height: 57px;
+}
+
+@media screen and (max-width: 1125px) {
+  #event-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    padding-top: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #event-section button {
+    cursor: pointer;
+  }
+  #event-section #img-1 {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  #event-section #top {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 100px;
+  }
+  #event-section #top #top-text {
+    margin-right: 95px;
+    margin-bottom: 100px;
+  }
+  #event-section #top #top-text #top-title {
+    font-family: utm-bebas;
+    font-size: 42px;
+  }
+  #event-section #top #top-text #top-body {
+    width: 727px;
+    line-height: 33px;
+    text-align: right;
+    font-family: AvenirNextLTPro-Medium;
+    margin-top: 50px;
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: justify;
+  }
+  #event-section #top #top-text #top-regist {
+    color: white;
+    background-color: #FFCF00;
+    border-radius: 18px;
+    font-family: AvenirNextLTPro-Bold;
+    width: 444px;
+    height: 48px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+    box-shadow: 0px 0px 10px 0px #FFCF00;
+  }
+  #event-section #top #img-2 {
+    width: 496px;
+  }
+  #event-section #bot {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 190px;
+  }
+  #event-section #bot #img-3 {
+    width: 496px;
+  }
+  #event-section #bot #bot-text {
+    text-align: -webkit-right;
+  }
+  #event-section #bot #bot-text #bot-title {
+    font-family: utm-bebas;
+    font-size: 42px;
+  }
+  #event-section #bot #bot-text #bot-body {
+    width: 727px;
+    padding-left: 95px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 33px;
+    font-family: AvenirNextLTPro-Medium;
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+  #event-section #bot #bot-text #bot-regist {
+    color: white;
+    background-color: #FFCF00;
+    border-radius: 18px;
+    font-family: AvenirNextLTPro-Bold;
+    width: 444px;
+    height: 48px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+    box-shadow: 0px 0px 10px 0px #FFCF00;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  #event-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    padding-top: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #event-section button {
+    cursor: pointer;
+  }
+  #event-section #img-1 {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  #event-section #top {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 100px;
+  }
+  #event-section #top #top-text {
+    margin-right: 0px;
+    margin-bottom: 100px;
+  }
+  #event-section #top #top-text #top-title {
+    font-family: utm-bebas;
+    font-size: 42px;
+  }
+  #event-section #top #top-text #top-body {
+    width: 727px;
+    line-height: 33px;
+    text-align: right;
+    font-family: AvenirNextLTPro-Medium;
+    margin-top: 50px;
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: justify;
+  }
+  #event-section #top #top-text #top-regist {
+    color: white;
+    background-color: #FFCF00;
+    border-radius: 18px;
+    font-family: AvenirNextLTPro-Bold;
+    width: 444px;
+    height: 48px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+    box-shadow: 0px 0px 10px 0px #FFCF00;
+  }
+  #event-section #top #img-2 {
+    width: 496px;
+  }
+  #event-section #bot {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 190px;
+  }
+  #event-section #bot #img-3 {
+    width: 496px;
+  }
+  #event-section #bot #bot-text {
+    margin-right: 95px;
+    text-align: -webkit-right;
+  }
+  #event-section #bot #bot-text #bot-title {
+    font-family: utm-bebas;
+    font-size: 42px;
+  }
+  #event-section #bot #bot-text #bot-body {
+    width: 727px;
+    padding-left: 95px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 33px;
+    font-family: AvenirNextLTPro-Medium;
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+  #event-section #bot #bot-text #bot-regist {
+    color: white;
+    background-color: #FFCF00;
+    border-radius: 18px;
+    font-family: AvenirNextLTPro-Bold;
+    width: 444px;
+    height: 48px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+    box-shadow: 0px 0px 10px 0px #FFCF00;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  #event-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    padding-top: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #event-section button {
+    cursor: pointer;
+  }
+  #event-section #img-1 {
+    width: 260px;
+    margin-bottom: 30px;
+  }
+  #event-section #top {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 100px;
+  }
+  #event-section #top #top-text {
+    margin-right: 30px;
+    margin-bottom: 100px;
+  }
+  #event-section #top #top-text #top-title {
+    font-family: utm-bebas;
+    font-size: 36px;
+  }
+  #event-section #top #top-text #top-body {
+    width: 560px;
+    line-height: 33px;
+    text-align: right;
+    font-family: AvenirNextLTPro-Medium;
+    margin-top: 50px;
+    font-size: 15px;
+    margin-bottom: 50px;
+    text-align: justify;
+  }
+  #event-section #top #top-text #top-regist {
+    color: white;
+    background-color: #FFCF00;
+    border-radius: 18px;
+    font-family: AvenirNextLTPro-Bold;
+    width: 444px;
+    height: 48px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+    box-shadow: 0px 0px 10px 0px #FFCF00;
+  }
+  #event-section #top #img-2 {
+    width: 426px;
+  }
+  #event-section #bot {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 190px;
+  }
+  #event-section #bot #img-3 {
+    width: 426px;
+  }
+  #event-section #bot #bot-text {
+    margin-right: 95px;
+    text-align: -webkit-right;
+    padding-bottom: 64px;
+  }
+  #event-section #bot #bot-text #bot-title {
+    font-family: utm-bebas;
+    font-size: 36px;
+  }
+  #event-section #bot #bot-text #bot-body {
+    width: 560px;
+    padding-left: 95px;
+    text-align: right;
+    font-size: 15px;
+    line-height: 33px;
+    font-family: AvenirNextLTPro-Medium;
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+  #event-section #bot #bot-text #bot-regist {
+    color: white;
+    background-color: #FFCF00;
+    border-radius: 18px;
+    font-family: AvenirNextLTPro-Bold;
+    width: 444px;
+    height: 48px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+    box-shadow: 0px 0px 10px 0px #FFCF00;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  #event-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    padding-top: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #event-section button {
+    cursor: pointer;
+  }
+  #event-section #img-1 {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  #event-section #top {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 100px;
+  }
+  #event-section #top #top-text {
+    margin-right: 30px;
+    margin-bottom: 100px;
+  }
+  #event-section #top #top-text #top-title {
+    font-family: utm-bebas;
+    font-size: 30px;
+  }
+  #event-section #top #top-text #top-body {
+    width: 420px;
+    line-height: 33px;
+    text-align: right;
+    font-family: AvenirNextLTPro-Medium;
+    margin-top: 50px;
+    font-size: 13px;
+    margin-bottom: 50px;
+    text-align: justify;
+  }
+  #event-section #top #top-text #top-regist {
+    color: white;
+    background-color: #FFCF00;
+    border-radius: 18px;
+    font-family: AvenirNextLTPro-Bold;
+    width: 345px;
+    height: 48px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+    box-shadow: 0px 0px 10px 0px #FFCF00;
+  }
+  #event-section #top #img-2 {
+    width: 344px;
+  }
+  #event-section #bot {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 190px;
+  }
+  #event-section #bot #img-3 {
+    width: 344px;
+  }
+  #event-section #bot #bot-text {
+    margin-right: 95px;
+    text-align: -webkit-right;
+    padding-bottom: 64px;
+  }
+  #event-section #bot #bot-text #bot-title {
+    font-family: utm-bebas;
+    font-size: 30px;
+  }
+  #event-section #bot #bot-text #bot-body {
+    width: 420px;
+    padding-left: 95px;
+    text-align: right;
+    font-size: 13px;
+    line-height: 33px;
+    font-family: AvenirNextLTPro-Medium;
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+  #event-section #bot #bot-text #bot-regist {
+    color: white;
+    background-color: #FFCF00;
+    border-radius: 18px;
+    font-family: AvenirNextLTPro-Bold;
+    width: 320px;
+    height: 48px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+    box-shadow: 0px 0px 10px 0px #FFCF00;
+  }
+}
+
+@media screen and (max-width: 486px) {
+  #event-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    padding-top: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #event-section button {
+    cursor: pointer;
+  }
+  #event-section #img-1 {
+    width: 180px;
+    margin-bottom: 10px;
+  }
+  #event-section #top {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 100px;
+  }
+  #event-section #top #top-text {
+    margin-right: 0px;
+    margin-bottom: 100px;
+  }
+  #event-section #top #top-text #top-title {
+    font-family: utm-bebas;
+    font-size: 26px;
+  }
+  #event-section #top #top-text #top-body {
+    width: 295px;
+    line-height: 18px;
+    text-align: right;
+    font-family: AvenirNextLTPro-Medium;
+    margin-top: 25px;
+    font-size: 11px;
+    margin-bottom: 25px;
+    text-align: justify;
+  }
+  #event-section #top #top-text #top-regist {
+    color: white;
+    background-color: #FFCF00;
+    border-radius: 18px;
+    font-family: AvenirNextLTPro-Bold;
+    width: 224px;
+    height: 48px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+    box-shadow: 0px 0px 10px 0px #FFCF00;
+  }
+  #event-section #top #img-2 {
+    width: 260px;
+  }
+  #event-section #bot {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 190px;
+  }
+  #event-section #bot #img-3 {
+    width: 260px;
+  }
+  #event-section #bot #bot-text {
+    margin-right: 95px;
+    text-align: -webkit-right;
+    padding-bottom: 64px;
+  }
+  #event-section #bot #bot-text #bot-title {
+    font-family: utm-bebas;
+    font-size: 26px;
+  }
+  #event-section #bot #bot-text #bot-body {
+    width: 295px;
+    padding-left: 95px;
+    text-align: right;
+    font-size: 11px;
+    line-height: 18px;
+    font-family: AvenirNextLTPro-Medium;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  #event-section #bot #bot-text #bot-regist {
+    color: white;
+    background-color: #FFCF00;
+    border-radius: 18px;
+    font-family: AvenirNextLTPro-Bold;
+    width: 260px;
+    height: 48px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
+    box-shadow: 0px 0px 10px 0px #FFCF00;
+  }
+}
+/*# sourceMappingURL=style.css.map */
