@@ -13,6 +13,8 @@ function SectionSponsor(){
                 <div id="right">
                     <p id="btcm">BẢO TRỢ CHUYÊN MÔN</p>
                     <img className="sponsor-img" id="img-3" src={require("../../../images/sponsor/1.png")} alt="img_3"/>
+                    <p id="bttt">BẢO TRỢ TRUYỀN THÔNG</p>
+                    <img className="sponsor-img" id="img-4" src={require("../../../images/sponsor/3.png")} alt="img_4"/>
                 </div>
             </div>
         </section>

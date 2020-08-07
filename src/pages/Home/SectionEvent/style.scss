@@ -23,12 +23,13 @@
             position: relative;
             margin-right: 95px;
             margin-bottom: 100px;
+            margin-left: 70px;
             #top-title{
                 font-family: utm-bebas;
-                font-size:42px
+                font-size:40px
             }
             #top-body{
-                width: 727px;
+                width: 679px;
                 line-height: 33px;
                 text-align: right;
                 font-family: AvenirNextLTPro-Medium;
@@ -53,12 +54,13 @@
                 box-shadow:         0px 0px 10px 0px #FFCF00;
             }
             #top-regist:active {
-                width: 490px;
+                width: 400px;
                 height: 57px;
             }
         }
         #img-2{
-            width: 496px;
+            width: 400px;
+            margin-right: 60px;
         }
     }
     
@@ -70,24 +72,24 @@
         flex-direction: row ;
         margin-bottom: 190px;
         #img-3{
-            width: 496px;
+            width: 417px;
         }
         #bot-text{
             position: relative;
             text-align: -webkit-right;
             #bot-title{
                 font-family: utm-bebas;
-                font-size: 42px;
+                font-size: 40px;
             }
             #bot-body{
-                width: 727px;
+                width: 679px;
                 padding-left: 95px;
                 text-align: right;
                 font-size: 20px;
                 line-height: 33px;
                 font-family: AvenirNextLTPro-Medium;
-                margin-top: 36px;
-                margin-bottom: 36px;
+                margin-top: -15px;
+                margin-bottom: 20px;
                 
             }
             #bot-regist{
@@ -185,6 +187,7 @@
             margin-bottom: 190px;
             #img-3{
                 width: 496px;
+                padding-top: 101px;
             }
             #bot-text{
                 // margin-right: 95px;
@@ -577,7 +580,7 @@
             flex-direction: column ;
             margin-bottom: 100px;
             #top-text{
-                margin-right: 0px;
+                margin-right: 83px;
                 margin-bottom: 100px;
                 #top-title{
                     font-family: utm-bebas;
