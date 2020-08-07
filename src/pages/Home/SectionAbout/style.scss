@@ -8,7 +8,7 @@
         width: 346px;
         height: 500px;
         margin-left: 147px;
-        
+        min-width: 346px;
         background-color: black;
         #img-1 { 
             width: 314px;
@@ -89,6 +89,505 @@
             left: 143px;
         }
       
+    }
+}
+
+@media screen and (max-width: 1125px)
+{
+    #about-section {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding-bottom: 140px;
+        align-items: center;
+        justify-content: center;
+        #imgs{
+            position: relative;
+            width: 346px;
+            height: 500px;
+            margin-left: 147px;
+            min-width: 346px;
+            background-color: black;
+            #img-1 { 
+                width: 314px;
+                z-index: 2;
+                position: absolute;
+                top: 74px;
+                left: 27px;
+            }
+    
+            p{
+                background-color: gold;
+                position: absolute;
+                z-index: 3;
+                width: 24px;
+                height: 218px;
+                top: 16px;
+                left: -12px;
+            }
+            
+            #img-circle
+            {
+                width: 135px;
+                position: absolute;
+                top: 44px;
+                left: 65px;
+            }
+            
+            #img-dot
+            {
+                width: 351px;
+                position: absolute;
+                left: 31px;
+                top: 185px;
+            }
+        }
+        
+        #not-image{
+            display: flex;
+            flex-direction: column;
+            width: 700px;
+            height: 500px;
+            margin-left: 116px;
+    
+            align-items: center;
+            #img-2 { 
+                width: 215px;
+                position: relative;
+                left: -312px;
+                top: -39px;
+            
+            }
+            #graph{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                
+                width: 700px;
+                #img-3 {
+                    position: absolute;
+                    width: 386px;
+                    top: 33px;
+                    left: -30px;
+                }
+                
+              
+               
+                p{
+                    padding-top: 138px;
+                    width: 80%;
+                   font-family: AvenirNextLTPro-Mixed;
+                   font-size: 15px;
+                }
+            }
+            #img-4 {
+                width: 276px;
+                position: relative;
+                top: 43px;
+                left: 143px;
+            }
+          
+        }
+    }
+}
+
+@media screen and (max-width: 645px)
+{
+    #about-section {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding-bottom: 140px;
+        align-items: center;
+        justify-content: center;
+        #imgs{
+            position: relative;
+            width: 346px;
+            height: 500px;
+            margin-left: 56px;
+            min-width: 346px;
+            background-color: black;
+            #img-1 { 
+                width: 314px;
+                z-index: 2;
+                position: absolute;
+                top: 74px;
+                left: 27px;
+            }
+    
+            p{
+                background-color: gold;
+                position: absolute;
+                z-index: 3;
+                width: 24px;
+                height: 218px;
+                top: 16px;
+                left: -12px;
+            }
+            
+            #img-circle
+            {
+                width: 135px;
+                position: absolute;
+                top: 44px;
+                left: 65px;
+            }
+            
+            #img-dot
+            {
+                width: 351px;
+                position: absolute;
+                left: 31px;
+                top: 185px;
+            }
+        }
+        
+        #not-image{
+            display: flex;
+            flex-direction: column;
+            width: 700px;
+            height: 500px;
+            margin-left: 116px;
+    
+            align-items: center;
+            #img-2 { 
+                width: 215px;
+                position: relative;
+                left: -163px;
+                top: 13px;
+            
+            }
+            #graph{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                
+                width: 700px;
+                #img-3 {
+                    position: absolute;
+                    width: 280px;
+                    top: 33px;
+                    left: 126px;
+                }
+                
+              
+               
+                p{
+                    padding-top: 138px;
+                    width: 45%;
+                   font-family: AvenirNextLTPro-Mixed;
+                   font-size: 14px;
+                   padding-left: 152px;
+                }
+            }
+            #img-4 {
+                width: 196px;
+                position: relative;
+                top: 43px;
+                left: 49px;
+            }
+          
+        }
+    }
+}
+
+@media screen and (max-width: 645px)
+{
+    #about-section {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding-bottom: 140px;
+        align-items: center;
+        justify-content: center;
+        #imgs{
+            position: relative;
+            width: 346px;
+            height: 500px;
+            margin-left: 56px;
+            min-width: 346px;
+            background-color: black;
+            #img-1 { 
+                width: 314px;
+                z-index: 2;
+                position: absolute;
+                top: 74px;
+                left: 27px;
+            }
+    
+            p{
+                background-color: gold;
+                position: absolute;
+                z-index: 3;
+                width: 24px;
+                height: 218px;
+                top: 16px;
+                left: -12px;
+            }
+            
+            #img-circle
+            {
+                width: 135px;
+                position: absolute;
+                top: 44px;
+                left: 65px;
+            }
+            
+            #img-dot
+            {
+                width: 351px;
+                position: absolute;
+                left: 31px;
+                top: 185px;
+            }
+        }
+        
+        #not-image{
+            display: flex;
+            flex-direction: column;
+            width: 700px;
+            height: 500px;
+            margin-left: 116px;
+    
+            align-items: center;
+            #img-2 { 
+                width: 215px;
+                position: relative;
+                left: -163px;
+                top: 13px;
+            
+            }
+            #graph{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                
+                width: 700px;
+                #img-3 {
+                    position: absolute;
+                    width: 280px;
+                    top: 33px;
+                    left: 126px;
+                }
+                
+              
+               
+                p{
+                    padding-top: 138px;
+                    width: 45%;
+                   font-family: AvenirNextLTPro-Mixed;
+                   font-size: 14px;
+                   padding-left: 152px;
+                }
+            }
+            #img-4 {
+                width: 196px;
+                position: relative;
+                top: 43px;
+                left: 49px;
+            }
+          
+        }
+    }
+}
+
+@media screen and (max-width: 475px)
+{
+    #about-section {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding-bottom: 140px;
+        align-items: center;
+        justify-content: center;
+        #imgs{
+            position: relative;
+            width: 305px;
+            height: 437px;
+            margin-left: 15px;
+            min-width: 305px;
+            background-color: black;
+            #img-1 { 
+                width: 268px;
+                z-index: 2;
+                position: absolute;
+                top: 74px;
+                left: 37px;
+            }
+    
+            p{
+                background-color: gold;
+                position: absolute;
+                z-index: 3;
+                width: 24px;
+                height: 218px;
+                top: 16px;
+                left: -12px;
+            }
+            
+            #img-circle
+            {
+                width: 108px;
+                position: absolute;
+                top: 57px;
+                left: 70px;
+            }
+            
+            #img-dot
+            {
+                width: 300px;
+                position: absolute;
+                left: 38px;
+                top: 161px;
+            }
+        }
+        
+        #not-image{
+            display: flex;
+            flex-direction: column;
+            width: 700px;
+            height: 500px;
+            margin-left: 116px;
+    
+            align-items: center;
+            #img-2 { 
+                width: 215px;
+                position: relative;
+                left: -163px;
+                top: 13px;
+            
+            }
+            #graph{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                
+                width: 700px;
+                #img-3 {
+                    position: absolute;
+                    width: 280px;
+                    top: 33px;
+                    left: 126px;
+                }
+                
+              
+               
+                p{
+                    padding-top: 138px;
+                    width: 45%;
+                   font-family: AvenirNextLTPro-Mixed;
+                   font-size: 14px;
+                   padding-left: 152px;
+                }
+            }
+            #img-4 {
+                width: 196px;
+                position: relative;
+                top: 43px;
+                left: 39px;
+            }
+          
+        }
+    }
+}
+
+@media screen and (max-width: 380px)
+{
+    #about-section {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding-bottom: 140px;
+        align-items: center;
+        justify-content: center;
+        #imgs{
+            position: relative;
+            width: 224px;
+            height: 319px;
+            margin-left: 15px;
+            min-width: 210px;
+            background-color: black;
+            #img-1 { 
+                width: 195px;
+                z-index: 2;
+                position: absolute;
+                top: 52px;
+                left: 25px;
+            }
+    
+            p{
+                background-color: gold;
+                position: absolute;
+                z-index: 3;
+                width: 24px;
+                height: 144px;
+                top: 16px;
+                left: -12px;
+            }
+            
+            #img-circle
+            {
+                width: 73px;
+                position: absolute;
+                top: 42px;
+                left: 52px;
+            }
+            
+            #img-dot
+            {
+                width: 218px;
+                position: absolute;
+                left: 29px;
+                top: 121px;
+            }
+        }
+        
+        #not-image{
+            display: flex;
+            flex-direction: column;
+            width: 700px;
+            height: 500px;
+            margin-left: 116px;
+    
+            align-items: center;
+            #img-2 { 
+                width: 118px;
+                position: relative;
+                left: -145px;
+                top: 13px;
+            
+            }
+            #graph{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                
+                width: 700px;
+                #img-3 {
+                    position: absolute;
+                    width: 170px;
+                    top: 33px;
+                    left: 168px;
+                }
+                
+              
+               
+                p{
+                    padding-top: 84px;
+                    width: 30%;
+                   font-family: AvenirNextLTPro-Mixed;
+                   font-size: 12px;
+                   padding-left: 183px;
+                }
+            }
+            #img-4 {
+                width: 135px;
+                position: relative;
+                top: 7px;
+                left: -7px;
+            }
+          
+        }
     }
 }
 
