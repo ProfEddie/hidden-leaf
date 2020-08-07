@@ -19,6 +19,7 @@ router.route('/')
     const t = await sequelize.transaction();
     try {
        const {Group_name, Group_leader ,data} = req.body;
+       let leaderId;
        console.log(data)
        for (let i = 0 ; i < data.length ; i++) {
            let cell = {
@@ -30,12 +31,23 @@ router.route('/')
                email: data[i].Email,
                phone_number: data[i].Phone_number,
            }
-           await model.Candidate.create(cell, {transaction: t})
+           const candidate = await model.Candidate.create(cell, {transaction: t})
+           if (data[i].isLeader) {
+               leaderId = candidate.dataValues.id
+            }
         }
+        console.log(leaderId)
+        await model.Group.create({
+            group_name: Group_name,
+            event_id: 1,
+            leader_id: leaderId
+        }, {transaction: t})
         await t.commit();
+        res.status(200).json('success');
     }
     catch(err) {
         await t.rollback();
+        console.log(err.message)
         console.log(err.errors[0].message);
         res.status(400).json(err.errors[0].message);
     }
@@ -49,7 +61,7 @@ router.route('/member')
        console.log(data)
        let form_id = v4();
        for (let i = 0 ; i < data.length ; i++) {
-           if (data[i].Full_name) {
+           if (data[i].Fullname) {
                 let cell = {
                   full_name: data[i].Fullname,
                   form_id,
@@ -63,6 +75,7 @@ router.route('/member')
            }
         }
         await t.commit();
+        res.status(200).json('success');
     }
     catch(err) {
         await t.rollback();

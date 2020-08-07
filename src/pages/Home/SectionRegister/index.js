@@ -326,10 +326,44 @@ function handleGroupSubmit(e) {
       reqBody.data = data
       axios.post('/v1/candidate', reqBody)
       .then(function (response) {
-       console.log(response);
+        Swal.fire(
+          'Success!',
+          'Bạn đã đăng ký thành công!',
+          'success'
+        )
+
      })
      .catch(function (error) {
-       console.log(error.response)
+       console.log(error.response.data)
+       if (error.response.data === 'email must be unique')  {
+        Swal.fire(
+          'Oops!',
+          'Email một thành viên của nhóm bạn đã bị trùng, hãy thử email khác nhé!',
+          'error'
+        )
+       }
+       else if (error.response.data === 'phone_number must be unique')  {
+        Swal.fire(
+          'Oops!',
+          'Số điện thoại một thành viên của nhóm bạn đã bị trùng, hãy thử số khác nhé!',
+          'error'
+        )
+       }
+       else if (error.response.data === 'group_name must be unique')  {
+        Swal.fire(
+          'Oops!',
+          'Tên nhóm đã bị trùng, tìm tên khác cho nhóm của bạn nhé!',
+          'error'
+        )
+       }
+       else {
+        Swal.fire(
+          'Oops!',
+          'Đã có lỗi xảy ra, vui lòng thử lại sau',
+          'error'
+        )
+       }
+      
      });
   }
   catch(err) {
@@ -409,13 +443,38 @@ function handleMemberSubmit(e) {
           Group_leader: null,
           data
       }
-     
       axios.post('/v1/candidate/member', reqBody)
       .then(function (response) {
-       console.log(response);
-     })
+        Swal.fire(
+          'Success!',
+          'Bạn đã đăng ký thành công!',
+          'success'
+        )
+       }
+     )
      .catch(function (error) {
-       console.log(error.response)
+      if (error.response.data === 'email must be unique')  {
+        Swal.fire(
+          'Oops!',
+          'Email một thành viên của nhóm bạn đã bị trùng, hãy thử email khác nhé!',
+          'error'
+        )
+       }
+       else if (error.response.data === 'phone_number must be unique')  {
+        Swal.fire(
+          'Oops!',
+          'Số điện thoại một thành viên của nhóm bạn đã bị trùng, hãy thử số khác nhé!',
+          'error'
+        )
+      }
+       else {
+        Swal.fire(
+          'Oops!',
+          'Đã có lỗi xảy ra, vui lòng thử lại sau',
+          'error'
+        )
+       }
+      
      });
   }
   catch(err) {
