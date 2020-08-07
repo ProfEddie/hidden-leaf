@@ -1,0 +1,21 @@
+#Home {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#bended-content {
+  background-color: #ffffff;
+  transform: skew(0deg, -8deg);
+  -ms-transform: skew(0deg, -8deg);
+  -webkit-transform: skew(0deg, -8deg);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#bended-content .child-section {
+  transform: skew(0deg, 8deg);
+  -ms-transform: skew(0deg, 8deg);
+  -webkit-transform: skew(0deg, 8deg);
+}
+/*# sourceMappingURL=style.css.map */

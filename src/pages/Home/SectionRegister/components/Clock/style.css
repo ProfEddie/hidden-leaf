@@ -1,0 +1,67 @@
+#clock-container {
+  background-color: #ffffff;
+  width: 549px;
+  -webkit-box-shadow: 0px 0px 20px 3px #e4e4e4;
+  box-shadow: 0px 0px 20px 3px #e4e4e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 175px;
+  position: absolute;
+  bottom: 0px;
+}
+
+#clock-container #title {
+  color: #FFCF00;
+  font-family: AvenirNextLTPro-Demi;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+#clock-container #time-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#clock-container #time-container .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#clock-container #time-container .time .time-val {
+  font-family: AvenirNextLTPro-Demi;
+  font-size: 43px;
+}
+
+#clock-container #time-container .time .time-unit {
+  font-family: AvenirNextLTPro-Medium;
+  font-size: 11px;
+  text-align: center;
+  color: #9B9B9B;
+}
+
+#clock-container #time-container svg {
+  width: 64px;
+  height: 25px;
+}
+/*# sourceMappingURL=style.css.map */
