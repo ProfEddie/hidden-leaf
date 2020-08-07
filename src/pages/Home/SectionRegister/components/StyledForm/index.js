@@ -6,7 +6,7 @@ function StyledForm(props) {
   const [active, setActive] = useState(false)
 
   return (
-    <form className={`form ${active?'active':'hide'}`} id={props.formId} onSubmit={props.onSubmit}  >
+    <form className={`form ${active?'active':'inactive'}`} id={props.formId} onSubmit={props.onSubmit}  >
         <p id="title" onClick={() => setActive(!active)}>{props.title}</p>
         <div className="input-container">
           {
