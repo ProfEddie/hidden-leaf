@@ -27,12 +27,38 @@
         -webkit-box-shadow: 0px 0px 20px 3px #e4e4e4;
         box-shadow:         0px 0px 20px 3px #e4e4e4;
     }
+    input[type="date"]::before { 
+        content: attr(data-placeholder);
+        width: 100%;
+        color: #818181;
+    }
+    
+    /* hide our custom/fake placeholder text when in focus to show the default
+     * 'mm/dd/yyyy' value and when valid to show the users' date of birth value.
+     */
+    // input[type="date"]:focus::before,
+    input[type="date"]:valid::before { display: none }
+    
     .input-container {
         display: flex;
         flex-direction: column;
         max-height: 325px;
         overflow-y: scroll;
+        align-items: center;
+        .submit-button {
+            border: none;
+            outline: none;
+            background-color: black;
+            min-height: 40px;
+            width: 200px;
+            border-radius: 10px;
+            margin-bottom: 37px;
+            font-family: AvenirNextLTPro-Bold;
+            color: #ffffff;
+            font-size: 16px;
+        }
     }
+    
 }
 
 .active  {

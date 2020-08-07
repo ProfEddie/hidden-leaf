@@ -37,7 +37,7 @@ function SectionRegister() {
       isRequired: true,
     },{
       placeholder: 'Ngày/Tháng/Năm sinh',
-      type: 'text',
+      type: 'date',
       id: 'group-member1-birthDate',
       className: 'group',
       isTitle: false,
@@ -85,7 +85,7 @@ function SectionRegister() {
       isRequired: true,
     },{
       placeholder: 'Ngày/Tháng/Năm sinh',
-      type: 'text',
+      type: 'date',
       id: 'group-member2-birthDate',
       isTitle: false,
       className: 'group',
@@ -134,7 +134,7 @@ function SectionRegister() {
       isRequired: true,
     },{
       placeholder: 'Ngày/Tháng/Năm sinh',
-      type: 'text',
+      type: 'date',
       id: 'group-member3-birthDate',
       isTitle: false,
       className: 'group',
@@ -186,7 +186,7 @@ function SectionRegister() {
       isRequired: true,
     },{
       placeholder: 'Ngày/Tháng/Năm sinh',
-      type: 'text',
+      type: 'date',
       id: 'member1-birthDate',
       isTitle: false,
       className: 'member',
@@ -234,7 +234,7 @@ function SectionRegister() {
       isRequired: false,
     },{
       placeholder: 'Ngày/Tháng/Năm sinh',
-      type: 'text',
+      type: 'date',
       id: 'member2-birthDate',
       isTitle: false,
       className: 'member',
@@ -270,27 +270,13 @@ function SectionRegister() {
     }
   ]
 
-  function checkValidEmail(email) {
-  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
-  }  
-
   function checkValidTel(tel) {
     const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
     return re.test(String(tel));
   }
 
-  function checkValidURL(url) {
-    var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
-      '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
-      '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
-      '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
-      '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
-      '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
-    return pattern.test(url);
-  }
-
-function handleGroupSubmit() {
+function handleGroupSubmit(e) {
+  e.preventDefault();
   try {
       var reqBody = {
           Group_name:  document.getElementById(`group-name`).value,
@@ -315,21 +301,6 @@ function handleGroupSubmit() {
                   )
               }
               switch (key) {
-                case 'Birthdate': {
-                  if(!moment(data[key], 'DD/MM/YYYY', true).isValid()) {
-                      throw new Error(
-                          `${key.replace('_',' ').toLowerCase()} của thành viên ${item} không hợp lệ.`
-                      )
-                  }
-                  break;
-                }
-                case 'Email': {
-                  if (!checkValidEmail(data[key])) 
-                  throw new Error(
-                      `${key.replace('_',' ').toLowerCase()} của thành viên ${item} không hợp lệ.`
-                  )
-                  break;
-                }
                 case 'Phone_number': {
                   if (!checkValidTel(data[key]))
                   throw new Error(
@@ -337,13 +308,7 @@ function handleGroupSubmit() {
                   )
                   break;
                 }
-                case 'Student_card': {
-                  if (!checkValidURL(data[key]))
-                  throw new Error(
-                      `${key.replace('_',' ').toLowerCase()} của thành viên ${item} không hợp lệ.`
-                  )
-                  break;
-                }
+               
                 default: {
                   break;
                 }
@@ -378,7 +343,8 @@ function handleGroupSubmit() {
 
 }
 
-function handleMemberSubmit() {
+function handleMemberSubmit(e) {
+  e.preventDefault();
   try {
       var data =  [1, 2].map(function(item)  {
           var data = {
@@ -390,47 +356,51 @@ function handleMemberSubmit() {
               Student_card: document.getElementById(`member${item}-student-card`).value || null
           }
           for (let key in data) {
-              if (!data[key] && item === 1)  {
-                  throw new Error(
-                      ` Bạn chưa điền đầy đủ thông tin cho thành viên ${item}.`
-                  )
-              }
-              else if (data[key]) {
-                  switch (key) {
-                      case 'Birthdate': {
-                        if(!moment(data[key], 'DD/MM/YYYY', true).isValid()) {
-                            throw new Error(
-                                `${key.replace('_',' ').toLowerCase()} của thành viên ${item} không hợp lệ.`
-                            )
-                        }
-                        break;
-                      }
-                      case 'Email': {
-                        if (!checkValidEmail(data[key])) 
-                        throw new Error(
-                            `${key.replace('_',' ').toLowerCase()} của thành viên ${item} không hợp lệ.`
-                        )
-                        break;
-                      }
-                      case 'Phone_number': {
-                        if (!checkValidTel(data[key]))
-                        throw new Error(
-                            `${key.replace('_',' ').toLowerCase()} của thành viên ${item} không hợp lệ.`
-                        )
-                        break;
-                      }
-                      case 'Student_card': {
-                        if (!checkValidURL(data[key]))
-                        throw new Error(
-                            `${key.replace('_',' ').toLowerCase()} của thành viên ${item} không hợp lệ.`
-                        )
-                        break;
-                      }
-                      default: {
-                        break;
-                      }
+              if (data[key] && item === 2) {
+                console.log('trigger')
+               
+                switch (key) {
+                  case 'Phone_number': {
+                    if (!checkValidTel(data[key]))
+                    throw new Error(
+                        `${key.replace('_',' ').toLowerCase()} của thành viên ${item} không hợp lệ.`
+                    )
+                    break;
                   }
+                  default: {
+                    break;
+                  }
+                }
+                if ((
+                    !document.getElementById(`member${item}-name`).value &&
+                    !document.getElementById(`member${item}-birthDate`).value &&
+                    !document.getElementById(`member${item}-tel`).value && 
+                    !document.getElementById(`member${item}-email`).value &&
+                    !document.getElementById(`member${item}-university`).value && 
+                    !document.getElementById(`member${item}-student-card`).value
+                  ) || (
+                    document.getElementById(`member${item}-name`).value &&
+                    document.getElementById(`member${item}-birthDate`).value &&
+                    document.getElementById(`member${item}-tel`).value && 
+                    document.getElementById(`member${item}-email`).value &&
+                    document.getElementById(`member${item}-university`).value && 
+                    document.getElementById(`member${item}-student-card`).value
+                  )
+                 
+                ) {
+                } else {
+                  document.getElementById(`member${item}-name`).required = true
+                  document.getElementById(`member${item}-birthDate`).required = true
+                  document.getElementById(`member${item}-email`).required = true
+                  document.getElementById(`member${item}-tel`).required = true
+                  document.getElementById(`member${item}-university`).required = true
+                  document.getElementById(`member${item}-student-card`).required = true
+                  throw new Error(
+                    `${key.replace('_',' ').toLowerCase()} của thành viên ${item} không hợp lệ.`
+                  )
+                }
               }
+             
           }  
           return data
       })
@@ -449,12 +419,6 @@ function handleMemberSubmit() {
      });
   }
   catch(err) {
-      Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: err.message,
-          // footer: '<a href>Why do I have this issue?</a>'
-        })
   }
 }
 

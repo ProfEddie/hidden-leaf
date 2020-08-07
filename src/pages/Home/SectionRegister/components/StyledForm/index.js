@@ -6,7 +6,7 @@ function StyledForm(props) {
   const [active, setActive] = useState(false)
 
   return (
-    <form className={`form ${active?'active':'inactive'}`} id={props.formId} onSubmit={props.onSubmit}  >
+    <form className={`form ${active?'active':'inactive'}`} id={props.formId} onSubmit={(e) => props.onSubmit(e)}  >
         <p id="title" onClick={() => setActive(!active)}>{props.title}</p>
         <div className="input-container">
           {
@@ -16,6 +16,7 @@ function StyledForm(props) {
               )
             })
           }
+           <button  className="submit-button" type="submit">Submit</button>
         </div>
         <Clock dueDate={props.dueDate}/>
     </form>

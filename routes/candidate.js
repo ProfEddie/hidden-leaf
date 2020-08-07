@@ -49,16 +49,18 @@ router.route('/member')
        console.log(data)
        let form_id = v4();
        for (let i = 0 ; i < data.length ; i++) {
-        let cell = {
-              full_name: data[i].Fullname,
-              form_id,
-              university: data[i].University, 
-              birthdate: data[i].Birthdate,
-              student_card: data[i].Student_card,
-              email: data[i].Email,
-              phone_number: data[i].Phone_number,
-            }
-           await model.Candidate.create(cell, {transaction: t})
+           if (data[i].Full_name) {
+                let cell = {
+                  full_name: data[i].Fullname,
+                  form_id,
+                  university: data[i].University, 
+                  birthdate: data[i].Birthdate,
+                  student_card: data[i].Student_card,
+                  email: data[i].Email,
+                  phone_number: data[i].Phone_number,
+                }
+              await model.Candidate.create(cell, {transaction: t})
+           }
         }
         await t.commit();
     }
