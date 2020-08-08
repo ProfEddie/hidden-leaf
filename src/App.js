@@ -7,6 +7,8 @@ import {
   Route,
 } from "react-router-dom";
 import Home from "./pages/Home"
+import Loader from 'react-loader-spinner'
+import './style.scss'
 // import Admin from "./pages/Admin"
 // import Login from "./pages/Login";
 // import { AuthContext } from "./context/auth";
@@ -19,15 +21,26 @@ function App() {
   //   localStorage.setItem("tokens", JSON.stringify(data));
   //   setAuthTokens(data);
   // }
-
+  const [isLoading, setIsLoading] = useState(true)
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-    window.addEventListener('load', AOS.refresh);
+    console.log('init')
+    window.addEventListener('load', function() {
+      setIsLoading(false)
+      AOS.refresh();
+    });
   });
   return (
     // <AuthContext.Provider value={{ authTokens, setAuthTokens: setTokens }}>
     <Router className="App">
+        
+        <div className="loading-screen" id={isLoading? 'loading-show': 'loading-hide'}>
+            <img data-aos="fade-in"src={require("./images/home/5.png")} alt="logo"/>
+            <Loader type="TailSpin" color="#FFCF00" height={200} width={500} />
+            <p id="loading">Loading...</p>
+        </div>
+     
       <Switch>
         <Route path="/" component={Home}/>
         {/* <Route path="/login" component={Login} /> */}
