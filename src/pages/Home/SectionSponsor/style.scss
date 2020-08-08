@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     #img-1{
-        width:223px;
+        width:16%;
     }
     #bot{
         display: flex;
@@ -24,11 +24,11 @@
             align-items: center;
             #ntt{
              font-family: AvenirNextLTPro-Bold ;
-             font-size: 20px;
+             font-size: 19px;
              z-index: 3;
             }
              #img-2{
-                width: 100%;
+                width: 87%;
             }
         }
         #right
@@ -37,6 +37,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding-right: 187px;
             #btcm{
                 font-family: AvenirNextLTPro-Bold ;
                 font-size: 19px;
@@ -44,13 +45,22 @@
             }
             #img-3
             {
-                width: 100%;
+                width: 155%;
+            }
+            #bttt{
+                font-family: AvenirNextLTPro-Bold ;
+                font-size: 19px;
+                z-index: 3;
+            }
+            #img-4
+            {
+                width: 155%;
             }
         }
     }
 }
 
-@media screen and(max-width: 780px)
+@media screen and(max-width: 1100px)
 {
     #sponsor-section{
         display: flex;
@@ -59,11 +69,11 @@
         align-items: center;
         justify-content: center;
         #img-1{
-            width:223px;
+            width:27%;
         }
         #bot{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             position: relative;
@@ -74,7 +84,137 @@
                 display: flex;
                 flex-direction: column;
                 position: relative;
-                padding-right: 100px;
+                padding-right: 0px;
+                align-items: center;
+                #ntt{
+                 font-family: AvenirNextLTPro-Bold ;
+                 font-size: 19px;
+                 z-index: 3;
+                }
+                 #img-2{
+                    width: 80%;
+                }
+            }
+            #right
+            {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-right: 0px;
+                #btcm{
+                    font-family: AvenirNextLTPro-Bold ;
+                    font-size: 19px;
+                    z-index: 3;
+                }
+                #img-3
+                {
+                    width: 110%;
+                }
+                #bttt{
+                    font-family: AvenirNextLTPro-Bold ;
+                    font-size: 19px;
+                    z-index: 3;
+                }
+                #img-4
+                {
+                    width: 120%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 900px)
+{
+    #sponsor-section{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        #img-1{
+            width:27%;
+        }
+        #bot{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding-top: 20px;
+            padding-bottom: 60px;
+            margin-bottom: 66px;
+            #left{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                padding-right: 0px;
+                align-items: center;
+                #ntt{
+                 font-family: AvenirNextLTPro-Bold ;
+                 font-size: 19px;
+                 z-index: 3;
+                }
+                 #img-2{
+                    width: 60%;
+                }
+            }
+            #right
+            {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-right: 0px;
+                #btcm{
+                    font-family: AvenirNextLTPro-Bold ;
+                    font-size: 19px;
+                    z-index: 3;
+                }
+                #img-3
+                {
+                    width: 75%;
+                }
+                #bttt{
+                    font-family: AvenirNextLTPro-Bold ;
+                    font-size: 19px;
+                    z-index: 3;
+                }
+                #img-4
+                {
+                    width: 82%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 900px)
+{
+    #sponsor-section{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        #img-1{
+            width:27%;
+        }
+        #bot{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding-top: 20px;
+            padding-bottom: 60px;
+            margin-bottom: 66px;
+            #left{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                padding-right: 0px;
                 align-items: center;
                 #ntt{
                  font-family: AvenirNextLTPro-Bold ;
@@ -82,7 +222,7 @@
                  z-index: 3;
                 }
                  #img-2{
-                    width: 100%;
+                    width: 60%;
                 }
             }
             #right
@@ -91,6 +231,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                padding-right: 0px;
                 #btcm{
                     font-family: AvenirNextLTPro-Bold ;
                     font-size: 14px;
@@ -98,14 +239,23 @@
                 }
                 #img-3
                 {
-                    width: 100%;
+                    width: 75%;
+                }
+                #bttt{
+                    font-family: AvenirNextLTPro-Bold ;
+                    font-size: 14px;
+                    z-index: 3;
+                }
+                #img-4
+                {
+                    width: 82%;
                 }
             }
         }
     }
 }
 
-@media screen and(max-width: 780px)
+@media screen and(max-width: 443px)
 {
     #sponsor-section{
         display: flex;
@@ -114,11 +264,11 @@
         align-items: center;
         justify-content: center;
         #img-1{
-            width:170px;
+            width:27%;
         }
         #bot{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             position: relative;
@@ -129,15 +279,15 @@
                 display: flex;
                 flex-direction: column;
                 position: relative;
-                padding-right: 100px;
+                padding-right: 0px;
                 align-items: center;
                 #ntt{
                  font-family: AvenirNextLTPro-Bold ;
-                 font-size: 10px;
+                 font-size: 16px;
                  z-index: 3;
                 }
                  #img-2{
-                    width: 100%;
+                    width: 119%;
                 }
             }
             #right
@@ -146,179 +296,24 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                padding-right: 0px;
                 #btcm{
                     font-family: AvenirNextLTPro-Bold ;
-                    font-size: 10px;
+                    font-size: 16px;
                     z-index: 3;
                 }
                 #img-3
                 {
-                    width: 100%;
+                    width: 123%;
                 }
-            }
-        }
-    }
-}
-
-@media screen and(max-width: 510px)
-{
-    #sponsor-section{
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        #img-1{
-            width:150px;
-        }
-        #bot{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            padding-top: 20px;
-            padding-bottom: 60px;
-            margin-bottom: 66px;
-            #left{
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                padding-right: 100px;
-                align-items: center;
-                #ntt{
-                 font-family: AvenirNextLTPro-Bold ;
-                 font-size: 8px;
-                 z-index: 3;
-                }
-                 #img-2{
-                    width: 100%;
-                }
-            }
-            #right
-            {
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                #btcm{
+                #bttt{
                     font-family: AvenirNextLTPro-Bold ;
-                    font-size: 8px;
+                    font-size: 16px;
                     z-index: 3;
                 }
-                #img-3
+                #img-4
                 {
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
-
-@media screen and(max-width: 418px)
-{
-    #sponsor-section{
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        #img-1{
-            width:105px;
-        }
-        #bot{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            padding-top: 20px;
-            padding-bottom: 60px;
-            margin-bottom: 66px;
-            #left{
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                padding-right: 100px;
-                align-items: center;
-                #ntt{
-                 font-family: AvenirNextLTPro-Bold ;
-                 font-size: 6px;
-                 z-index: 3;
-                }
-                 #img-2{
-                    width: 100%;
-                }
-            }
-            #right
-            {
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                #btcm{
-                    font-family: AvenirNextLTPro-Bold ;
-                    font-size: 6px;
-                    z-index: 3;
-                }
-                #img-3
-                {
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
-
-@media screen and(max-width: 418px)
-{
-    #sponsor-section{
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        #img-1{
-            width:85px;
-        }
-        #bot{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            padding-top: 20px;
-            padding-bottom: 60px;
-            margin-bottom: 66px;
-            #left{
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                padding-right: 100px;
-                align-items: center;
-                #ntt{
-                 font-family: AvenirNextLTPro-Bold ;
-                 font-size: 4.5px;
-                 z-index: 3;
-                }
-                 #img-2{
-                    width: 100%;
-                }
-            }
-            #right
-            {
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                #btcm{
-                    font-family: AvenirNextLTPro-Bold ;
-                    font-size: 4.5px;
-                    z-index: 3;
-                }
-                #img-3
-                {
-                    width: 100%;
+                    width: 95%;
                 }
             }
         }

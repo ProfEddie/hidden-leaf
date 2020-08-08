@@ -10,18 +10,18 @@ function SectionFooter(){
                         <p id="hotline" className="text-container">
                           HOTLINE
                           <br></br>
-                          <span style={{paddingLeft: "135px"}}>079 8399 887 (Mr. Nhật Thanh)</span>
+                          <span style={{paddingLeft: "24%"}}>079 8399 887 (Mr. Nhật Thanh)</span>
                           <br></br>
-                          <span style={{paddingLeft: "135px"}}>079 4250 899 (Mr. Hoàng Hải)</span>
+                          <span style={{paddingLeft: "24%"}}>079 4250 899 (Mr. Hoàng Hải)</span>
                         </p>
                         <p id="email"  className="text-container">
-                          EMAIL <span style={{paddingLeft: "90px"}} >marketingarena2020@gmail.com</span>       
+                          EMAIL <span style={{paddingLeft: "17%"}} >marketingarena2020@gmail.com</span>       
                         </p>
                         <p id="fanpage"  className="text-container">
-                          FANPAGE <span style={{paddingLeft: "59px"}} >http://www.facebook.com/creatioftu2/</span>       
+                          FANPAGE <span style={{paddingLeft: "14%"}} >http://www.facebook.com/creatioftu2/</span>       
                         </p>
                         <p id="website" className="text-container">
-                          WEBSITE <span style={{paddingLeft: "109px"}}>marketingarena.info</span>           
+                          WEBSITE <span style={{paddingLeft: "15%"}}>marketingarena.info</span>           
                         </p>
                     
                     </div>

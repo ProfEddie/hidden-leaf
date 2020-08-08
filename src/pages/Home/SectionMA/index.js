@@ -15,8 +15,8 @@ function SectionMA() {
           <img className={`ma-img`} id="img-ma-2020" src={require("../../../images/ma2020/MA 2020.png")} alt="circle" data-aos="fade-down"/>
           <img className="ma-img" id="img-1" src={require("../../../images/ma2020/ruleEachRound/1.png")} alt="circle" data-aos="fade-up"/>
           <div id="subtitle" data-aos="fade-up">
-              <p>Cuộc thi <span style={{fcolor: "#FFCF00"}}>MARKETING ARENA 2020</span> sẽ chính thức khởi động từ ngày <span>16.08.2020 </span>và kết thúc vào ngày <span>27.09.2020</span>. Các đội thi sẽ được thử thách qua <span>03 chặng hành trình</span> chính với<span> 02 sự lựa chọn.</span></p> 
-              <p><span>Lưu ý: 20 đội</span>  đăng ký dự thi <span>sớm nhất</span> sẽ được quyền <span>tự do lựa chọn đề</span>, các đội còn lại sẽ được BTC chỉ định đề thi.</p> 
+              <p>Cuộc thi <span style={{color: "#FFCF00"}}>MARKETING ARENA 2020</span> sẽ chính thức khởi động từ ngày <span>16.08.2020 </span>và kết thúc vào ngày <span>27.09.2020</span>. Các đội thi sẽ được thử thách qua <span>03 chặng hành trình</span> chính với<span> 02 sự lựa chọn.</span></p> 
+              <p style={{fontFamily: "AvenirNextLTPro-Italic"}}><span style={{fontFamily: "AvenirNextLTPro-BoldItalic"}}>Lưu ý: 20 đội</span>  đăng ký dự thi <span style={{fontFamily: "AvenirNextLTPro-BoldItalic"}}>sớm nhất</span> sẽ được quyền <span style={{fontFamily: "AvenirNextLTPro-BoldItalic"}}>tự do lựa chọn đề</span>, các đội còn lại sẽ được BTC chỉ định đề thi.</p> 
           </div>
           {/* <img className="ma-img" id="img-2" src={require('../../../images/ma2020/2.png')} alt="circle"/> */}
            <div id="rule-each-round-container">
@@ -50,32 +50,32 @@ function SectionMA() {
                 <div className="round-container">
                     <div id="round-2-container">
                       <div className="round-2-child" style={{alignItems:'flex-end'}} data-aos="fade-right" data-aos-once="true">
-                        <div className="yellow-full-round"  style={{paddingRight: '22px',alignItems:'flex-end', paddingTop: '4px',paddingBottom: '4px', width: '94%'}}>
+                        <div id="yellow-full-round-left" className="yellow-full-round">
                           <p className="title">Vòng 2</p>
                           <p className="subtitle"><span>Xây dựng kế hoạch</span></p>
                           <p className="subtitle">Marketing truyền thông tích hợp</p>
                         </div>
                          <span className="date" style={{marginTop: "17px"}}>7:00 PM 14.09</span>
-                         <div className="white-full-round" style={{paddingRight: '25px',height: "63px", alignItems:'flex-end'}}>
+                         <div id="white-full-round-left" className="white-full-round" >
                            <p className="title">Training Sesssion:</p>
                            <p className="subtitle">ICM Plan</p>
                          </div>
                       </div>
 
-                      <div className="datetime-container" style={{marginBottom: '57px'}}>
+                      <div className="datetime-container"  id="round-2-datetime" >
                         <span>06.09</span>
                         <img src={require('../../../svg/ma-6.svg')} id="svg-6" alt="svg"/>
                         <span>11.09</span>
                       </div>
 
                       <div className="round-2-child" data-aos="fade-left" data-aos-once="true">
-                        <div className="yellow-full-round" style={{paddingLeft: '22px',alignItems:'flex-start', paddingTop: '4px',paddingBottom: '4px', width: '94%'}} >
+                        <div id="yellow-full-round-right" className="yellow-full-round" >
                           <p className="title">Vòng 2</p>
                           <p className="subtitle"><span>Xây dựng kế hoạch</span></p>
                           <p className="subtitle">Tung sản phẩm mới theo mô hình 6Ps</p>
                         </div>
                          <p className="date">7:00 PM 14.09</p>
-                         <div className="white-full-round" style={{paddingLeft: '25px', height: "63px",alignItems:'flex-start'}}>
+                         <div  id="white-full-round-right" className="white-full-round" >
                            <p className="title">Training Session:</p>
                            <p className="subtitle">Launching Product</p>
                          </div>

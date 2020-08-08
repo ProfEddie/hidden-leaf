@@ -1,25 +1,26 @@
 #about-section {
     display: flex;
     position: relative;
+    justify-content: center;
     flex-direction: row;
-    padding-bottom: 100px;
+    padding-bottom: 140px;
     #imgs{
         position: relative;
-        width: 341px;
-        height: 442px;
-        margin-left: 104px;
-        
+        width: 442px;
+        height: 580px;
+        margin-left: 147px;
+        min-width: 346px;
         background-color: black;
         #img-1 { 
-            width: 288px;
+            width: 370px;
             z-index: 2;
             position: absolute;
-            top: 51px;
-            left: 40px;
+            top: 79px;
+            left: 55px;
         }
 
         p{
-            background-color: gold;
+            background-color: #FFCF00;
             position: absolute;
             z-index: 3;
             width: 24px;
@@ -30,64 +31,472 @@
         
         #img-circle
         {
-            width: 127px;
+            width: 162px;
             position: absolute;
-            top: 23px;
-            left: 70px;
+            top: 44px;
+            left: 36px;
         }
         
         #img-dot
         {
-            width: 351px;
+            width: 442px;
             position: absolute;
-            left: 31px;
-            top: 141px;
+            left: 49px;
+            top: 185px;
         }
     }
     
-    #not-image{
+    #about-content{
         display: flex;
         flex-direction: column;
         width: 700px;
-        height: 443px;
-        margin-left: 96px;
+        height: 500px;
+        margin-left: 116px;
 
         align-items: center;
         #img-2 { 
             width: 215px;
-            position: absolute;
-            left: 467px;
-            top: -36px;
+            position: relative;
+            left: -312px;
+            top: -39px;
         
         }
         #graph{
             display: flex;
             position: relative;
             flex-direction: column;
-            
+            margin-top: 100px;
             width: 700px;
             #img-3 {
-                position: absolute;
-                width: 364px;
-                top: 80px;
-                left: -30px;
+                width: 386px;
             }
             
           
            
             p{
-                padding-top: 182px;
-               
-               
+                padding-top: 38px;
+                width: 80%;
+               font-family: AvenirNextLTPro-Medium;
+               font-size: 14px;
+               span {
+                   font-family: AvenirNextLTPro-Bold;
+               }
             }
         }
         #img-4 {
-            width: 301px;
-            position: absolute;
-            top: 371px;
-            left: 911px;
+            width: 276px;
+            position: relative;
+            top: 43px;
+            left: 143px;
         }
       
+    }
+}
+
+@media screen and (max-width: 1125px)
+{
+    #about-section {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding-bottom: 140px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 12%;
+        #imgs{
+            position: relative;
+            width: 316px;
+            height: 431px;
+            margin-left: 147px;
+            min-width: 234px;
+            background-color: black;
+            #img-1 { 
+                width: 263px;
+                z-index: 2;
+                position: absolute;
+                top: 74px;
+                left: 36px;
+            }
+    
+            p{
+                background-color: #FFCF00;
+                position: absolute;
+                z-index: 3;
+                width: 24px;
+                height: 218px;
+                top: 17px;
+                left: -12px;
+            }
+            
+            #img-circle
+            {
+                width: 113px;
+                position: absolute;
+                top: 54px;
+                left: 65px;
+            }
+            
+            #img-dot
+            {
+                width: 316px;
+                position: absolute;
+                left: 36px;
+                top: 167px;
+            }
+        }
+        
+        #about-content{
+            display: flex;
+            flex-direction: column;
+            width: 700px;
+            height: 500px;
+            margin-left: 116px;
+    
+            align-items: center;
+            #img-2 { 
+                width: 215px;
+                position: relative;
+                left: -312px;
+                top: -39px;
+            
+            }
+            #graph{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                
+                width: 700px;
+                #img-3 {
+                    width: 55%;
+                    top: 33px;
+                    left: -30px;
+                }
+                
+              
+               
+                p{
+                    padding-top: 38px;
+                    width: 80%;
+                   font-family: AvenirNextLTPro-Medium;
+                   font-size: 15px;
+                }
+            }
+            #img-4 {
+                width: 276px;
+                position: relative;
+                top: 43px;
+                left: 143px;
+            }
+          
+        }
+    }
+}
+
+@media screen and (max-width: 645px)
+{
+    #about-section {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding-bottom: 140px;
+        align-items: center;
+        justify-content: center;
+        #imgs{
+            position: relative;
+            width: 282px;
+            height: 370px;
+            margin-left: 3px;
+            min-width: 236px;
+            background-color: black;
+            #img-1 { 
+                width: 224px;
+                z-index: 2;
+                position: absolute;
+                top: 64px;
+                left: 38px;
+            }
+    
+            p{
+                background-color: #FFCF00;
+                position: absolute;
+                z-index: 3;
+                width: 24px;
+                height: 218px;
+                top: 16px;
+                left: -12px;
+            }
+            
+            #img-circle
+            {
+                width: 91px;
+                position: absolute;
+                top: 44px;
+                left: 65px;
+            }
+            
+            #img-dot
+            {
+                width: 248px;
+                position: absolute;
+                left: 62px;
+                top: 150px;
+            }
+        }
+        
+        #about-content{
+            display: flex;
+            flex-direction: column;
+            width: 700px;
+            height: 500px;
+            margin-left: 116px;
+    
+            align-items: center;
+            #img-2 { 
+                width: 215px;
+                position: relative;
+                left: -163px;
+                top: 13px;
+            
+            }
+            #graph{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                
+                width: 700px;
+                #img-3 {
+                    width: 36%;
+                    top: 33px;
+                    left: 126px;
+                }
+                
+              
+               
+                p{
+                    padding-top: 38px;
+                    width: 80%;
+                   font-family: AvenirNextLTPro-Medium;
+                   font-size: 16px;
+                   span {
+                       font-family: AvenirNextLTPro-Bold;
+                   }
+                }
+            }
+            #img-4 {  
+                width: 196px;
+                position: relative;
+                top: 43px;
+                left: 49px;
+            }
+          
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 475px)
+{
+    #about-section {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding-bottom: 140px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+        #imgs{
+            position: relative;
+            width: 222px;
+             height: 281px;
+            margin-left: 3px;
+            min-width: 143px;
+            background-color: black;
+            #img-1 { 
+                width: 179px;
+                z-index: 2;
+                position: absolute;
+                top: 38px;
+                left: 31px;
+            }
+    
+            p{
+                background-color: #FFCF00;
+                position: absolute;
+                z-index: 3;
+                width: 24px;
+                height: 133px;
+                top: 16px;
+                left: -12px;
+            }
+            
+            #img-circle
+            {
+                width: 56px;
+                position: absolute;
+                top: 38px;
+                left: 62px;
+            }
+            
+            #img-dot
+            {
+                width: 193px;
+                position: absolute;
+                left: 49px;
+                top: 102px;
+            }
+        }
+        
+        #about-content{
+            display: flex;
+            flex-direction: column;
+            width: 700px;
+            height: 500px;
+            margin-left: 116px;
+    
+            align-items: center;
+            #img-2 { 
+                width: 147px;
+                position: relative;
+                left: -162px;
+                top: 14px;
+            
+            }
+            #graph{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                
+                width: 700px;
+                #img-3 {
+                    position: absolute;
+                    width: 25%;
+                    top: 19px;
+                    left: 117px;
+                }
+                
+              
+               
+                p{
+                    padding-top: 80px;
+                    width: 50%;
+                   font-family: AvenirNextLTPro-Medium;
+                   font-size: 15px;
+                   padding-left: 116px;
+                   span {
+                    font-family: AvenirNextLTPro-Bold;
+                   }
+                }
+            }
+            #img-4 {
+                width: 146px;
+                position: relative;
+                top: 24px;
+                left: 17px;
+            }
+          
+        }
+    }
+}
+
+@media screen and (max-width: 380px)
+{
+    #about-section {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding-bottom: 140px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+        #imgs{
+            position: relative;
+            width: 165px;
+            height: 227px;
+            margin-left: 3px;
+            min-width: 86px;
+            background-color: black;
+            #img-1 { 
+                width: 141px;
+                z-index: 2;
+                position: absolute;
+                top: 38px;
+                left: 21px;;
+            }
+    
+            p{
+                background-color: #FFCF00;
+                position: absolute;
+                z-index: 3;
+                width: 18px;
+                height: 104px;
+                top: 16px;
+                left: -9px;
+            }
+            
+            #img-circle
+            {
+                width: 43px;
+                position: absolute;
+                top: 38px;
+                left: 46px;
+            }
+            
+            #img-dot
+            {
+                width: 131px;
+                position: absolute;
+                left: 49px;
+                top: 102px;
+            }
+        }
+        
+        #about-content{
+            display: flex;
+            flex-direction: column;
+            width: 700px;
+            height: 500px;
+            margin-left: 116px;
+    
+            align-items: center;
+            #img-2 { 
+                width: 147px;
+                position: relative;
+                left: -137px;
+                top: 14px;
+            
+            }
+            #graph{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                
+                width: 700px;
+                #img-3 {
+                    position: absolute;
+                    width: 22%;
+                    top: 19px;
+                    left: 137px;
+                }
+                p{
+                    padding-top: 80px;
+                    width: 45%;
+                    font-family: AvenirNextLTPro-Medium;
+                    font-size: 14px;
+                    padding-left: 135px;
+                   span {
+                    font-family: AvenirNextLTPro-Bold;
+                   }
+                }
+            }
+            #img-4 {
+                width: 146px;
+                position: relative;
+                top: 24px;
+                left: 17px;
+            }
+          
+        }
     }
 }
 
