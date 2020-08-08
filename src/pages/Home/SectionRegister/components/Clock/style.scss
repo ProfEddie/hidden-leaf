@@ -43,3 +43,67 @@
     }
    
 }
+
+@media  screen and (max-width: 1384px) {
+    #clock-container {
+        width: 110%
+    }
+}
+
+@media screen and (max-width:  563px) {
+
+    #clock-container {
+        width: 100%;
+       
+    }
+}
+
+@media  screen and (max-width: 452px) {
+
+    #clock-container {
+        #time-container {
+            .time {
+                .time-val {
+                    font-family: AvenirNextLTPro-Demi;
+                    font-size: 32px;
+                }
+             
+            }
+        }
+    }
+}
+
+
+@media  screen and (max-width: 375px) {
+
+    #clock-container {
+        #time-container {
+            .time {
+                .time-val {
+                    font-family: AvenirNextLTPro-Demi;
+                    font-size: 28px;
+                }
+             
+            }
+        }
+    }
+}
+@media  screen and (max-width: 320px) {
+
+    #clock-container {
+        #time-container {
+            .time {
+                .time-val {
+                    font-family: AvenirNextLTPro-Demi;
+                    font-size: 25px;
+                }
+             
+            }
+            svg {
+                width: 43px;
+                height: 15px;
+            }
+        }
+    }
+}
+

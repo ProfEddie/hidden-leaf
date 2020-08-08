@@ -70,10 +70,22 @@
 }
 
 
-@media only screen and (max-width: 1384px) {
-
+@media screen and (max-width: 1384px) {
     .form {
        margin-bottom: 30px;
        margin-top: 30px;
+       width: 428px
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .form {
+       width: 364px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form {
+       width: 307px;
     }
 }

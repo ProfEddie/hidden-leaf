@@ -32,3 +32,15 @@
  .register-input:disabled::-ms-input-placeholder { /* Microsoft Edge */
    color: #ffffff;
 }
+
+@media screen and (max-width: 375px) {
+    .register-input {
+        width: 300px
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .register-input {
+        width: 260px
+    }
+}
