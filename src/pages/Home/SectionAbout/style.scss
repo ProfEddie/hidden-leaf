@@ -78,7 +78,7 @@
             p{
                 padding-top: 138px;
                 width: 80%;
-               font-family: AvenirNextLTPro-Mixed;
+               font-family: AvenirNextLTPro-Regular;
                font-size: 15px;
             }
         }
@@ -101,19 +101,20 @@
         padding-bottom: 140px;
         align-items: center;
         justify-content: center;
+        padding-top: 12%;
         #imgs{
             position: relative;
-            width: 346px;
-            height: 500px;
+            width: 316px;
+            height: 431px;
             margin-left: 147px;
-            min-width: 346px;
+            min-width: 234px;
             background-color: black;
             #img-1 { 
-                width: 314px;
+                width: 263px;
                 z-index: 2;
                 position: absolute;
                 top: 74px;
-                left: 27px;
+                left: 36px;
             }
     
             p{
@@ -122,24 +123,24 @@
                 z-index: 3;
                 width: 24px;
                 height: 218px;
-                top: 16px;
+                top: 17px;
                 left: -12px;
             }
             
             #img-circle
             {
-                width: 135px;
+                width: 113px;
                 position: absolute;
-                top: 44px;
+                top: 54px;
                 left: 65px;
             }
             
             #img-dot
             {
-                width: 351px;
+                width: 316px;
                 position: absolute;
-                left: 31px;
-                top: 185px;
+                left: 36px;
+                top: 167px;
             }
         }
         
@@ -166,7 +167,7 @@
                 width: 700px;
                 #img-3 {
                     position: absolute;
-                    width: 386px;
+                    width: 55%;
                     top: 33px;
                     left: -30px;
                 }
@@ -176,7 +177,7 @@
                 p{
                     padding-top: 138px;
                     width: 80%;
-                   font-family: AvenirNextLTPro-Mixed;
+                   font-family: AvenirNextLTPro-Regular;
                    font-size: 15px;
                 }
             }
@@ -202,17 +203,17 @@
         justify-content: center;
         #imgs{
             position: relative;
-            width: 346px;
-            height: 500px;
-            margin-left: 56px;
-            min-width: 346px;
+            width: 282px;
+            height: 370px;
+            margin-left: 3px;
+            min-width: 236px;
             background-color: black;
             #img-1 { 
-                width: 314px;
+                width: 224px;
                 z-index: 2;
                 position: absolute;
-                top: 74px;
-                left: 27px;
+                top: 64px;
+                left: 38px;
             }
     
             p{
@@ -227,7 +228,7 @@
             
             #img-circle
             {
-                width: 135px;
+                width: 91px;
                 position: absolute;
                 top: 44px;
                 left: 65px;
@@ -235,10 +236,10 @@
             
             #img-dot
             {
-                width: 351px;
+                width: 248px;
                 position: absolute;
-                left: 31px;
-                top: 185px;
+                left: 62px;
+                top: 150px;
             }
         }
         
@@ -265,7 +266,7 @@
                 width: 700px;
                 #img-3 {
                     position: absolute;
-                    width: 280px;
+                    width: 36%;
                     top: 33px;
                     left: 126px;
                 }
@@ -275,7 +276,7 @@
                 p{
                     padding-top: 138px;
                     width: 45%;
-                   font-family: AvenirNextLTPro-Mixed;
+                   font-family: AvenirNextLTPro-Regular;
                    font-size: 14px;
                    padding-left: 152px;
                 }
@@ -291,105 +292,7 @@
     }
 }
 
-@media screen and (max-width: 645px)
-{
-    #about-section {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        padding-bottom: 140px;
-        align-items: center;
-        justify-content: center;
-        #imgs{
-            position: relative;
-            width: 346px;
-            height: 500px;
-            margin-left: 56px;
-            min-width: 346px;
-            background-color: black;
-            #img-1 { 
-                width: 314px;
-                z-index: 2;
-                position: absolute;
-                top: 74px;
-                left: 27px;
-            }
-    
-            p{
-                background-color: gold;
-                position: absolute;
-                z-index: 3;
-                width: 24px;
-                height: 218px;
-                top: 16px;
-                left: -12px;
-            }
-            
-            #img-circle
-            {
-                width: 135px;
-                position: absolute;
-                top: 44px;
-                left: 65px;
-            }
-            
-            #img-dot
-            {
-                width: 351px;
-                position: absolute;
-                left: 31px;
-                top: 185px;
-            }
-        }
-        
-        #not-image{
-            display: flex;
-            flex-direction: column;
-            width: 700px;
-            height: 500px;
-            margin-left: 116px;
-    
-            align-items: center;
-            #img-2 { 
-                width: 215px;
-                position: relative;
-                left: -163px;
-                top: 13px;
-            
-            }
-            #graph{
-                display: flex;
-                position: relative;
-                flex-direction: column;
-                
-                width: 700px;
-                #img-3 {
-                    position: absolute;
-                    width: 280px;
-                    top: 33px;
-                    left: 126px;
-                }
-                
-              
-               
-                p{
-                    padding-top: 138px;
-                    width: 45%;
-                   font-family: AvenirNextLTPro-Mixed;
-                   font-size: 14px;
-                   padding-left: 152px;
-                }
-            }
-            #img-4 {
-                width: 196px;
-                position: relative;
-                top: 43px;
-                left: 49px;
-            }
-          
-        }
-    }
-}
+
 
 @media screen and (max-width: 475px)
 {
@@ -400,19 +303,20 @@
         padding-bottom: 140px;
         align-items: center;
         justify-content: center;
+        padding-top: 50px;
         #imgs{
             position: relative;
-            width: 305px;
-            height: 437px;
-            margin-left: 15px;
-            min-width: 305px;
+            width: 222px;
+             height: 281px;
+            margin-left: 3px;
+            min-width: 143px;
             background-color: black;
             #img-1 { 
-                width: 268px;
+                width: 179px;
                 z-index: 2;
                 position: absolute;
-                top: 74px;
-                left: 37px;
+                top: 38px;
+                left: 31px;
             }
     
             p{
@@ -420,25 +324,25 @@
                 position: absolute;
                 z-index: 3;
                 width: 24px;
-                height: 218px;
+                height: 133px;
                 top: 16px;
                 left: -12px;
             }
             
             #img-circle
             {
-                width: 108px;
+                width: 56px;
                 position: absolute;
-                top: 57px;
-                left: 70px;
+                top: 38px;
+                left: 62px;
             }
             
             #img-dot
             {
-                width: 300px;
+                width: 193px;
                 position: absolute;
-                left: 38px;
-                top: 161px;
+                left: 49px;
+                top: 102px;
             }
         }
         
@@ -451,10 +355,10 @@
     
             align-items: center;
             #img-2 { 
-                width: 215px;
+                width: 147px;
                 position: relative;
-                left: -163px;
-                top: 13px;
+                left: -162px;
+                top: 14px;
             
             }
             #graph{
@@ -465,26 +369,26 @@
                 width: 700px;
                 #img-3 {
                     position: absolute;
-                    width: 280px;
-                    top: 33px;
-                    left: 126px;
+                    width: 25%;
+                    top: 19px;
+                    left: 138px;
                 }
                 
               
                
                 p{
-                    padding-top: 138px;
-                    width: 45%;
-                   font-family: AvenirNextLTPro-Mixed;
-                   font-size: 14px;
+                    padding-top: 80px;
+                    width: 38%;
+                   font-family: AvenirNextLTPro-Regular;
+                   font-size: 12px;
                    padding-left: 152px;
                 }
             }
             #img-4 {
-                width: 196px;
+                width: 146px;
                 position: relative;
-                top: 43px;
-                left: 39px;
+                top: 24px;
+                left: 17px;
             }
           
         }
@@ -500,45 +404,46 @@
         padding-bottom: 140px;
         align-items: center;
         justify-content: center;
+        padding-top: 50px;
         #imgs{
             position: relative;
-            width: 224px;
-            height: 319px;
-            margin-left: 15px;
-            min-width: 210px;
+            width: 165px;
+            height: 227px;
+            margin-left: 3px;
+            min-width: 86px;
             background-color: black;
             #img-1 { 
-                width: 195px;
+                width: 141px;
                 z-index: 2;
                 position: absolute;
-                top: 52px;
-                left: 25px;
+                top: 38px;
+                left: 21px;;
             }
     
             p{
                 background-color: gold;
                 position: absolute;
                 z-index: 3;
-                width: 24px;
-                height: 144px;
+                width: 18px;
+                height: 104px;
                 top: 16px;
-                left: -12px;
+                left: -9px;
             }
             
             #img-circle
             {
-                width: 73px;
+                width: 43px;
                 position: absolute;
-                top: 42px;
-                left: 52px;
+                top: 38px;
+                left: 46px;
             }
             
             #img-dot
             {
-                width: 218px;
+                width: 131px;
                 position: absolute;
-                left: 29px;
-                top: 121px;
+                left: 49px;
+                top: 102px;
             }
         }
         
@@ -551,10 +456,10 @@
     
             align-items: center;
             #img-2 { 
-                width: 118px;
+                width: 147px;
                 position: relative;
-                left: -145px;
-                top: 13px;
+                left: -137px;
+                top: 14px;
             
             }
             #graph{
@@ -565,26 +470,26 @@
                 width: 700px;
                 #img-3 {
                     position: absolute;
-                    width: 170px;
-                    top: 33px;
-                    left: 168px;
+                    width: 22%;
+                    top: 19px;
+                    left: 172px;
                 }
                 
               
                
                 p{
-                    padding-top: 84px;
-                    width: 30%;
-                   font-family: AvenirNextLTPro-Mixed;
-                   font-size: 12px;
-                   padding-left: 183px;
+                    padding-top: 80px;
+                    width: 33%;
+                   font-family: AvenirNextLTPro-Regular;
+                   font-size: 11px;
+                   padding-left: 184px;
                 }
             }
             #img-4 {
-                width: 135px;
+                width: 146px;
                 position: relative;
-                top: 7px;
-                left: -7px;
+                top: 24px;
+                left: 17px;
             }
           
         }
