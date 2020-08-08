@@ -36,8 +36,7 @@ function App() {
     <Router className="App">
         
         <div className="loading-screen" id={isLoading? 'loading-show': 'loading-hide'}>
-            <img data-aos="fade-in"src={require("./images/home/5.png")} alt="logo"/>
-            <Loader type="TailSpin" color="#FFCF00" height={200} width={500} />
+            <img data-aos="fade-in"src={require("./svg/Double Ring-1s-200px.svg")} alt="logo"/>
             <p id="loading">Loading...</p>
         </div>
      
