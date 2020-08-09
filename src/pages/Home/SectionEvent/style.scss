@@ -8,6 +8,15 @@
         cursor: pointer;
         transition: all 0.5s;
     }
+    .img-container {
+        
+        #img-4{
+            position: absolute;
+            left: -38px;
+            width: 485px;
+            z-index: 8;
+        }
+    }
     #img-1{
         width: 300px;
         margin-bottom: 30px;
@@ -34,7 +43,7 @@
                 text-align: right;
                 font-family: AvenirNextLTPro-Medium;
                 margin-top: 50px;
-                font-size: 20px;
+                font-size: 18px;
                 margin-bottom: 50px;
                 text-align: justify;
             }
@@ -61,7 +70,8 @@
         #img-2{
             width: 400px;
             margin-right: 60px;
-        }
+         }
+      
     }
     
     #bot{
@@ -85,7 +95,7 @@
                 width: 679px;
                 padding-left: 95px;
                 text-align: right;
-                font-size: 20px;
+                font-size: 18px;
                 line-height: 33px;
                 font-family: AvenirNextLTPro-Medium;
                 margin-top: -15px;
@@ -174,16 +184,7 @@
                     box-shadow:         0px 0px 10px 0px #FFCF00;
                 }
             }
-            #top-img
-            {
-                #img-2{
-                width: 496px;
-                }
-                #img-4{
-                position: absolute;
-                z-index: 8;
-                }
-            }
+           
             
         }
         
@@ -414,12 +415,11 @@
             position: relative;
             flex-direction: column-reverse ;
             margin-bottom: 190px;
-  
             #img-3{
                 width: 344px;
             }
             #bot-text{
-                 margin-right: 95px;
+                margin-right: 95px;
                 text-align: -webkit-right;
                 padding-bottom: 64px;
                 #bot-title{
@@ -435,7 +435,6 @@
                     font-family: AvenirNextLTPro-Medium;
                     margin-top: 36px;
                     margin-bottom: 36px;
-                    
                 }
                 #bot-regist{
                     color: white;
