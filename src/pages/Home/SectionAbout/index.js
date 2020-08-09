@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import  './style.scss'
 
 export default function AboutSection() {
@@ -13,8 +13,8 @@ export default function AboutSection() {
             <div id="about-content">
                 <img id="img-2" src={require('../../../images/aboutUs/8.png')} alt="about_2"></img>
                 <div id="graph">
-                    <img  id="img-3" src={require('../../../images/aboutUs/6.png')} alt="about_3"></img>
-                    <p style={{lineHeight: "22px"}}>
+                    <img  id="img-3" src={require('../../../images/aboutUs/6.png')} alt="about_3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"></img>
+                    <p style={{lineHeight: "22px" }} data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500"  >
                        <span >Lòng hiếu kì</span> chính là niềm cảm hứng vô tận của mỗi người
                        trong hành trình khám phá những điều bí ẩn. Một câu hỏi lớn được đặt ra, khơi dậy sự tò mò của các
                        bạn trẻ trong việc tìm kiếm đáp án chính xác - <span style={{color: '#FFCF00'}}>MARKETING ARENA 2020 </span>

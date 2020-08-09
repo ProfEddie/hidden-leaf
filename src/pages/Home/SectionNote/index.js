@@ -11,7 +11,7 @@ function SectionNote() {
                <img className="note-img" id="img-1" src={require("../../../images/ma2020/notes/1.png")} alt="img_1"/>
                 <p id="note-title">LƯU Ý DÀNH CHO THÍ SINH</p>
 
-                <p id="note-content" data-aos="fade-in">
+                <p id="note-content" data-aos="fade-in" data-aos-duration="500">
                 (i) Các đội thi được xem là hợp lệ nếu đăng ký dự thi tại Website chính thức
                 của cuộc thi từ ngày <span  >17.08.2020</span> đến trước 
                 ngày <span  >23:59</span> ngày <span >22.08.2020</span><span style={{color: '#FFCF00'}}> (đối với đăng kí dự thi) </span>

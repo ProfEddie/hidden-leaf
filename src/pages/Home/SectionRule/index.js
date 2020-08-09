@@ -4,8 +4,8 @@ function SectionRule() {
   return (
     <section className="child-section" id="rule-section">
         <div id="rule-content">
-          <img className="rule-img" id="img-1" src={require("../../../images/ma2020/rules/1.png")} alt="circle" data-aos="fade-down"/>
-          <div id="rule-text" data-aos="fade-up">
+          <img className="rule-img" id="img-1" src={require("../../../images/ma2020/rules/1.png")} alt="circle" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"/>
+          <div id="rule-text" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500">
             <img className="rule-img" id="img-5" src={require("../../../images/ma2020/rules/5.png")} alt="circle"/>
             <p>Nhóm dự thi gồm 03 thành viên, đều là công dân Việt Nam hợp pháp, đang là sinh viên theo học hoặc vừa tốt nghiệp trong năm 2020 tại các trường đại học, cao đẳng tại Việt Nam, có độ tuổi từ 18-24 tuổi.</p>
             <p>Mỗi thí sinh chỉ được quyền tham gia 01 nhóm thi.</p> 

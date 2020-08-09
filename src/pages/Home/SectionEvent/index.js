@@ -6,7 +6,7 @@ function SectionEvent(){
 
     return(
         <section className="child-section" id="event-section">
-            <img className="event-img" id="img-1" src={require("../../../images/events/1.png")} alt="img_1" data-aos="fade-up"/>
+            <img className="event-img" id="img-1" src={require("../../../images/events/1.png")} alt="img_1" data-aos="fade-up" data-aos-delay="500"/>
             <div id="top">
                 <div id="top-text">
                     <p id="top-title">INFORMATION DAY</p>
@@ -16,10 +16,16 @@ function SectionEvent(){
                     cung cấp nhiều lời khuyên mang tính chuyên môn cũng như trải nghiệm bổ ích.</p>
                     <button id="top-regist" type="submit" form="group-regiser-form" >Đăng kí tham dự Information Day</button>
                 </div>
+                <div className="img-container" style={{position: "relative"}}>
                     <img className="event-img" id="img-2" src={require("../../../images/events/10.png")} alt="img_2"/>
+                    <img className="event-img" id="img-4" src={require("../../../images/events/2.png")} data-aos="zoom-out" data-aos-duration="500"  alt="img_4"/>
+                </div>
             </div>
             <div id="bot">
+                <div className="img-container" style={{position: "relative"}}>
                 <img className="event-img" id="img-3" src={require("../../../images/events/11.png")} alt="img_3"/>
+                <img className="event-img" id="img-4" src={require("../../../images/events/2.png")} style={{bottom: '5px'}} data-aos="zoom-out" data-aos-duration="500" alt="img_4"/>
+                </div>
                 <div id="bot-text" >
                     <p id="bot-title">GALA NIGHT</p>
                     <p id="bot-body"  data-aos="fade-in">
