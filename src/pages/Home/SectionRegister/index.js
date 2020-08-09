@@ -484,7 +484,7 @@ function handleMemberSubmit(e) {
   return (
     <section className="child-section" id="register-section">
         <div id="register-content">
-           <img className="register-img" id="img-1" src={require("../../../images/register/1.png")} alt="img_1"/>
+           <img className="register-img" id="img-1" src={require("../../../images/register/1.png")} alt="img_1" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"/>
            <div id="form-container">
               <div data-aos="fade-right" data-aos-once="true">
                 <Form title="ĐĂNG KÍ DỰ THI"data={groupRegistForm} formId="group-register-form" onSubmit={handleGroupSubmit} dueDate={moment.duration(moment('2020-08-23').diff(moment()))} />

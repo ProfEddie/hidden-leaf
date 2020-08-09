@@ -5,7 +5,7 @@ function SectionFooter(){
     return(
         <section className="child-section" id="footer-section">
             <div id="text">
-                <img className="event-img" id="img-1" src={require("../../../images/footer/2.png")} alt="img_1"/>  
+                <img className="event-img" id="img-1" src={require("../../../images/footer/2.png")} alt="img_1" />  
                     <div id="body">
                         <p id="hotline" className="text-container">
                           HOTLINE
@@ -26,7 +26,7 @@ function SectionFooter(){
                     
                     </div>
             </div>
-            <img className="event-img" id="img-2" src={require("../../../images/footer/1.png")} alt="img_2"/>
+            <img className="event-img" id="img-2" src={require("../../../images/footer/1.png")} alt="img_2" data-aos="fade-left" data-aos-duration="500"/>
         </section>
     )
 }

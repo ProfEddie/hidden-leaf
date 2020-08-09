@@ -133,6 +133,7 @@
         #img-1{
             width: 25%;
             margin-bottom: 30px;
+        
         }
         #top{
             align-items: center;
@@ -173,9 +174,17 @@
                     box-shadow:         0px 0px 10px 0px #FFCF00;
                 }
             }
-            #img-2{
+            #top-img
+            {
+                #img-2{
                 width: 496px;
+                }
+                #img-4{
+                position: absolute;
+                z-index: 8;
+                }
             }
+            
         }
         
         #bot{

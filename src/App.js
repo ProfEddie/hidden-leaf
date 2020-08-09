@@ -7,7 +7,7 @@ import {
   Route,
 } from "react-router-dom";
 import Home from "./pages/Home"
-import Loader from 'react-loader-spinner'
+
 import './style.scss'
 // import Admin from "./pages/Admin"
 // import Login from "./pages/Login";
