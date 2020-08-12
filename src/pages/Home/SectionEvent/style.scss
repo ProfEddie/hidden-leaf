@@ -294,7 +294,6 @@
                 }
             }
             #img-2{
-                width: 496px;
             }
         }
         
@@ -307,7 +306,6 @@
             margin-bottom: 190px;
   
             #img-3{
-                width: 496px;
             }
             #bot-text{
                  margin-right: 95px;
@@ -346,7 +344,7 @@
     }
 }
 
-@media screen and(max-width: 775px)
+@media screen and(max-width: 768px)
 {
     #event-section{
         display: flex;
@@ -358,7 +356,12 @@
         button {
             cursor: pointer;
         }
-      
+        .img-container {
+        
+            #img-4{
+                width: 436px;
+            }
+        }
         #img-1{
             width: 200px;
             margin-bottom: 10px;
@@ -467,7 +470,12 @@
         button {
             cursor: pointer;
         }
-      
+        .img-container {
+        
+            #img-4{
+                width: 349px;
+            }
+        }
         #img-1{
             width: 180px;
             margin-bottom: 10px;

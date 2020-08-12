@@ -16,12 +16,13 @@
        color: #FFCF00;
        font-family: AvenirNextLTPro-Demi;
        font-size: 25px;
-       margin-bottom:20px;
-       margin-top: 5px;
+       margin-bottom:7px;
+       margin-top: 0px;
     }
     #time-container {
         display: flex;
         align-items: center;
+        margin-bottom: 21px;
         .time {
             display: flex;
             flex-direction: column;

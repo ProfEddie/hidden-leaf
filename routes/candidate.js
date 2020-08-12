@@ -18,7 +18,7 @@ router.route('/')
 .post(async(req, res) => {
     const t = await sequelize.transaction();
     try {
-       const {Group_name, Group_leader ,data} = req.body;
+       const {Group_name ,data} = req.body;
        let leaderId;
        console.log(data)
        for (let i = 0 ; i < data.length ; i++) {
@@ -30,6 +30,7 @@ router.route('/')
                student_card: data[i].Student_card,
                email: data[i].Email,
                phone_number: data[i].Phone_number,
+               is_leader: data[i].isLeader,
            }
            const candidate = await model.Candidate.create(cell, {transaction: t})
            if (data[i].isLeader) {
@@ -70,6 +71,7 @@ router.route('/member')
                   student_card: data[i].Student_card,
                   email: data[i].Email,
                   phone_number: data[i].Phone_number,
+                  is_leader: null
                 }
               await model.Candidate.create(cell, {transaction: t})
            }

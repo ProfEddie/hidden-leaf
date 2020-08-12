@@ -48,6 +48,10 @@ module.exports = {
         allowNull: false,
         unique: true,
       },
+      is_leader: {
+        type: Sequelize.BOOLEAN,
+        allowNull: true
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

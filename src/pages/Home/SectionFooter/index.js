@@ -26,7 +26,7 @@ function SectionFooter(){
                     
                     </div>
             </div>
-            <img className="event-img" id="img-2" src={require("../../../images/footer/1.png")} alt="img_2" data-aos="fade-left" data-aos-duration="500"/>
+            <img className="event-img" id="img-2" src={require("../../../images/footer/1.png")} alt="img_2" data-aos-once="true" data-aos="fade-left" data-aos-duration="500"/>
         </section>
     )
 }

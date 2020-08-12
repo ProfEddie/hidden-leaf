@@ -5,6 +5,7 @@
     align-items: center;
     margin-bottom: 140px;
     #register-content {
+        position: relative;
         display:flex;
         justify-content: center;
         align-items: center;
@@ -21,7 +22,40 @@
             margin-top: 80px;
            #img-2 {
                width: 169px;
+               margin-bottom: 82px;
            }
+        }
+        .img-3 {
+            position:absolute;
+            width: 30px
+        }
+        #img-3-0 {
+           top: 90px;
+           left: 114px
+        }
+        #img-3-1 {
+            top: 208px;
+            left: 492px
+        }
+        #img-3-2 {
+            top: 272px;
+            left: 755px
+        }
+        #img-3-3 {
+            top: 37px;
+            left: 940px
+        }
+        .img-4 {
+            position:absolute;
+            width: 82px
+        }
+        #img-4-1 {
+            top: 528px;
+            left: 525px
+        }
+        #img-4-0 {
+            top: 128px;
+            left: 719px
         }
     }
 }
@@ -56,6 +90,8 @@
                 flex-direction: column;
                #img-2 {
                    width: 130px;
+                   margin-bottom: 30px;
+                   margin-top: 30px;
                }
             }
         }

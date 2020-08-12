@@ -484,13 +484,19 @@ function handleMemberSubmit(e) {
   return (
     <section className="child-section" id="register-section">
         <div id="register-content">
-           <img className="register-img" id="img-1" src={require("../../../images/register/1.png")} alt="img_1" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"/>
+           <img className="register-img" id="img-1" src={require("../../../images/register/1.png")} alt="img_1" data-aos-once="true" data-aos="fade-up"  data-aos-duration="500" data-aos-delay="500"/>
+           <img className="img-3" id="img-3-0" src={require("../../../images/register/3.png")} alt="img_3"/>
+           <img className="img-3" id="img-3-1" src={require("../../../images/register/3.png")} alt="img_3"/>
+           <img className="img-3" id="img-3-2" src={require("../../../images/register/3.png")} alt="img_3"/>
+           <img className="img-3" id="img-3-3" src={require("../../../images/register/3.png")} alt="img_3"/>
+           <img className="img-4" id="img-4-0" src={require("../../../images/register/4.png")} alt="img_4"/>
+           <img className="img-4" id="img-4-1" src={require("../../../images/register/4.png")} alt="img_4"/>
            <div id="form-container">
-              <div data-aos="fade-right" data-aos-once="true">
+              <div data-aos-once="true" data-aos="fade-right" >
                 <Form title="ĐĂNG KÍ DỰ THI"data={groupRegistForm} formId="group-register-form" onSubmit={handleGroupSubmit} dueDate={moment.duration(moment('2020-08-23').diff(moment()))} />
               </div>
                 <img className="register-img" id="img-2" src={require("../../../images/register/2.png")} alt="img_2"/>
-                <div data-aos="fade-left"data-aos-once="true">
+                <div data-aos-once="true" data-aos="fade-left">
                   <Form title="ĐĂNG KÍ GHÉP NHÓM" data={memberRegistForm} formId="member-register-form" onSubmit={handleMemberSubmit} dueDate={moment.duration(moment('2020-08-21').diff(moment()))} />
                 </div>
            </div>

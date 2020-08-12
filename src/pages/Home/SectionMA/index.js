@@ -12,9 +12,9 @@ function SectionMA() {
   return (
     <section className="child-section" id="ma-section">
        <div id="ma-content">
-          <img className={`ma-img`} id="img-ma-2020" src={require("../../../images/ma2020/MA 2020.png")} alt="circle" data-aos="fade-down"/>
-          <img className="ma-img" id="img-1" src={require("../../../images/ma2020/ruleEachRound/1.png")} alt="circle" data-aos="fade-up"/>
-          <div id="subtitle" data-aos="fade-up">
+          <img className={`ma-img`} id="img-ma-2020" src={require("../../../images/ma2020/MA 2020.png")} alt="circle" data-aos="fade-down"  data-aos-duration="1000" />
+          <img className="ma-img" id="img-1" src={require("../../../images/ma2020/ruleEachRound/1.png")} alt="circle" data-aos-once="true" data-aos="fade-up"/>
+          <div id="subtitle" data-aos-once="true" data-aos="fade-up">
               <p>Cuộc thi <span style={{color: "#FFCF00"}}>MARKETING ARENA 2020</span> sẽ chính thức khởi động từ ngày <span>16.08.2020 </span>và kết thúc vào ngày <span>27.09.2020</span>. Các đội thi sẽ được thử thách qua <span>03 chặng hành trình</span> chính với<span> 02 sự lựa chọn.</span></p> 
               <p style={{fontFamily: "AvenirNextLTPro-Italic"}}><span style={{fontFamily: "AvenirNextLTPro-BoldItalic"}}>Lưu ý: 20 đội</span>  đăng ký dự thi <span style={{fontFamily: "AvenirNextLTPro-BoldItalic"}}>sớm nhất</span> sẽ được quyền <span style={{fontFamily: "AvenirNextLTPro-BoldItalic"}}>tự do lựa chọn đề</span>, các đội còn lại sẽ được BTC chỉ định đề thi.</p> 
           </div>
@@ -49,7 +49,7 @@ function SectionMA() {
 
                 <div className="round-container">
                     <div id="round-2-container">
-                      <div className="round-2-child" style={{alignItems:'flex-end'}} data-aos="fade-right" data-aos-once="true">
+                      <div className="round-2-child" style={{alignItems:'flex-end'}} data-aos-once="true" data-aos="fade-right" >
                         <div id="yellow-full-round-left" className="yellow-full-round">
                           <p className="title">Vòng 2</p>
                           <p className="subtitle"><span>Xây dựng kế hoạch</span></p>
@@ -68,7 +68,7 @@ function SectionMA() {
                         <span>11.09</span>
                       </div>
 
-                      <div className="round-2-child" data-aos="fade-left" data-aos-once="true">
+                      <div className="round-2-child" data-aos-once="true" data-aos="fade-left" >
                         <div id="yellow-full-round-right" className="yellow-full-round" >
                           <p className="title">Vòng 2</p>
                           <p className="subtitle"><span>Xây dựng kế hoạch</span></p>
