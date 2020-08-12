@@ -4,7 +4,7 @@ import './style.scss'
 function SectionSponsor(){
     return(
         <section className="child-section" id="sponsor-section">
-            <img src={require('../../../images/collaborators/1.png')} alt="img_1" style={{width: '223px'}}  data-aos="fade-up"/>
+            <img src={require('../../../images/collaborators/1.png')} alt="img_1" id="title-img" data-aos="fade-up"/>
             <div id="top">
                 <img className="sponsor-img" id="img-1" src={require("../../../images/sponsor/1.png")} alt="img_1"  data-aos="fade-up"/>
                 <img className="sponsor-img" id="img-2" src={require("../../../images/sponsor/2.png")} alt="img_2"  data-aos="fade-up"/>
