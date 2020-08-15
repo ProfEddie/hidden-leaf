@@ -22,8 +22,6 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use('/v1', router)
 
 
-
-
 app.get('/*', function (req, res) {
   res.redirect('/');
 });
