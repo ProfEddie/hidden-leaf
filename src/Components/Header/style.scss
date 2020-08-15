@@ -89,7 +89,7 @@
   height: 112px;
   cursor: pointer;
 }
-#marketing-button:hover + #drop-down {
+#marketing-button:hover, #marketing-button:hover + #drop-down,#drop-down:hover {
    
     visibility: visible;
     opacity: 1;
