@@ -89,7 +89,7 @@
   height: 112px;
   cursor: pointer;
 }
-#marketing-button:focus + #drop-down {
+#marketing-button:hover + #drop-down {
    
     visibility: visible;
     opacity: 1;
@@ -157,7 +157,7 @@
                 color: #ffffff;
             }
        }
-       #marketing-button:focus + #drop-down {
+       #marketing-button:hover + #drop-down {
            height: 400px;
            visibility: visible;
            opacity: 1;

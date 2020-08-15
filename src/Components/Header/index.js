@@ -22,7 +22,7 @@ export default function Header() {
              <button className="header-button" onClick={() => jumpTo('#about-section')}>VỀ CHÚNG TÔI</button>
              <button className="header-button" id="marketing-button" >MARKETING ARENA 2020</button>
             <div id="drop-down">
-              <button className="drop-down-item"  onClick={() => jumpTo('#ma-section')}>Thể lệ Round thi</button>
+              <button className="drop-down-item"  onClick={() => jumpTo('#ma-section')}>Thể lệ vòng thi</button>
               <button className="drop-down-item" onClick={() => jumpTo('#rule-section')}>Cơ cấu cuộc thi</button>
               <button className="drop-down-item" onClick={() => jumpTo('#award-section')}>Cơ cấu giải thưởng</button>
               <button className="drop-down-item" onClick={() => jumpTo('#note-section')}>Lưu ý dành cho thí sinh</button>

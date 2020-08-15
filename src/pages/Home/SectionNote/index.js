@@ -19,7 +19,7 @@ function SectionNote() {
                 <br></br>
                 <br></br>
                 <br></br>
-                (ii) Đề thi Round thi 01 của <span style={{color: '#FFCF00'}}>MARKETING ARENA 2020</span> sẽ được công bố vào ngày <span  >17.08.2020</span> trên
+                (ii) Đề thi vòng 01 của <span style={{color: '#FFCF00'}}>MARKETING ARENA 2020</span> sẽ được công bố vào ngày <span  >17.08.2020</span> trên
                  Website chính thức của 
                 cuộc thi và Fanpage chính thức của CLB Creatio;
                 <br></br>
