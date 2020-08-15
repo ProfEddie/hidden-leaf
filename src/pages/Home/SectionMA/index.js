@@ -125,7 +125,7 @@ function SectionMA() {
                   <div className="datetime-container" style={{justifyContent: 'center'}}>
                     <span style={{color: '#D82400'}}>27.09</span>
                   </div>
-                  <div className="white-full-round" style={{backgroundColor: '#D82400', width: '100%',}}>
+                  <div className="white-full-round" id="gala-night" style={{backgroundColor: '#D82400', width: '100%',}}>
                     <p className="title" style={{color: '#ffffff'}} >Gala Night</p>
                   </div>
                   <p className="text-container">
