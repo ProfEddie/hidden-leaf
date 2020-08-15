@@ -12,7 +12,7 @@ function SectionFooter(){
                           <br></br>
                           <span style={{paddingLeft: "24%"}}>079 8399 887 (Mr. Nhật Thanh)</span>
                           <br></br>
-                          <span style={{paddingLeft: "24%"}}>079 4250 899 (Mr. Hoàng Hải)</span>
+                          <span style={{paddingLeft: "24%"}}>090 5585 564 (Mr. Phước Thiện)</span>
                         </p>
                         <p id="email"  className="text-container">
                           EMAIL <span style={{paddingLeft: "17%"}} >marketingarena2020@gmail.com</span>       

@@ -21,6 +21,11 @@ export default function AboutSection() {
                        đã chính thức quay trở lại, tiếp nối chặng đường thành công của 4 mùa trước. Với thông điệp <span >"Who Wonder Do Wonders", </span>
                        cuộc thi năm nay chính là sân chơi cho các Marketers dám biến suy nghĩ thành hàng động , thỏa mãn sự tò mò
                        bằng cách dấn mình vào hành trình giải mã bản thân và trau dồi những giá trị đáng quý.
+                       <br></br>
+                       <br></br>
+                       Đặc biệt, mùa thi năm nay còn chứng kiến sự thay đổi mới mẻ trong đề thi và thể lệ các vòng. Lần đầu tiên, <span>MARKETING ARENA </span>
+                       có đến <span>02 đề thi</span> về hai <span>chuyên môn riêng biệt</span> rong lĩnh vực Marketing, bao gồm: xây dựng chiến dịch truyền thông 
+                       tích hợp nhằm giải quyết bài toán của thương hiệu và thiết lập kế hoạch phát triển sản phẩm mới để mở rộng phân khúc thị trường của công ty. 
                     </p>
                 </div>
                 <img  id="img-4" src={require('../../../images/aboutUs/7.png')} alt="about_4"></img>
