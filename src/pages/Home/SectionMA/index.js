@@ -34,7 +34,7 @@ function SectionMA() {
                     <span>30.08</span>
                   </div>
                   <div className="yellow-full-round">
-                    <p className="title">Vòng 1</p>
+                    <p className="title">Round 1: THE CHAOS</p>
                     <p className="subtitle">Data Analysis</p>
                   </div>
                   <p className="date">23.08</p>
@@ -51,9 +51,9 @@ function SectionMA() {
                     <div id="round-2-container">
                       <div className="round-2-child" style={{alignItems:'flex-end'}} data-aos-once="true" data-aos="fade-right" >
                         <div id="yellow-full-round-left" className="yellow-full-round">
-                          <p className="title">Vòng 2</p>
-                          <p className="subtitle"><span>Xây dựng kế hoạch</span></p>
-                          <p className="subtitle">Marketing truyền thông tích hợp</p>
+                          <p className="title">Round 2: THE COLOSSEUM</p>
+                          <p className="subtitle">IMC Plan</p>
+                          <p className="subtitle"><span>(Kế hoạch Marketing truyền thông tích hợp)</span></p>
                         </div>
                          <span className="date" style={{marginTop: "17px"}}>7:00 PM 14.09</span>
                          <div id="white-full-round-left" className="white-full-round" >
@@ -70,22 +70,22 @@ function SectionMA() {
 
                       <div className="round-2-child" data-aos-once="true" data-aos="fade-left" >
                         <div id="yellow-full-round-right" className="yellow-full-round" >
-                          <p className="title">Vòng 2</p>
-                          <p className="subtitle"><span>Xây dựng kế hoạch</span></p>
-                          <p className="subtitle">Tung sản phẩm mới theo mô hình 6Ps</p>
+                          <p className="title">Round 2: THE COLOSSEUM</p>
+                          <p className="subtitle">Product Launching</p>
+                          <p className="subtitle" style={{textAlign: 'left'}}><span>(Kế hoạch ra mắt sản phẩm mới theo mô hình 6Ps)</span></p>
                         </div>
                          <p className="date">7:00 PM 14.09</p>
                          <div  id="white-full-round-right" className="white-full-round" >
                            <p className="title">Training Session:</p>
-                           <p className="subtitle">Launching Product</p>
+                           <p className="subtitle"> Product Launching</p>
                          </div>
                       </div>
                     </div>
                     <p className="text-container">
-                        Chọn thêm <span>Top 02 </span> trong <span>Top 09</span> còn lại của <span>mỗi đề</span> vào <span>vòng chung kết.</span> <br/>
+                        Chọn thêm <span>Top 02 </span> trong <span>Top 09</span> còn lại của <span>mỗi đề</span> vào <span>Round chung kết.</span> <br/>
                       (*)Cách tính điểmđiểm cho top 09 còn lại của mỗi đề:<br/>
-                      - Điểm từ <span>vòng 02</span> chiếm <span>60%</span> điểm tổng kết vào chung cuộc.<br/>
-                      - Điểm từ <span>vòng Second Chance</span> chiếm <span>40%</span> tổng điểm vào chung cuộc
+                      - Điểm từ <span>Round 02</span> chiếm <span>60%</span> điểm tổng kết vào chung cuộc.<br/>
+                      - Điểm từ <span>Round Second Chance</span> chiếm <span>40%</span> tổng điểm vào chung cuộc
                     </p>
                 </div>
                 
@@ -98,7 +98,7 @@ function SectionMA() {
                     <span>18.09</span>
                   </div>
                   <div className="yellow-full-round">
-                    <p className="title">Second Chance</p>
+                    <p className="title">THE SECOND CHANCE</p>
                     <p className="subtitle">Cả 20 đội <span>làm</span> Storyboard <span>cho</span> Viral Video</p>
                   </div>
                   <p className="date">7:00 PM 14.09</p>
@@ -115,7 +115,7 @@ function SectionMA() {
                     <span>27.09</span>
                   </div>
                   <div className="yellow-full-round">
-                    <p className="title">Vòng 03</p>
+                    <p className="title">Round 03: THE WONDER</p>
                     <p className="subtitle">Top 6 <span>hoàn thành</span> Plan <span>và</span> Executionion Idea <span>theo hướng dẫn của</span>  Mentor</p>
                   </div>
                 </div>

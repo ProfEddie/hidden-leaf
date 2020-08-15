@@ -12,6 +12,16 @@
     #title-img {
         width: 223px;
     }
+    .sponsor-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            font-family:AvenirNextLTPro-bold;
+            font-size: 20px;
+            letter-spacing: 4px;
+        }
+    }
     #top {
         margin-top: 40px;
         display: flex;
@@ -20,12 +30,12 @@
         flex-direction: column;
         margin-bottom: 65px;
         #img-1 {
-           width: 270px;
+           width: 181px;
            margin-bottom: 65px;
 
         }
         #img-2 {
-            width: 404px;
+            width: 315px;
         }
     }
     #bot {
@@ -39,15 +49,15 @@
             display: flex;
             position: relative;
             align-items: flex-start;
-            justify-content: space-between;
+            justify-content: space-evenly;
             margin-bottom: 65px;
             width: 942px;
             #img-3 {
-               width: 448px;
+               width: 378px;
             }
              #img-4 {
-                width: 404px;
-
+                width: 334px;
+                margin-top: 32px;
             }
           
         }
@@ -55,14 +65,13 @@
             display: flex;
             position: relative;
             align-items: flex-start;
-            justify-content: space-between;
+            justify-content: space-evenly;
             width: 942px;
              #img-5 {
-                width: 374px;
-                margin-left: 47px
+                width: 204px;
             }
              #img-6 {
-                width: 404px;
+                width: 338px;
             }
         }
     }
@@ -275,6 +284,11 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 0px;
+    .sponsor-container {
+        p {
+            font-size: 17px;
+        }
+    }
     #top {
         margin-bottom: 65px;
         width: 100%;

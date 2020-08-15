@@ -40,12 +40,15 @@
             #top-body{
                 width: 679px;
                 line-height: 33px;
-                text-align: right;
+                text-align: justify;
                 font-family: AvenirNextLTPro-Medium;
                 margin-top: 50px;
                 font-size: 18px;
                 margin-bottom: 50px;
                 text-align: justify;
+                span {
+                    font-family: AvenirNextLTPro-Bold;
+                }
             }
             #top-regist{
                 position: absolute;
@@ -94,13 +97,15 @@
             #bot-body{
                 width: 679px;
                 padding-left: 95px;
-                text-align: right;
+                text-align: justify;
                 font-size: 18px;
                 line-height: 33px;
                 font-family: AvenirNextLTPro-Medium;
                 margin-top: -15px;
-                margin-bottom: 20px;
-                
+                margin-bottom: 60px;
+                span {
+                    font-family: AvenirNextLTPro-Bold;
+                }
             }
             #bot-regist{
                 color: white;
@@ -162,7 +167,7 @@
                 #top-body{
                     width: 727px;
                     line-height: 33px;
-                    text-align: right;
+                    text-align: justify;
                     font-family: AvenirNextLTPro-Medium;
                     margin-top: 50px;
                     font-size: 20px;
@@ -209,7 +214,7 @@
                 #bot-body{
                     width: 727px;
                     padding-left: 0px;
-                    text-align: right;
+                    text-align: justify;
                     font-size: 20px;
                     line-height: 33px;
                     font-family: AvenirNextLTPro-Medium;
@@ -271,7 +276,7 @@
                 #top-body{
                     width: 727px;
                     line-height: 33px;
-                    text-align: right;
+                    text-align: justify;
                     font-family: AvenirNextLTPro-Medium;
                     margin-top: 50px;
                     font-size: 20px;
@@ -317,12 +322,12 @@
                 #bot-body{
                     width: 727px;
                     padding-left: 95px;
-                    text-align: right;
+                    text-align: justify;
                     font-size: 20px;
                     line-height: 33px;
                     font-family: AvenirNextLTPro-Medium;
                     margin-top: 36px;
-                    margin-bottom: 36px;
+                    margin-bottom: 60px;
                     
                 }
                 #bot-regist{
@@ -384,7 +389,6 @@
                 #top-body{
                     width: 420px;
                     line-height: 23px;
-                    text-align: right;
                     font-family: AvenirNextLTPro-Medium;
                     margin-top: 50px;
                     font-size: 13px;
@@ -433,7 +437,7 @@
                 #bot-body{
                     width: 420px;
                     padding-left: 95px;
-                    text-align: right;
+                    text-align: justify;
                     font-size: 13px;
                     line-height: 23px;
                     font-family: AvenirNextLTPro-Medium;
@@ -499,7 +503,6 @@
                 #top-body{
                     width: 347px;
                     line-height: 18px;
-                    text-align: right;
                     font-family: AvenirNextLTPro-Medium;
                     margin-top: 25px;
                     font-size: 15px;
@@ -548,7 +551,7 @@
                 #bot-body{
                     width: 347px;
                     padding-left: 85px;
-                    text-align: right;
+                    text-align: justify;
                     font-size: 15px;
                     line-height: 18px;
                     font-family: AvenirNextLTPro-Medium;
@@ -611,7 +614,6 @@
                 #top-body{
                     width: 287px;
                     line-height: 18px;
-                    text-align: right;
                     font-family: AvenirNextLTPro-Medium;
                     margin-top: 25px;
                     font-size: 15px;
@@ -660,7 +662,7 @@
                 #bot-body{
                     width:287px;
                     padding-left: 85px;
-                    text-align: right;
+                    text-align: justify;
                     font-size: 15px;
                     line-height: 18px;
                     font-family: AvenirNextLTPro-Medium;

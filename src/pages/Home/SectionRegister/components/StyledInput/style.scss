@@ -21,6 +21,18 @@
     background-color: black;
 
 }
+select {
+   -webkit-appearance: button;
+   -moz-appearance: button;
+   appearance: button;       /* Remove default arrow */
+}
+
+.custom-select {
+    margin-bottom: 20px;
+    align-self: start;
+    width: 100%;
+    border-radius: 0px;
+}
 
 .register-input:disabled::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #ffffff;

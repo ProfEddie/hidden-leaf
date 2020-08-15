@@ -2,7 +2,16 @@ import React from 'react';
 import Countdown from 'react-countdown';
 import './style.scss'
 
-const Completionist = () => <span>You are good to go!</span>;
+const Completionist = () => (
+  <div id="clock-container">
+      <p id="title">Hết thời hạn đăng ký! </p>
+      <div id="time-container"> 
+        <div className="time">
+          <span className="time-unit">Thời gian đã hết, bạn không thể đăng ký cho mục này được nữa ^^!</span>
+        </div>
+      </div>
+    </div>
+)
  
 const renderer = ({days ,hours, minutes, seconds, completed }) => {
   if (completed) {

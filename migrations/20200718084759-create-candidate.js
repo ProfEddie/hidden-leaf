@@ -48,6 +48,15 @@ module.exports = {
         allowNull: false,
         unique: true,
       },
+      facebook: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: true,
+      },
+      gender: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
       is_leader: {
         type: Sequelize.BOOLEAN,
         allowNull: true

@@ -30,6 +30,8 @@ router.route('/')
                student_card: data[i].Student_card,
                email: data[i].Email,
                phone_number: data[i].Phone_number,
+               gender: data[i].Gender,
+               facebook: data[i].Facebook,
                is_leader: data[i].isLeader,
            }
            const candidate = await model.Candidate.create(cell, {transaction: t})
@@ -71,6 +73,8 @@ router.route('/member')
                   student_card: data[i].Student_card,
                   email: data[i].Email,
                   phone_number: data[i].Phone_number,
+                  gender: data[i].Gender,
+                  facebook: data[i].Facebook,
                   is_leader: null
                 }
               await model.Candidate.create(cell, {transaction: t})

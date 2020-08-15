@@ -10,10 +10,12 @@ function SectionEvent(){
             <div id="top">
                 <div id="top-text">
                     <p id="top-title">INFORMATION DAY</p>
-                    <p id="top-body"  data-aos-once="true" data-aos="fade-in">Buổi "Information Day" do Creatio tổ chức ngay khi đề vòng 01 được công bố
-                    với sự góp mặt của các diễn giả đầu ngành dày dặn kinh nghiệm hứa hẹn sẽ
-                    giúp các thí sinh thấu hiểu cặn kẽ hơn về yêu cầu và quy trình làm bài, đồng thời 
-                    cung cấp nhiều lời khuyên mang tính chuyên môn cũng như trải nghiệm bổ ích.</p>
+                    <p id="top-body"  data-aos-once="true" data-aos="fade-in">
+                        Buổi <span>“Information Day”</span> sẽ do Creatio tổ chức dưới hình thức online ngay 
+                       sau khi đề vòng 01 được công bố. Với sự góp mặt của các diễn giả đầu ngành dày dặn kinh nghiệm,
+                        Information Day hứa hẹn sẽ giúp các thí sinh thấu hiểu cặn kẽ hơn về <span>yêu cầu</span> và <span>quy trình làm bài</span>, 
+                        đồng thời cung cấp nhiều <span>lời khuyên</span> mang tính <span>chuyên môn</span> cũng như những <span>trải nghiệm bổ ích</span>.
+                   </p>
                     <button id="top-regist" type="submit" form="group-regiser-form" >Đăng kí tham dự Information Day</button>
                 </div>
                 <div className="img-container" style={{position: "relative"}}>
@@ -29,16 +31,11 @@ function SectionEvent(){
                 <div id="bot-text" >
                     <p id="bot-title">GALA NIGHT</p>
                     <p id="bot-body"  data-aos-once="true" data-aos="fade-in">
-                        Đêm Chung kết mang đến cơ hội được tận mắt chứng kiến cuộc tranh tài đặc sắc của 04 đội chơi ưu tú nhất. 
-                        Bên cạnh đó, người tham dự
-                        Gala Night còn có dịp chiêm ngưỡng các tác phẩm được trưng bày của Top 10 Cuộc thi Thiết kế “PRINT-ART” 
-                        và có quyền bầu chọn cho tác phẩm mình yêu thích nhất.
-                        <br></br>
-                        <br></br>
-                        Những phần trình bày tâm huyết trong đêm Gala, các kế hoạch thực thi chiến dịch vô cùng độc đáo, 
-                        màn “hỏi xoáy – đáp xoay” kịch tính đến từ BGK chuyên 
-                        môn, những tác phẩm sáng tạo xuất sắc nhất,… tất cả
-                        những điều đó là những kiến thức vô cùng đáng giá để học hỏi và phát triển bản thân.
+                      <span>Đêm Chung kết</span> mang đến cơ hội chứng kiến màn tranh tài gay cấn từ <span>06 đội chơi xuất sắc nhất</span>
+                      . Những phần trình bày bùng nổ trong đêm Gala, các kế hoạch thực 
+                      thi chiến dịch đột phá, màn chất vấn “căng não” đến từ BGK chuyên môn, các tác
+                       phẩm sáng tạo xuất sắc nhất,… tất cả đều là những <span>trải nghiệm</span> vô cùng đáng giá 
+                       cho quá trình <span>học hỏi</span> và <span>phát triển</span> bản thân của các <span>Marketers tương lai</span>.
                     </p>
                     <button id="bot-regist" type="submit" form="group-regiser-form" >Đăng kí tham dự Gala Night</button>
                 </div>

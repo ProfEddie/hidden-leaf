@@ -1,11 +1,43 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './style.scss'
 import Form from './components/StyledForm'
 import Swal from 'sweetalert2'
 import moment from 'moment'
 import axios from 'axios'
 function SectionRegister() {
-
+  const [groupGender1, setGroupGender1] = useState('')
+  const [groupGender2, setGroupGender2] = useState('')
+  const [groupGender3, setGroupGender3] = useState('')
+  const [gender1, setGender1] = useState('')
+  const [gender2, setGender2] = useState('')
+  function handleChangeGender (genderItem, selectedVal) {
+    switch (genderItem) {
+      case 'group-member1-gender': {
+        setGroupGender1(selectedVal.value)
+        break
+      }
+      case 'group-member2-gender': {
+        setGroupGender2(selectedVal.value)
+        break
+      }
+      case 'group-member3-gender': {
+        setGroupGender3(selectedVal.value)
+        break
+      } 
+      case 'member1-gender': {
+        setGender1(selectedVal.value)
+        break
+      } 
+      case 'member2-gender': {
+        setGender2(selectedVal.value)
+        break
+      }
+      default: {
+        break
+      }
+    }
+  };
+  
   var groupRegistForm = [
     {
       placeholder: 'Tên đội thi',
@@ -57,6 +89,13 @@ function SectionRegister() {
       className: 'group',
       isRequired: true,
     },{
+      placeholder: 'Giới tính',
+      type: 'select',
+      id: 'group-member1-gender',
+      isTitle: false,
+      className: 'member',
+      isRequired: true,
+    },{
       placeholder: 'Trường Đại học/ Cao đẳng',
       type: 'text',
       id: 'group-member1-university',
@@ -67,6 +106,13 @@ function SectionRegister() {
       placeholder: 'Thẻ sinh viên (Dẫn link GG Drive)',
       type: 'url',
       id: 'group-member1-student-card',
+      isTitle: false,
+      className: 'group',
+      isRequired: true,
+    },{
+      placeholder: 'Link Facebook',
+      type: 'url',
+      id: 'group-member1-facebook',
       isTitle: false,
       className: 'group',
       isRequired: true,
@@ -105,6 +151,13 @@ function SectionRegister() {
       className: 'group',
       isRequired: true,
     },{
+      placeholder: 'Giới tính',
+      type: 'select',
+      id: 'group-member2-gender',
+      isTitle: false,
+      className: 'member',
+      isRequired: true,
+    },{
       placeholder: 'Trường Đại học/ Cao đẳng',
       type: 'text',
       id: 'group-member2-university',
@@ -115,6 +168,13 @@ function SectionRegister() {
       placeholder: 'Thẻ sinh viên (Dẫn link GG Drive)',
       type: 'url',
       id: 'group-member2-student-card',
+      isTitle: false,
+      className: 'group',
+      isRequired: true,
+    },{
+      placeholder: 'Link Facebook',
+      type: 'url',
+      id: 'group-member2-facebook',
       isTitle: false,
       className: 'group',
       isRequired: true,
@@ -154,6 +214,13 @@ function SectionRegister() {
       className: 'group',
       isRequired: true,
     },{
+      placeholder: 'Giới tính',
+      type: 'select',
+      id: 'group-member3-gender',
+      isTitle: false,
+      className: 'member',
+      isRequired: true,
+    },{
       placeholder: 'Trường Đại học/ Cao đẳng',
       type: 'text',
       id: 'group-member3-university',
@@ -167,7 +234,14 @@ function SectionRegister() {
       isTitle: false,
       className: 'group',
       isRequired: true,
-    }
+    },{
+      placeholder: 'Link Facebook',
+      type: 'url',
+      id: 'group-member3-facebook',
+      isTitle: false,
+      className: 'group',
+      isRequired: true,
+    },
   ]
 
   var memberRegistForm = [
@@ -206,6 +280,13 @@ function SectionRegister() {
       className: 'member',
       isRequired: true,
     },{
+      placeholder: 'Giới tính',
+      type: 'select',
+      id: 'member1-gender',
+      isTitle: false,
+      className: 'member',
+      isRequired: true,
+    },{
       placeholder: 'Trường Đại học/ Cao đẳng',
       type: 'text',
       id: 'member1-university',
@@ -218,6 +299,13 @@ function SectionRegister() {
       id: 'member1-student-card',
       isTitle: false,
       className: 'member',
+      isRequired: true,
+    },{
+      placeholder: 'Link Facebook',
+      type: 'url',
+      id: 'member1-facebook',
+      isTitle: false,
+      className: 'group',
       isRequired: true,
     },{
       placeholder: 'Thành viên 02',
@@ -254,6 +342,13 @@ function SectionRegister() {
       className: 'member',
       isRequired: false,
     },{
+      placeholder: 'Giới tính',
+      type: 'select',
+      id: 'member2-gender',
+      isTitle: false,
+      className: 'member',
+      isRequired: true,
+    },{
       placeholder: 'Trường Đại học/ Cao đẳng',
       type: 'text',
       id: 'member2-university',
@@ -267,7 +362,14 @@ function SectionRegister() {
       isTitle: false,
       className: 'member',
       isRequired: false,
-    }
+    },{
+      placeholder: 'Link Facebook',
+      type: 'url',
+      id: 'member2-facebook',
+      isTitle: false,
+      className: 'group',
+      isRequired: false,
+    },
   ]
 
   function checkValidTel(tel) {
@@ -293,6 +395,8 @@ function handleGroupSubmit(e) {
               University: document.getElementById(`group-member${item}-university`).value || null,
               Student_card: document.getElementById(`group-member${item}-student-card`).value || null,
               isLeader: (reqBody.Group_leader === document.getElementById(`group-member${item}-name`).value) ? true : false,
+              Gender: (item === 1 && groupGender1) || (item === 2 && groupGender2) || (item === 3 && groupGender3) || null,
+              Facebook: document.getElementById(`group-member${item}-facebook`).value || null,
           }
           for (let key in data) {
               if (!data[key] && key !== 'isLeader')  {
@@ -355,6 +459,12 @@ function handleGroupSubmit(e) {
           'Tên nhóm đã bị trùng, tìm tên khác cho nhóm của bạn nhé!',
           'error'
         )
+       } else if (error.response.data === 'facebook must be unique')  {
+        Swal.fire(
+          'Oops!',
+          'Link facebook một thành viên đã bị trùng, hãy thử link khác nhé!',
+          'error'
+        )
        }
        else {
         Swal.fire(
@@ -382,17 +492,17 @@ function handleMemberSubmit(e) {
   try {
       var data =  [1, 2].map(function(item)  {
           var data = {
-              Fullname: document.getElementById(`member${item}-name`).value || null,
-              Birthdate: document.getElementById(`member${item}-birthDate`).value || null,
-              Email: document.getElementById(`member${item}-email`).value || null,
-              Phone_number: document.getElementById(`member${item}-tel`).value || null,
-              University: document.getElementById(`member${item}-university`).value || null,
-              Student_card: document.getElementById(`member${item}-student-card`).value || null
+            Fullname: document.getElementById(`member${item}-name`).value || null,
+            Birthdate: document.getElementById(`member${item}-birthDate`).value || null,
+            Email: document.getElementById(`member${item}-email`).value || null,
+            Phone_number: document.getElementById(`member${item}-tel`).value || null,
+            University: document.getElementById(`member${item}-university`).value || null,
+            Student_card: document.getElementById(`member${item}-student-card`).value || null,
+            Gender: (item === 1 && gender1) || (item === 2 && gender2) || null,
+            Facebook: document.getElementById(`member${item}-facebook`).value || null,
           }
           for (let key in data) {
               if (data[key] && item === 2) {
-                console.log('trigger')
-               
                 switch (key) {
                   case 'Phone_number': {
                     if (!checkValidTel(data[key]))
@@ -420,8 +530,14 @@ function handleMemberSubmit(e) {
                     document.getElementById(`member${item}-university`).value && 
                     document.getElementById(`member${item}-student-card`).value
                   )
-                 
                 ) {
+
+                  document.getElementById(`member${item}-name`).required = false
+                  document.getElementById(`member${item}-birthDate`).required = false
+                  document.getElementById(`member${item}-email`).required = false
+                  document.getElementById(`member${item}-tel`).required = false
+                  document.getElementById(`member${item}-university`).required = false
+                  document.getElementById(`member${item}-student-card`).required = false
                 } else {
                   document.getElementById(`member${item}-name`).required = true
                   document.getElementById(`member${item}-birthDate`).required = true
@@ -430,7 +546,7 @@ function handleMemberSubmit(e) {
                   document.getElementById(`member${item}-university`).required = true
                   document.getElementById(`member${item}-student-card`).required = true
                   throw new Error(
-                    `${key.replace('_',' ').toLowerCase()} của thành viên ${item} không hợp lệ.`
+                    `Hãy điền hết thông tin của thành viên 2`
                   )
                 }
               }
@@ -466,6 +582,12 @@ function handleMemberSubmit(e) {
           'Số điện thoại một thành viên của nhóm bạn đã bị trùng, hãy thử số khác nhé!',
           'error'
         )
+      } else if (error.response.data === 'facebook must be unique')  {
+        Swal.fire(
+          'Oops!',
+          'Link facebook một thành viên đã bị trùng, hãy thử link khác nhé!',
+          'error'
+        )
       }
        else {
         Swal.fire(
@@ -478,6 +600,11 @@ function handleMemberSubmit(e) {
      });
   }
   catch(err) {
+    Swal.fire(
+      'Oops!',
+       err.message,
+      'error'
+    )
   }
 }
 
@@ -493,11 +620,11 @@ function handleMemberSubmit(e) {
            <img className="img-4" id="img-4-1" src={require("../../../images/register/4.png")} alt="img_4"/>
            <div id="form-container">
               <div data-aos-once="true" data-aos="fade-right" >
-                <Form title="ĐĂNG KÍ DỰ THI"data={groupRegistForm} formId="group-register-form" onSubmit={handleGroupSubmit} dueDate={moment.duration(moment('2020-08-23').diff(moment()))} />
+                 <Form title="ĐĂNG KÍ DỰ THI"data={groupRegistForm} formId="group-register-form" onSubmit={handleGroupSubmit} dueDate={moment.duration(moment('2020-08-28').diff(moment()))} handleChangeGender={handleChangeGender}/>
               </div>
                 <img className="register-img" id="img-2" src={require("../../../images/register/2.png")} alt="img_2"/>
                 <div data-aos-once="true" data-aos="fade-left">
-                  <Form title="ĐĂNG KÍ GHÉP NHÓM" data={memberRegistForm} formId="member-register-form" onSubmit={handleMemberSubmit} dueDate={moment.duration(moment('2020-08-21').diff(moment()))} />
+                  <Form title="ĐĂNG KÍ GHÉP NHÓM" data={memberRegistForm} formId="member-register-form" onSubmit={handleMemberSubmit} dueDate={moment.duration(moment('2020-08-26').diff(moment()))} handleChangeGender={handleChangeGender} />
                 </div>
            </div>
         </div>

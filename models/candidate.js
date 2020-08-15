@@ -22,6 +22,8 @@ module.exports = (sequelize, DataTypes) => {
     student_card: DataTypes.TEXT,
     email: DataTypes.TEXT,
     phone_number: DataTypes.STRING,
+    facebook:DataTypes.STRING,
+    gender: DataTypes.STRING,
     is_leader: DataTypes.BOOLEAN,
   }, {
     sequelize,

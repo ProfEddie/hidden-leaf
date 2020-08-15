@@ -62,7 +62,7 @@
                 align-items: center;
                 width: 100%;
                 height: 1000px;
-                margin-top: 5px;
+                padding-top: 17px;
                 #round-2-container {
                     display: flex;
                     justify-content:space-between;
@@ -83,23 +83,41 @@
                     align-items: center;
                     .round-2-child {
                         #yellow-full-round-right {
-                            padding-left: 22px;
+                            padding-left: 13px;
                             align-items: flex-start;
-                            padding-top: 4px;
-                            padding-bottom: 4px;
-                            width: 94%;
+                            height: 75px;
+                            width: 100%;
+                            padding-bottom: 5px;
+                            justify-content: center;
                             .subtitle {
+                                margin-top: 5px;
+                                margin-bottom: -9px;
                                 text-align: flex-start
                             }
+                            .title {
+                                text-align: flex-start;
+                            }
+
+                        } #yellow-full-round-right:hover {
+                            height: 90px;
+                        }
+                        #yellow-full-round-left:hover {
+                            height: 90px;
                         }
                         #yellow-full-round-left {
-                            padding-right: 22px;
-                            align-items:flex-end;
-                            padding-top: 4px;
-                            padding-bottom: 4px;
-                            width: 89%;
+                            padding-right: 13px;
+                            align-items: flex-end;
+                            width: 100%;
+                            height: 75px;
+                            padding-bottom: 5px;
+                            justify-content: center;
                             .subtitle {
-                                text-align: flex-end
+                                margin-top: 5px;
+                                margin-bottom: -9px;
+                                text-align: flex-end;
+                            }
+                            .title {
+                                text-align: right;
                             }
                         }
                         .yellow-full-round:hover {
@@ -139,7 +157,7 @@
                         color: #ffffff;
                     }
                     .title {
-                        font-size: 23px;
+                        font-size: 20px;
                         margin-bottom: -4px;
                         margin-top: -4px;
                         font-family: AvenirNextLTPro-Bold
@@ -147,7 +165,7 @@
                     .subtitle {
                         font-size: 13px;
                         margin-top: 0px;
-                        margin-bottom: -5px;
+                        margin-bottom: 0px;
                         text-align: center;
                         span {
                             font-family: AvenirNextLTPro-MediumItalic;
@@ -327,6 +345,8 @@
                                 padding-top: 4px;
                                 padding-bottom: 4px;
                                 width: 94%;
+                                justify-content: center;
+                                height: 78px;
                                 .subtitle {
                                     text-align: left
                                 }
@@ -337,6 +357,9 @@
                                 padding-top: 4px;
                                 padding-bottom: 4px;
                                 width: 94%;
+                                justify-content: center;
+                                height: 78px;
+
                                 .subtitle {
                                     text-align: right
                                 }
@@ -425,7 +448,7 @@
      }
 }
 
-@media screen and (max-width:711px) {
+@media screen and (max-width:765px) {
     #ma-section {
       
         #ma-content {
@@ -465,7 +488,7 @@
                                 padding-bottom: 4px;
                                 padding-left: 12px;
                                 width: 100%;
-                                height: 100px;
+                                height: 120px;
                                 .subtitle {
                                     text-align: flex-start
                                 }
@@ -476,7 +499,7 @@
                                 padding-bottom: 4px;
                                 padding-right: 12px;
                                 width: 100%;
-                                height: 100px;
+                                height: 120px;
                                 .subtitle {
                                     text-align: flex-end
                                 }
@@ -631,6 +654,9 @@
                                     text-align: flex-start
                                 }
                             }
+                            #yellow-full-round-right:hover {
+                                height: 140px;
+                            }
                             #white-full-round-left {
                                 padding-right: 11px;
                                 height: 130px;
@@ -638,6 +664,9 @@
                                 .title {
                                     text-align: right
                                 }
+                            }
+                            #yellow-full-round-right:hover {
+                                height: 140px;
                             }
                         }
                          
@@ -702,7 +731,7 @@
 
 @media screen and (max-width:375px) {
     #ma-section {
-        padding-bottom: 65px;
+        padding-bottom: 125px;
       
         #ma-content {
            
@@ -730,7 +759,10 @@
                  #rounds-container {
                      height: 1126px;
                     .text-container {
-                        font-size: 11px;
+                        font-size: 12px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        margin-top: 20px;
                     }
                      #round-2-container {
                         
@@ -744,32 +776,50 @@
                                 align-items: flex-start;
                                 padding-top: 4px;
                                 padding-bottom: 4px;
-                                padding-left: 12px;
-                                width: 96%;
+                                padding-left: 8px;
+                                width: 100%;
                                 height: 133px;
+                                border-radius: 10px;
                                 .subtitle {
                                     text-align: flex-start
                                 }
+                                .title {
+                                    font-size: 18px;
+                                }
+                            }
+                            #yellow-full-round-right:hover {
+                                height: 140px;
                             }
                             #yellow-full-round-left {
                                 align-items: flex-end;
                                 padding-top: 4px;
                                 padding-bottom: 4px;
-                                padding-right: 12px;
-                                width: 96%;
+                                padding-right: 8px;
+                                width: 100%;
                                 height: 133px;
+                                border-radius: 10px;
                                 .subtitle {
                                     text-align: flex-end
                                 }
-                                
+                                .title {
+                                    font-size: 18px;
+                                }
+                            }
+                            #yellow-full-round-left:hover {
+                                height: 140px;
                             }
                             .white-full-round {
                                 width: 85%;
+                                border-radius: 10px;
+                            }
+                            .yellow-full-round {
+                                border-radius: 10px;
                             }
                             #white-full-round-right {
                                 padding-left: 11px;
                                 height: 130px;
                                 align-items: flex-start;
+                                border-radius: 10px;
                                 .title {
                                     text-align: flex-start
                                 }
@@ -778,6 +828,7 @@
                                 padding-right: 11px;
                                 height: 130px;
                                 align-items: flex-end;
+                                border-radius: 10px;
                                 .title {
                                     text-align: right
                                 }

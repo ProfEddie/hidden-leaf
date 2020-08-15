@@ -14,25 +14,34 @@ function SectionNote() {
                 <p id="note-content" data-aos-once="true" data-aos="fade-in"  data-aos-duration="500">
                 (i) Các đội thi được xem là hợp lệ nếu đăng ký dự thi tại Website chính thức
                 của cuộc thi từ ngày <span  >17.08.2020</span> đến trước 
-                ngày <span  >23:59</span> ngày <span >22.08.2020</span><span style={{color: '#FFCF00'}}> (đối với đăng kí dự thi) </span>
-                và  <span>20.08.2020</span><span style={{color: '#FFCF00'}}> (đối với đăng kí ghép nhóm);</span>
+                ngày <span  >23:59</span> ngày <span >27.08.2020</span><span style={{color: '#FFCF00'}}> (đối với đăng kí dự thi) </span>
+                và  <span>25.08.2020</span><span style={{color: '#FFCF00'}}> (đối với đăng kí ghép nhóm);</span>
                 <br></br>
                 <br></br>
                 <br></br>
-                (ii) Đề thi vòng thi 01 của <span style={{color: '#FFCF00'}}>MARKETING ARENA 2020</span> sẽ được công bố vào ngày <span  >17.08.2020</span> trên
+                (ii) Đề thi Round thi 01 của <span style={{color: '#FFCF00'}}>MARKETING ARENA 2020</span> sẽ được công bố vào ngày <span  >17.08.2020</span> trên
                  Website chính thức của 
                 cuộc thi và Fanpage chính thức của CLB Creatio;
                 <br></br>
                 <br></br>
                 <br></br>
-                (iii) Thí sinh <span>nộp bài vòng 1</span> qua<span> Email</span> chính thức của cuộc thi <span>trước 23:59</span> ngày 
+                (iii) Thí sinh <span>nộp bài Round 1</span> <span>trước 23:59</span> ngày 
                 
                 <span  > 30.08.2020</span>. Cách thức và hình thức nộp
                 bài sẽ được công bố cụ thể trong đề bài.
                 <br></br>
                 <br></br>
                 <br></br>
-                (iv) Linh trên<span> Website, Email</span> và<span> Fanpage</span> được đề cập ở phần <span>thông tin chi tiết.</span> 
+                (iv) Link trên<span> Website, Email</span> và<span> Fanpage</span> được đề cập ở phần <span>thông tin chi tiết.</span> 
+                <br></br>
+                <br></br>
+                <br></br>
+                (v) Tất cả các hoạt động, bao gồm:<span>Đăng ký dự thi, Nộp bài, Đăng ký tham dự Information Day và Gala Night</span>  đều sẽ được <span>BTC gửi mail</span> đến thí sinh/người tham dự để <span>xác nhận.</span>
+                <br></br>
+                <br></br>
+                <br></br>
+                (vi) <span>Thời gian và hình thức</span> tổ chức <span>Gala Night</span> có thể <span>thay đổi </span>theo tình hình thực tế, BTC sẽ thông báo qua <span>Website/Fanpage</span> chương trình trong thời gian sớm nhất nếu có bất kỳ thay đổi nào xảy ra.
+
                </p>        
     
             </div>
