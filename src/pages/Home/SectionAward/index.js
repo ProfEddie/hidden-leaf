@@ -4,17 +4,9 @@ function SectionAward() {
   return (
     <section className="child-section" id="award-section">
       <img className="rule-img" id="img-1" src={require("../../../images/ma2020/awards/1.png")} alt="circle" data-aos-once="true" data-aos="fade-up"  data-aos-duration="500" data-aos-delay="500"/>
-      <div id="awards-content">
-          <div className="img-container">
-            <img className="award-img" id="img-2" src={require("../../../images/ma2020/awards/2.png")} alt="circle" data-aos-once="true" data-aos="fade-right"/>
-            <p>STRATEGY</p>
-          </div>
+      <p><span>MARKETING ARENA 2020</span> là đấu trường tranh tài vô cùng hấp dẫn với tổng giá trị giải thưởng lên đến <span>400.000.000</span> đồng bao gồm</p>
+      <img className="award-img" id="img-award" src={require("../../../images/ma2020/awards/awards.png")} alt="circle" data-aos-once="true" data-aos="fade-right"/>
        
-          <div className="img-container">
-            <img className="award-img" id="img-2" src={require("../../../images/ma2020/awards/3.png")} alt="circle" data-aos-once="true" data-aos="fade-left"/>
-            <p>CREATIVE</p>
-          </div>
-      </div>
     </section>
   );
 }

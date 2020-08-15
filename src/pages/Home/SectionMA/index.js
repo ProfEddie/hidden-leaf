@@ -81,7 +81,7 @@ function SectionMA() {
                          </div>
                       </div>
                     </div>
-                    <p className="text-container">
+                    <p className="text-container" style={{marginTop: '50px'}}>
                         Chọn thêm <span>Top 02 </span> trong <span>Top 09</span> còn lại của <span>mỗi đề</span> vào <span>Round chung kết.</span> <br/>
                       (*)Cách tính điểmđiểm cho top 09 còn lại của mỗi đề:<br/>
                       - Điểm từ <span>Round 02</span> chiếm <span>60%</span> điểm tổng kết vào chung cuộc.<br/>

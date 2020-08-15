@@ -4,18 +4,28 @@
     flex-direction:column;
     justify-content: center;
     align-items: center; 
-    padding-bottom: 351px;
+    padding-bottom: 167px;
+    p {
+        font-family: AvenirNextLTPro-Medium;
+        letter-spacing: 1px;
+        margin-bottom: 48px;
+        span {
+          color: #FFCF00;
+          font-family: AvenirNextLTPro-Bold;
+        }
+    }
     #awards-content {
         width: 74.7%;
         display: flex;
         justify-content: space-between;
-        .award-img {
-            width: 100%;
-        }
+       
     }
     #img-1 {
         width: 574px;
         margin-bottom: 35px;
+    }
+    #img-award {
+       width: 999px
     }
     .img-container {
         display: flex;
@@ -152,6 +162,24 @@
         justify-content: center;
         align-items: center; 
         padding-bottom: 351px;
+        p {
+            font-family: AvenirNextLTPro-Medium;
+            letter-spacing: 1px;
+            margin-bottom: 48px;
+            padding: 19px;
+            span {
+              color: #FFCF00;
+              font-family: AvenirNextLTPro-Bold;
+            }
+        }
+        
+        #img-1 {
+            width: 574px;
+            margin-bottom: 35px;
+        }
+        #img-award {
+           width: 100%
+        }
         #awards-content {
             width: 93.7%;
             display: flex;
