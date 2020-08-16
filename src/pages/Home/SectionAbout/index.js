@@ -19,7 +19,7 @@ export default function AboutSection() {
                        trong hành trình khám phá những điều bí ẩn. Một câu hỏi lớn được đặt ra, khơi dậy sự tò mò của các
                        bạn trẻ trong việc tìm kiếm đáp án chính xác - <span style={{color: '#FFCF00'}}>MARKETING ARENA 2020 </span>
                        đã chính thức quay trở lại, tiếp nối chặng đường thành công của 4 mùa trước. Với thông điệp <span >"Who Wonder Do Wonders", </span>
-                       cuộc thi năm nay chính là sân chơi cho các Marketers dám biến suy nghĩ thành hàng động , thỏa mãn sự tò mò
+                       cuộc thi năm nay chính là sân chơi cho các Marketers dám biến suy nghĩ thành hành động , thỏa mãn sự tò mò
                        bằng cách dấn mình vào hành trình giải mã bản thân và trau dồi những giá trị đáng quý.
                        <br></br>
                        <br></br>
