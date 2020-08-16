@@ -58,6 +58,17 @@
   }
 }
 
+
+@media screen and (max-width: 414px) {
+  #home-section {
+    #img-10 {
+      margin-left: -76px;
+      width: 135%;
+      top: 103px;
+    }
+  }
+ 
+}
 @media screen and (max-width: 375px) {
   #home-section {
     #img-10 {

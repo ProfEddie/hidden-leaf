@@ -63,7 +63,6 @@
 @media  screen and (max-width: 1380px) {
     #register-section { 
         #register-content {
-            width: 90%;
             #img-1 {
             }
             #form-container {
@@ -85,6 +84,27 @@
     #register-section { 
         #register-content {
             #img-1 {
+                width: 51%
+            }
+            #form-container {
+                flex-direction: column;
+               #img-2 {
+                   width: 130px;
+                   margin-bottom: 30px;
+                   margin-top: 30px;
+               }
+            }
+        }
+    }
+   
+}
+
+
+@media screen and (max-width: 414px) {
+    #register-section { 
+        #register-content {
+            #img-1 {
+                width: 71%
             }
             #form-container {
                 flex-direction: column;

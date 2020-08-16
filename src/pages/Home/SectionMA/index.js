@@ -83,7 +83,7 @@ function SectionMA() {
                     </div>
                     <p className="text-container" id="middle-text">
                         Chọn thêm <span>Top 02 </span> trong <span>Top 09</span> còn lại của <span>mỗi đề</span> vào <span>Round chung kết.</span> <br/>
-                      (*)Cách tính điểmđiểm cho top 09 còn lại của mỗi đề:<br/>
+                      (*)Cách tính điểm cho top 09 còn lại của mỗi đề:<br/>
                       - Điểm từ <span>Round 02</span> chiếm <span>60%</span> điểm tổng kết vào chung cuộc.<br/>
                       - Điểm từ <span>Round Second Chance</span> chiếm <span>40%</span> tổng điểm vào chung cuộc
                     </p>
