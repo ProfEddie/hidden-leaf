@@ -36,7 +36,7 @@ function SectionNote() {
                 <br></br>
                 <br></br>
                 <br></br>
-                (v) Tất cả các hoạt động, bao gồm:<span>Đăng ký dự thi, Nộp bài, Đăng ký tham dự Information Day và Gala Night</span>  đều sẽ được <span>BTC gửi mail</span> đến thí sinh/người tham dự để <span>xác nhận.</span>
+                (v) Tất cả các hoạt động, bao gồm:<span> Đăng ký dự thi, Nộp bài, Đăng ký tham dự Information Day và Gala Night</span>  đều sẽ được <span>BTC gửi mail</span> đến thí sinh/người tham dự để <span>xác nhận.</span>
                 <br></br>
                 <br></br>
                 <br></br>

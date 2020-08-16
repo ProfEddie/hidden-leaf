@@ -87,7 +87,7 @@ function SectionMA() {
                       - Điểm từ <span>Vòng 02</span> chiếm <span>60%</span> điểm tổng kết vào chung cuộc.<br/>
                       - Điểm từ <span>Vòng Second Chance</span> chiếm <span>40%</span> tổng điểm vào chung cuộc
                     </p>
-                </div>e
+                </div>
                 
 
                 <img className="circle-img" src={require('../../../images/ma2020/ruleEachRound/3.png')} alt="circle"/>
