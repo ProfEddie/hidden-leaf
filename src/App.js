@@ -37,7 +37,6 @@ function App() {
         
         <div className="loading-screen" id={isLoading? 'loading-show': 'loading-hide'}>
             <img data-aos-once="true" data-aos="fade-in"src={require("./svg/Double Ring-1s-200px.svg")} alt="logo"/>
-            <p id="loading">Loading...</p>
         </div>
      
       <Switch>

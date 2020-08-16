@@ -34,3 +34,23 @@
     visibility: hidden;
     opacity: 0;
 }
+
+
+@media screen and (max-width: 414px) {
+    .loading-screen {
+       
+        img {
+            position: absolute;
+            width: 150px;
+            top: 133px;
+        }
+        #loading {
+            position: absolute;
+            font-family: utm-bebas;
+            color: #FFCF00;
+            font-size: 30px;
+            top: 460px
+        }
+    }
+    
+}
