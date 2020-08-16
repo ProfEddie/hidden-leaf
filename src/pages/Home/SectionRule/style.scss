@@ -815,13 +815,13 @@
     
         #rule-content {
             width: 756.56px;
-            height: 936px;
+            height: 980px;
             position: relative;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             flex-direction: column;
-        
+            padding-top: 52px;
             #img-1 {
                 align-self: flex-end;
                 width: 59.79%;

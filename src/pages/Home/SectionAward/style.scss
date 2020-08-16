@@ -9,6 +9,7 @@
         font-family: AvenirNextLTPro-Medium;
         letter-spacing: 1px;
         margin-bottom: 48px;
+        text-align: center;
         span {
           color: #FFCF00;
           font-family: AvenirNextLTPro-Bold;
@@ -161,12 +162,14 @@
         flex-direction:column;
         justify-content: center;
         align-items: center; 
-        padding-bottom: 351px;
+        text-align: center;
+        padding-bottom: 151px;
         p {
             font-family: AvenirNextLTPro-Medium;
             letter-spacing: 1px;
             margin-bottom: 48px;
             padding: 19px;
+            text-align: center;
             span {
               color: #FFCF00;
               font-family: AvenirNextLTPro-Bold;
@@ -216,7 +219,6 @@
         flex-direction:column;
         justify-content: center;
         align-items: center; 
-        padding-bottom: 215px;
         #awards-content {
             width: 93.7%;
             display: flex;

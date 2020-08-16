@@ -16,6 +16,9 @@ export default function Header() {
        <div id="header">
             <div id="overlay" className={hide ? 'hide': 'show'}>
             </div>
+           <button className="menu-button" onClick={() => setHide(!hide)}>
+             <img  src={require('../../svg/icons8-menu.svg')} alt="menu"/>
+           </button>
            <div id="header-content" className={hide ? 'hide': 'show'}> 
             
              <button className="header-button" onClick={() => jumpTo('#home-section')}>TRANG CHỦ</button>
@@ -33,7 +36,7 @@ export default function Header() {
              <button className="header-button" onClick={() => jumpTo('#footer-section')}>LIÊN HỆ</button>
             
            </div>
-           <div id="logo-img-container" onClick={() => setHide(!hide)}>
+           <div id="logo-img-container" >
                <img id="logo-img" src={require('../../images/menu/official-logo-of-creatio.png')} alt="logo"/>
             </div>
        </div>

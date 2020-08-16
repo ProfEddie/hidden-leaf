@@ -89,7 +89,7 @@
   height: 112px;
   cursor: pointer;
 }
-#marketing-button:hover, #marketing-button:hover + #drop-down,#drop-down:hover {
+#marketing-button:hover + #drop-down,#drop-down:hover {
    
     visibility: visible;
     opacity: 1;
@@ -112,9 +112,34 @@
     outline: none;
     border: none;
  }
-
+ .menu-button {
+   display: none
+ }
 
 @media only screen and (max-width: 1277px) {
+    #header {
+        justify-content: space-between;
+        .menu-button {
+            display: flex;
+            align-self: flex-start;
+            background: transparent; 
+            border: none;
+            outline: none;
+            color: #FFCF00;
+            height: 103px;
+            width: 103px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            img {
+                width: 70px;
+                height: 70px;
+            }
+           
+        }
+
+    }
+   
     #header-content {
         top:103px;
         flex-direction: column;
@@ -124,11 +149,11 @@
        overflow-y: scroll;
        min-height: 320px;
        transition: all 0.5s;
+       margin-left: -50px;
        .header-button {
            width:100%;
            box-shadow:none;
            margin-bottom: 25px;
-           margin-left: 96px
        }
        #drop-down {
           opacity: 0;
@@ -147,6 +172,7 @@
           transition: all 0.5s;
           margin-top: -32px;
           height: 0px;
+          margin-left: -70px;
             .drop-down-item {
                 background-color:transparent;
                 font-size: 15px;
@@ -157,7 +183,13 @@
                 color: #ffffff;
             }
        }
-       #marketing-button:hover + #drop-down {
+       #marketing-button:hover + #drop-down,#drop-down:hover {
+   
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+       #marketing-button:focus + #drop-down,#drop-down:hover {
            height: 400px;
            visibility: visible;
            opacity: 1;

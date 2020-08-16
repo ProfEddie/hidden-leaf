@@ -49,15 +49,18 @@
             display: flex;
             position: relative;
             align-items: flex-start;
-            justify-content: space-evenly;
+            justify-content: space-between;
             margin-bottom: 65px;
-            width: 942px;
+            width: 805px;
             #img-3 {
                width: 378px;
             }
-             #img-4 {
-                width: 334px;
+             #img-7 {
+                width: 234px;
                 margin-top: 32px;
+            }
+            #silver {
+                margin-right: 72px;
             }
           
         }
@@ -67,6 +70,10 @@
             align-items: flex-start;
             justify-content: space-evenly;
             width: 942px;
+            #img-4 {
+                width: 334px;
+                margin-top: 32px;
+            }
              #img-5 {
                 width: 204px;
             }
@@ -244,6 +251,13 @@
                  #img-2{
                     width: 60%;
                 }
+                #img-7 {
+                    width: 234px;
+                    margin-top: 32px;
+                }
+                #silver {
+                    margin-right: 0px;
+                }
             }
             #right
             {
@@ -268,7 +282,7 @@
                 }
                 #img-4
                 {
-                    width: 82%;
+                    width: 40%;
                 }
             }
         }
@@ -311,14 +325,21 @@
             #img-3 {
                 width: 90%;
             }
-             #img-4 {
-                width: 80%;
+            #img-7 {
+                width: 234px;
+                margin-top: 32px;
+            }
+            #silver {
+                margin-right: 0px;
             }
           
         }
         #right {
             flex-direction: column;
             width: 100%;
+            #img-4 {
+                width: 80%;
+            }
              #img-5 {
                 width: 74%;
                 margin-left: 0px
