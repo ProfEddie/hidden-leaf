@@ -24,7 +24,7 @@ export default function AboutSection() {
                        <br></br>
                        <br></br>
                        Đặc biệt, mùa thi năm nay còn chứng kiến sự thay đổi mới mẻ trong đề thi và thể lệ các vòng. Lần đầu tiên, <span>MARKETING ARENA </span>
-                       có đến <span>02 đề thi</span> về hai <span>chuyên môn riêng biệt</span> rong lĩnh vực Marketing, bao gồm: xây dựng chiến dịch truyền thông 
+                       có đến <span>02 đề thi</span> về hai <span>chuyên môn riêng biệt</span> trong lĩnh vực Marketing, bao gồm: xây dựng chiến dịch truyền thông 
                        tích hợp nhằm giải quyết bài toán của thương hiệu và thiết lập kế hoạch phát triển sản phẩm mới để mở rộng phân khúc thị trường của công ty. 
                     </p>
                 </div>
