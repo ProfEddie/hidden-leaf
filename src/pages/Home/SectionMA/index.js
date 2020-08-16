@@ -82,12 +82,12 @@ function SectionMA() {
                       </div>
                     </div>
                     <p className="text-container" id="middle-text">
-                        Chọn thêm <span>Top 02 </span> trong <span>Top 09</span> còn lại của <span>mỗi đề</span> vào <span>Round chung kết.</span> <br/>
+                        Chọn thêm <span>Top 02 </span> trong <span>Top 09</span> còn lại của <span>mỗi đề</span> vào <span>Vòng chung kết.</span> <br/>
                       (*)Cách tính điểm cho top 09 còn lại của mỗi đề:<br/>
-                      - Điểm từ <span>Round 02</span> chiếm <span>60%</span> điểm tổng kết vào chung cuộc.<br/>
-                      - Điểm từ <span>Round Second Chance</span> chiếm <span>40%</span> tổng điểm vào chung cuộc
+                      - Điểm từ <span>Vòng 02</span> chiếm <span>60%</span> điểm tổng kết vào chung cuộc.<br/>
+                      - Điểm từ <span>Vòng Second Chance</span> chiếm <span>40%</span> tổng điểm vào chung cuộc
                     </p>
-                </div>
+                </div>e
                 
 
                 <img className="circle-img" src={require('../../../images/ma2020/ruleEachRound/3.png')} alt="circle"/>
@@ -116,7 +116,7 @@ function SectionMA() {
                   </div>
                   <div className="yellow-full-round">
                     <p className="title">Round 03: THE WONDER</p>
-                    <p className="subtitle">Top 6 <span>hoàn thành</span> Plan <span>và</span> Executionion Idea <span>theo hướng dẫn của</span>  Mentor</p>
+                    <p className="subtitle">Top 6 <span>hoàn thành</span> Plan <span>và</span> Execution Idea <span>theo hướng dẫn của</span>  Mentor</p>
                   </div>
                 </div>
               

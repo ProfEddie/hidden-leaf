@@ -21,7 +21,7 @@ function SectionFooter(){
                           FANPAGE <span style={{paddingLeft: "14%"}} >http://www.facebook.com/creatioftu2/</span>       
                         </p>
                         <p id="website" className="text-container">
-                          WEBSITE <span style={{paddingLeft: "15%"}}>marketingarena.info</span>           
+                          WEBSITE <span style={{paddingLeft: "15%"}}>marketing-arena.xyz</span>           
                         </p>
                     
                     </div>
