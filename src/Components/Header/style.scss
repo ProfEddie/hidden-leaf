@@ -149,7 +149,7 @@
        overflow-y: scroll;
        min-height: 320px;
        transition: all 0.5s;
-       margin-left: -50px;
+       margin-left: -60px;
        .header-button {
            width:100%;
            box-shadow:none;
@@ -172,7 +172,7 @@
           transition: all 0.5s;
           margin-top: -32px;
           height: 0px;
-          margin-left: -70px;
+          margin-left: -80px;
             .drop-down-item {
                 background-color:transparent;
                 font-size: 15px;
@@ -227,6 +227,113 @@
 }
 
 @media only screen and (max-width: 600px) {
+    #header {
+        justify-content: space-between;
+        .menu-button {
+            display: flex;
+            align-self: flex-start;
+            background: transparent; 
+            border: none;
+            outline: none;
+            color: #FFCF00;
+            height: 103px;
+            width: 103px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            img {
+                width: 70px;
+                height: 70px;
+            }
+           
+        }
 
+    }
+   
+    #header-content {
+        top:103px;
+        flex-direction: column;
+       position: absolute;
+       width: 100%;
+       height:500px;
+       overflow-y: scroll;
+       min-height: 320px;
+       transition: all 0.5s;
+       margin-left: -60px;
+       .header-button {
+           width:100%;
+           box-shadow:none;
+           margin-bottom: 25px;
+       }
+       #drop-down {
+          opacity: 0;
+          top: 0px;
+          left: 44px;
+          visibility: hidden;
+          transition: all 0.5s;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          background-color: transparent;
+          box-shadow:none;
+          width: 100%;
+          transition: all 0.5s;
+          margin-top: -32px;
+          height: 0px;
+          margin-left: -80px;
+            .drop-down-item {
+                background-color:transparent;
+                font-size: 15px;
+                
+            }
+            .drop-down-item:hover {
+                background-color:transparent;
+                color: #ffffff;
+            }
+       }
+       #marketing-button:hover + #drop-down,#drop-down:hover {
+   
+        height: 400px;
+        visibility: visible;
+        opacity: 1;
+       }
+    
+       #marketing-button:focus + #drop-down,#drop-down:hover {
+           visibility: visible;
+           opacity: 1;
+         
 
+       }
+    
+       .header-button:hover, .header-button:focus {
+        background-color: transparent;
+        box-shadow:  none;
+        color: white;
+        outline: none;
+       }
+       
+    }
+    #overlay {
+        top: 103px;
+        width: 100%;
+        height: 1050px;
+        background-color: #F7D147;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+       
+    }
+    .hide {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .show {
+        visibility: visible;
+        opacity: 0.9;
+    }
+    
 }
