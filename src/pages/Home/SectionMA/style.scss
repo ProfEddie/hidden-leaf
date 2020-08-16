@@ -729,169 +729,173 @@
      }
 }
 
-@media screen and (max-width:375px) {
-    #ma-section {
-        padding-bottom: 60px;
-      
-        #ma-content {
-           
-            #rule-each-round-container {
-                width: 95%;
+@supports (-webkit-touch-callout: none) {
+    @media screen and (max-width:375px) {
+        #ma-section {
+            padding-bottom: 60px;
+          
+            #ma-content {
                
-                 #svg-3 {
-                 
-                 }
-                 #img-2 {
+                #rule-each-round-container {
+                    width: 95%;
                    
-                 }
-                 #svg-4 {
-                    width: 35%;
-                    top: 69px
-                 }
-                 #svg-5 {
-                    width: 43%;
-                    top: 72px
-                 }
-                 #svg-2 {
-                  
-                 }
-                 #svg-1 {
-                 }
-                 #rounds-container {
-                     height: 1249px;
-                    .text-container {
-                        font-size: 12px;
-                        padding-left: 10px;
-                        padding-right: 10px;
-                        margin-top: 20px;
-                    }
-                   
-                     #round-2-container {
-                        
-                         .round-2-child {
-                          
-                         }
+                     #svg-3 {
+                     
                      }
-                     .round-container{
-                        .round-2-child {
-                            #yellow-full-round-right {
-                                align-items: flex-start;
-                                padding-top: 4px;
-                                padding-bottom: 4px;
-                                padding-left: 8px;
-                                width: 100%;
-                                height: 133px;
-                                border-radius: 10px;
-                                .subtitle {
-                                    text-align: flex-start
-                                }
-                                .title {
-                                    font-size: 18px;
-                                }
-                            }
-                            #yellow-full-round-right:hover {
-                                height: 140px;
-                            }
-                            #yellow-full-round-left {
-                                align-items: flex-end;
-                                padding-top: 4px;
-                                padding-bottom: 4px;
-                                padding-right: 8px;
-                                width: 100%;
-                                height: 133px;
-                                border-radius: 10px;
-                                .subtitle {
-                                    text-align: flex-end
-                                }
-                                .title {
-                                    font-size: 18px;
-                                }
-                            }
-                            #yellow-full-round-left:hover {
-                                height: 140px;
-                            }
-                            .white-full-round {
-                                width: 85%;
-                                border-radius: 10px;
-                            }
-                          
-                            #white-full-round-right {
-                                padding-left: 11px;
-                                height: 130px;
-                                align-items: flex-start;
-                                border-radius: 10px;
-                                .title {
-                                    text-align: flex-start
-                                }
-                            }
-                            #white-full-round-left {
-                                padding-right: 11px;
-                                height: 130px;
-                                align-items: flex-end;
-                                border-radius: 10px;
-                                .title {
-                                    text-align: right
-                                }
-                            }
-                        }
-                         
+                     #img-2 {
+                       
                      }
-                    
-                     .yellow-full-round {
-                        border-radius: 10px;
-                        padding-top: 14px;
-                        padding-bottom: 12px;
-                    }
-                     .white-full-round:hover {
+                     #svg-4 {
+                        width: 35%;
+                        top: 69px
                      }
-                     #middle-text {
-                        margin-top: 126px;
+                     #svg-5 {
+                        width: 43%;
+                        top: 72px
                      }
-                    #gala-night {
-                        height: 77px;
-                    }
-                     .datetime-container {
-                         width: 26%;
-                         margin-bottom: 10px;
-                         #svg-6 {
-                            width: 4px
-                         }
-                         span {
+                     #svg-2 {
+                      
+                     }
+                     #svg-1 {
+                     }
+                     #rounds-container {
+                         height: 1249px;
+                        .text-container {
                             font-size: 12px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            margin-top: 20px;
+                        }
+                       
+                         #round-2-container {
+                            
+                             .round-2-child {
+                              
+                             }
+                         }
+                         .round-container{
+                            .round-2-child {
+                                #yellow-full-round-right {
+                                    align-items: flex-start;
+                                    padding-top: 4px;
+                                    padding-bottom: 4px;
+                                    padding-left: 8px;
+                                    width: 100%;
+                                    height: 133px;
+                                    border-radius: 10px;
+                                    .subtitle {
+                                        text-align: flex-start
+                                    }
+                                    .title {
+                                        font-size: 18px;
+                                    }
+                                }
+                                #yellow-full-round-right:hover {
+                                    height: 140px;
+                                }
+                                #yellow-full-round-left {
+                                    align-items: flex-end;
+                                    padding-top: 4px;
+                                    padding-bottom: 4px;
+                                    padding-right: 8px;
+                                    width: 100%;
+                                    height: 133px;
+                                    border-radius: 10px;
+                                    .subtitle {
+                                        text-align: flex-end
+                                    }
+                                    .title {
+                                        font-size: 18px;
+                                    }
+                                }
+                                #yellow-full-round-left:hover {
+                                    height: 140px;
+                                }
+                                .white-full-round {
+                                    width: 85%;
+                                    border-radius: 10px;
+                                }
+                              
+                                #white-full-round-right {
+                                    padding-left: 11px;
+                                    height: 130px;
+                                    align-items: flex-start;
+                                    border-radius: 10px;
+                                    .title {
+                                        text-align: flex-start
+                                    }
+                                }
+                                #white-full-round-left {
+                                    padding-right: 11px;
+                                    height: 130px;
+                                    align-items: flex-end;
+                                    border-radius: 10px;
+                                    .title {
+                                        text-align: right
+                                    }
+                                }
+                            }
+                             
+                         }
+                        
+                         .yellow-full-round {
+                            border-radius: 10px;
+                            padding-top: 14px;
+                            padding-bottom: 12px;
+                        }
+                         .white-full-round:hover {
+                         }
+                         #middle-text {
+                            margin-top: 126px;
+                         }
+                        #gala-night {
+                            height: 77px;
+                        }
+                         .datetime-container {
+                             width: 26%;
+                             margin-bottom: 10px;
+                             #svg-6 {
+                                width: 4px
+                             }
+                             span {
+                                font-size: 12px;
+                             }
                          }
                      }
-                 }
+                }
             }
-        }
-      
-        #img-1 {
-            width: 47%
-        }
-        #subtitle {
-            width: 94%;
-           p {
-            //    font-size: 1%;
-           }
-           span {
-            // font-size: 1%;
-           }
-        }
-        
-        #img-6 {
-        }
-        
-        #img-7 {
-        }
-        
-        #img-8 {
-        }
-        
-        #img-ma-2020 {
-            width: 80%
-        }
-        .up {
-        }
-        .down {
-        }
-     }
-}
+          
+            #img-1 {
+                width: 47%
+            }
+            #subtitle {
+                width: 94%;
+               p {
+                //    font-size: 1%;
+               }
+               span {
+                // font-size: 1%;
+               }
+            }
+            
+            #img-6 {
+            }
+            
+            #img-7 {
+            }
+            
+            #img-8 {
+            }
+            
+            #img-ma-2020 {
+                width: 80%
+            }
+            .up {
+            }
+            .down {
+            }
+         }
+    } /* CSS specific to iOS devices */ 
+  }
+  
+
