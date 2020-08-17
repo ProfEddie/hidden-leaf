@@ -10,7 +10,7 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-right: 100px;
-  height: 103px;
+  height: 76px;
   z-index: 10;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -66,7 +66,7 @@
 #logo-img-container {
   background-color: #F7F7F7;
   width: 106px;
-  height: 103px;
+  height: 76px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

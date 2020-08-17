@@ -12,10 +12,11 @@ import SectionSponsor from './SectionSponsor'
 import SectionFooter from './SectionFooter'
 import './style.scss'
 
+
 export default function Home() {
+ 
   return (
     <div id="Home">
-
       <Header/>
       <SectionHome/>
       <SectionAbout/>

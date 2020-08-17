@@ -14,7 +14,7 @@ function SectionRule() {
             <p>Trường hợp các đội thi trong <span>TOP 20 & TOP 06 không sinh sống tại TP.HCM, BTC </span> sẽ <span>hỗ trợ và đảm bảo</span> các bạn được nhận <span>đầy đủ thông tin</span> của các buổi <span>Training</span>, làm việc với <span>Mentor</span>. Đặc biệt <span>TOP 06</span> sẽ được <span>hỗ trợ chi phí</span> (di chuyển và lưu trú) để tham dự đêm chung kết <span>Gala Night</span> tại TP.HCM <span>trong trường hợp Gala Night được tổ chức dưới hình thức Offline.</span> </p>
             <p>Thương hiệu <span>NutiFood</span> có quyền <span>sử dụng ý tưởng</span> của các đội thi cho các chiến dịch của mình.</p>
             <p>Ban Tổ Chức (BTC) chương trình có <span>quyền hủy bỏ kết quả</span> của đội thi nếu phát hiện bất kỳ <span>hành vi gian lận</span> nào trong quá trình diễn ra cuộc thi.</p>
-            <p>Mọi <span>thắc mắc, khiếu nại</span> về quyết định của BTC xin gửi về địa chỉ <span>Email chính thức</span> của cuộc thi.</p>
+            <p>Mọi <span>thắc mắc, khiếu nại</span> về quyết định của BTC xin gửi về địa chỉ <span>Email chính thức</span> của cuộc thi. Quyền quyết định cuối cùng thuộc về ban tổ chức</p>
             <img className="rule-img" id="img-7" src={require("../../../images/ma2020/rules/5.png")} alt="circle"/>
           </div>
         </div>

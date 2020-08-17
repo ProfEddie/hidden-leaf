@@ -1,6 +1,11 @@
 #Home {
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
+    scroll-snap-type: mandatory;
+    // scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    .child-section {
+        scroll-snap-align: start;
+    }
 }
 
 #bended-content {

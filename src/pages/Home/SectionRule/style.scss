@@ -720,47 +720,47 @@
         
         #img-2 {
             position: absolute;
-            bottom: 10.77%;
+            bottom: 7.77%;
             left: 2px;
-            width: 25.33%;
+            width: 50.33%;
             z-index: 2;
         }
         #img-6 {
             position: absolute;
-            width: 8.15%;
-            bottom: 15.7%;
-            left: 30%;
+            width: 11.15%;
+            bottom: 17%;
+            left: 63%;
         
         }
     
         #rule-content {
             width: 756.56px;
-            height: 811px;
+            height: 900px;
             position: relative;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             flex-direction: column;
-        
+            padding-top: 52px;
             #img-1 {
                 align-self: flex-end;
-                width: 47.79%;
+                width: 59.79%;
                 margin-right: 55px;
             }
     
             #rule-text { 
                 position: relative;
                 padding-top: 33px;
-                padding-left: 7.37%;
-                padding-right: 6%;
-                height: 643px;
-                width: 279px;
+                padding-left: 5.37%;
+                padding-right: 5%;
+                height: 676px;
+                width: 323px;
                 background-color: white;
                 border-radius: 23px;
                 background-repeat: no-repeat;
                 background-size: 98%;
                 object-fit: contain;
-               
+              
                 #img-5 {
                     position: absolute;
                     top: 0px;
@@ -786,82 +786,7 @@
 
 @media screen and (max-width: 375px)
 {
-    #rule-section {
-        background-color: #FFCF00;
-        width: 100%;
-        height: -moz-fit-content;
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        padding-bottom: 131px;
-        margin-bottom: -125px;
-        
-        #img-2 {
-            position: absolute;
-            bottom: 7.77%;
-            left: 2px;
-            width: 50.33%;
-            z-index: 2;
-        }
-        #img-6 {
-            position: absolute;
-            width: 11.15%;
-            bottom: 17%;
-            left: 63%;
-        
-        }
     
-        #rule-content {
-            width: 756.56px;
-            height: 980px;
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            flex-direction: column;
-            padding-top: 52px;
-            #img-1 {
-                align-self: flex-end;
-                width: 59.79%;
-                margin-right: 55px;
-            }
-    
-            #rule-text { 
-                position: relative;
-                padding-top: 33px;
-                padding-left: 5.37%;
-                padding-right: 5%;
-                height: 676px;
-                width: 294px;
-                background-color: white;
-                border-radius: 23px;
-                background-repeat: no-repeat;
-                background-size: 98%;
-                object-fit: contain;
-              
-                #img-5 {
-                    position: absolute;
-                    top: 0px;
-                    right: 23px;
-                    width: 16%;
-                }
-                #img-7 {
-                    position: absolute;
-                    bottom: 6px;
-                    left: 144px;
-                    width: 17%;
-                    transform: rotate(-8deg);
-                    -ms-transform: rotate(-8deg);
-                    -webkit-transform: rotate(-8deg);
-                }
-              
-            }
-           
-        }
-    
-    }
 }
 
 

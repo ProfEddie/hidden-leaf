@@ -6,7 +6,7 @@
     display:flex;
     justify-content: flex-end;
     padding-right: 100px;
-    height: 103px;
+    height: 76px;
     z-index: 10;
     transition: all 0.5s ease;
     border-bottom: 0.5px solid  #d3d3d3;
@@ -52,7 +52,7 @@
 #logo-img-container {
     background-color: #F7F7F7;
     width: 106px;
-    height: 103px;
+    height: 76px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +62,7 @@
 
 #logo-img {
   width: 85px;
-  height: 85px;
+  height: 65px;
   object-fit: contain;
 }
 
@@ -77,7 +77,7 @@
   justify-content: center;
   align-items: flex-start;
   position: absolute;
-  top: 87px;
+  top: 70px;
   left: 316px;
   background-color: white;
   -moz-box-shadow:   -3px 2px 10px 3px #d1d1d1;
@@ -126,7 +126,7 @@
             border: none;
             outline: none;
             color: #FFCF00;
-            height: 103px;
+            height: 76px;
             width: 103px;
             justify-content: center;
             align-items: center;
@@ -205,7 +205,7 @@
        
     }
     #overlay {
-        top: 103px;
+        top: 76px;
         width: 100%;
         height: 1050px;
         background-color: #F7D147;
@@ -236,7 +236,7 @@
             border: none;
             outline: none;
             color: #FFCF00;
-            height: 103px;
+            height: 76px;
             width: 103px;
             justify-content: center;
             align-items: center;
@@ -316,7 +316,7 @@
        
     }
     #overlay {
-        top: 103px;
+        top: 76px;
         width: 100%;
         height: 1050px;
         background-color: #F7D147;
