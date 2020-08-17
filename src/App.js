@@ -36,7 +36,7 @@ function App() {
     <Router className="App">
         
         <div className="loading-screen" id={isLoading? 'loading-show': 'loading-hide'}>
-            <img  src={require("./svg/Vanilla-1s-274px.svg")} alt="logo" style={{width: '45%'}}/>
+            <img  src={require("./svg/Vanilla-1s-274px.svg")} alt="logo" />
         </div>
      
       <Switch>
