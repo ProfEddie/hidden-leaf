@@ -31,7 +31,7 @@ function SectionSponsor(){
                    <div className="sponsor-container" data-aos="fade-left"  data-aos-once="true">
                       <p>NHÀ TÀI TRỢ ĐỒNG</p>
                       <img className="sponsor-img" id="img-4" src={require("../../../images/sponsor/4.png")} alt="img_3" />
-                      <p>NHÀ TÀI TRỢ CHIẾN LƯỢC</p>
+                      <p>ĐỐI TÁC CHIẾN LƯỢC</p>
                       <img className="sponsor-img" id="img-5" src={require("../../../images/sponsor/5.png")} alt="img_3" />
                    </div>
                    <div className="sponsor-container"  data-aos="fade-left"  data-aos-once="true">
