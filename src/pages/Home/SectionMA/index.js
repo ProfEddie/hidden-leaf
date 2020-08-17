@@ -61,7 +61,7 @@ function SectionMA() {
                            <p className="subtitle">IMC Plan</p>
                          </div>
                          <p className="text-container" id="middle-text" style={{textAlign: 'end'}}>
-                          Chọn ra <span>đội xuất sắc nhất của mỗi đề</span>
+                          Chọn ra <span>đội xuất sắc nhất vào thẳng</span> vòng chung kết
                           </p>
                       </div>
 
@@ -83,7 +83,7 @@ function SectionMA() {
                            <p className="subtitle"> Product Launching</p>
                          </div>
                           <p className="text-container" id="middle-text">
-                          Chọn ra <span>đội xuất sắc nhất của mỗi đề</span>
+                          Chọn ra <span>đội xuất sắc nhất vào thẳng</span>  vòng chung kết
                           </p>
                       </div>
                     </div>
