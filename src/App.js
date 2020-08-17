@@ -35,8 +35,8 @@ function App() {
     // <AuthContext.Provider value={{ authTokens, setAuthTokens: setTokens }}>
     <Router className="App">
         
-        <div className="loading-screen" id={isLoading? 'loading-show': 'loading-hide'}>
-            <img data-aos-once="true" data-aos="fade-in"src={require("./svg/Double Ring-1s-200px.svg")} alt="logo"/>
+        <div className="loading-screen" id={isLoading? 'loading-show': 'loading-show'}>
+            <img  src={require("./svg/Vanilla-1s-274px.svg")} alt="logo" style={{width: '45%'}}/>
         </div>
      
       <Switch>
