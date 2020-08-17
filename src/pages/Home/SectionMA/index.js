@@ -15,7 +15,7 @@ function SectionMA() {
           <img className={`ma-img`} id="img-ma-2020" src={require("../../../images/ma2020/MA 2020.png")} alt="circle" data-aos="fade-down"  data-aos-duration="1000" />
           <img className="ma-img" id="img-1" src={require("../../../images/ma2020/ruleEachRound/1.png")} alt="circle" data-aos-once="true" data-aos="fade-up"/>
           <div id="subtitle" data-aos-once="true" data-aos="fade-up">
-              <p>Cuộc thi <span style={{color: "#FFCF00"}}>MARKETING ARENA 2020</span> sẽ chính thức khởi động từ ngày <span>16.08.2020 </span>và kết thúc vào ngày <span>27.09.2020</span>. Các đội thi sẽ được thử thách qua <span>03 chặng hành trình</span> chính với<span> 02 sự lựa chọn.</span></p> 
+              <p>Cuộc thi <span style={{color: "#FFCF00"}}>MARKETING ARENA 2020</span> sẽ chính thức khởi động từ ngày <span>17.08.2020 </span>và kết thúc vào ngày <span>27.09.2020</span>. Các đội thi sẽ được thử thách qua <span>03 chặng hành trình</span> chính với<span> 02 sự lựa chọn.</span></p> 
               <p style={{fontFamily: "AvenirNextLTPro-Italic"}}><span style={{fontFamily: "AvenirNextLTPro-BoldItalic"}}>Lưu ý: 20 đội</span>  đăng ký dự thi <span style={{fontFamily: "AvenirNextLTPro-BoldItalic"}}>sớm nhất</span> sẽ được quyền <span style={{fontFamily: "AvenirNextLTPro-BoldItalic"}}>tự do lựa chọn đề</span>, các đội còn lại sẽ được BTC chỉ định đề thi.</p> 
           </div>
           {/* <img className="ma-img" id="img-2" src={require('../../../images/ma2020/2.png')} alt="circle"/> */}
@@ -55,11 +55,14 @@ function SectionMA() {
                           <p className="subtitle">IMC Plan</p>
                           <p className="subtitle"><span>(Kế hoạch Marketing truyền thông tích hợp)</span></p>
                         </div>
-                         <span className="date" style={{marginTop: "17px"}}>7:00 PM 14.09</span>
+                         <span className="date" style={{marginTop: "17px"}}>7:00 AM 06.09</span>
                          <div id="white-full-round-left" className="white-full-round" >
                            <p className="title">Training Sesssion:</p>
                            <p className="subtitle">IMC Plan</p>
                          </div>
+                         <p className="text-container" id="middle-text" style={{textAlign: 'end'}}>
+                          Chọn ra <span>đội xuất sắc nhất của mỗi đề</span>
+                          </p>
                       </div>
 
                       <div className="datetime-container"  id="round-2-datetime" >
@@ -74,19 +77,17 @@ function SectionMA() {
                           <p className="subtitle">Product Launching</p>
                           <p className="subtitle" style={{textAlign: 'left'}}><span>(Kế hoạch ra mắt sản phẩm mới theo mô hình 6Ps)</span></p>
                         </div>
-                         <p className="date">7:00 PM 14.09</p>
+                         <p className="date">1:00 PM 06.09</p>
                          <div  id="white-full-round-right" className="white-full-round" >
                            <p className="title">Training Session:</p>
                            <p className="subtitle"> Product Launching</p>
                          </div>
+                          <p className="text-container" id="middle-text">
+                          Chọn ra <span>đội xuất sắc nhất của mỗi đề</span>
+                          </p>
                       </div>
                     </div>
-                    <p className="text-container" id="middle-text">
-                        Chọn thêm <span>Top 02 </span> trong <span>Top 09</span> còn lại của <span>mỗi đề</span> vào <span>Vòng chung kết.</span> <br/>
-                      (*)Cách tính điểm cho top 09 còn lại của mỗi đề:<br/>
-                      - Điểm từ <span>Vòng 02</span> chiếm <span>60%</span> điểm tổng kết vào chung cuộc.<br/>
-                      - Điểm từ <span>Vòng Second Chance</span> chiếm <span>40%</span> tổng điểm vào chung cuộc
-                    </p>
+                   
                 </div>
                 
 
@@ -105,6 +106,12 @@ function SectionMA() {
                   <div className="white-full-round">
                     <p id="title">Training Creative</p>
                   </div>
+                  <p className="text-container" id="middle-text">
+                        Chọn thêm <span>Top 02 </span> trong <span>Top 09</span> còn lại của <span>mỗi đề</span> vào <span>Vòng chung kết.</span> <br/>
+                      (*)Cách tính điểm cho top 09 còn lại của mỗi đề:<br/>
+                      - Điểm từ <span>Vòng 02</span> chiếm <span>60%</span> điểm tổng kết vào chung cuộc.<br/>
+                      - Điểm từ <span>Vòng Second Chance</span> chiếm <span>40%</span> tổng điểm vào chung cuộc
+                    </p>
                 </div>
               
                 <img className="circle-img" src={require('../../../images/ma2020/ruleEachRound/3.png')} alt="circle"/>
