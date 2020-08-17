@@ -58,7 +58,7 @@ function SectionMA() {
                          <span className="date" style={{marginTop: "17px"}}>7:00 PM 14.09</span>
                          <div id="white-full-round-left" className="white-full-round" >
                            <p className="title">Training Sesssion:</p>
-                           <p className="subtitle">ICM Plan</p>
+                           <p className="subtitle">IMC Plan</p>
                          </div>
                       </div>
 

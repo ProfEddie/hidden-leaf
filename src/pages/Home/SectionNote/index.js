@@ -19,14 +19,13 @@ function SectionNote() {
                 <br></br>
                 <br></br>
                 <br></br>
-                (ii) Đề thi vòng 01 của <span style={{color: '#FFCF00'}}>MARKETING ARENA 2020</span> sẽ được công bố vào ngày <span  >17.08.2020</span> trên
+                (ii) Đề thi vòng 01 của <span style={{color: '#FFCF00'}}>MARKETING ARENA 2020</span> sẽ được công bố vào ngày <span  >18.08.2020</span> trên
                  Website chính thức của 
                 cuộc thi và Fanpage chính thức của CLB Creatio;
                 <br></br>
                 <br></br>
                 <br></br>
-                (iii) Thí sinh <span>nộp bài Round 1</span> <span>trước 23:59</span> ngày 
-                
+                (iii) Thí sinh <span>nộp bài vòng 1</span> <span>trước 23:59</span> ngày 
                 <span  > 30.08.2020</span>. Cách thức và hình thức nộp
                 bài sẽ được công bố cụ thể trong đề bài.
                 <br></br>
