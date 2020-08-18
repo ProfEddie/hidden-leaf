@@ -24,6 +24,7 @@ function StyledForm(props) {
             })
           }
            <button  className="submit-button" type="submit">Submit</button>
+           <p  className="psedo-button" type="pseudo">Gặp rắc rối khi đăng ký? Nhấp vào <a href={props.registerLink}>đây</a></p>
         </div>
         <Clock dueDate={props.dueDate}/>
         <img className="img-5" src={require('../../../../../images/register/5.png')} alt="img-clock"/>

@@ -62,7 +62,6 @@
             min-height: 40px;
             width: 200px;
             border-radius: 10px;
-            margin-bottom: 37px;
             font-family: AvenirNextLTPro-Bold;
             color: #ffffff;
             font-size: 16px;
@@ -73,6 +72,15 @@
         .submit-button:active {
             width: 210px;
             height: 50px;
+        }
+        p{
+            margin-top: 10px;
+            margin-bottom: 25px;
+            color: #ffffff;
+            font-family: AvenirNextLTPro-Bold;
+            a {
+                color: #ffffff
+            }
         }
     }
     

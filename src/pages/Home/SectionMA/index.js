@@ -100,7 +100,7 @@ function SectionMA() {
                   </div>
                   <div className="yellow-full-round">
                     <p className="title">THE SECOND CHANCE</p>
-                    <p className="subtitle">Cả 20 đội <span>làm</span> Storyboard <span>cho</span> Viral Video</p>
+                    <p className="subtitle">Cả 20 đội <span>làm</span> Storyboard <span>cho</span> Viral Video/TVC</p>
                   </div>
                   <p className="date">7:00 PM 14.09</p>
                   <div className="white-full-round">

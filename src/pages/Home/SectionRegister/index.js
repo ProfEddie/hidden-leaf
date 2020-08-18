@@ -661,13 +661,35 @@ function handleMemberSubmit(e) {
            <img className="img-3" id="img-3-3" src={require("../../../images/register/3.png")} alt="img_3"/>
            <img className="img-4" id="img-4-0" src={require("../../../images/register/4.png")} alt="img_4"/>
            <img className="img-4" id="img-4-1" src={require("../../../images/register/4.png")} alt="img_4"/>
+           
            <div id="form-container">
               <div data-aos-once="true" data-aos="fade-right" >
-                 <Form title="ĐĂNG KÍ DỰ THI"data={groupRegistForm} formId="group-register-form" onSubmit={handleGroupSubmit} dueDate={moment.duration(moment('2020-08-28').diff(moment()))} handleChangeGender={handleChangeGender}/>
+                 <Form 
+                    title="ĐĂNG KÍ DỰ THI"
+                    data={groupRegistForm} 
+                    formId="group-register-form" 
+                    onSubmit={handleGroupSubmit} 
+                    dueDate={moment.duration(moment('2020-08-28').diff(moment()))} 
+                    handleChangeGender={handleChangeGender}
+                    registerLink="https://creatiomarena.typeform.com/to/rJn9OPLd"
+                  />
               </div>
-                <img className="register-img" id="img-2" src={require("../../../images/register/2.png")} alt="img_2"/>
+                <div id="test-container">
+                  <a id="test1" className="tests" href="https://drive.google.com/drive/folders/100IZwlCa5PeFz2pP2pwRKiByhlrTXKht?usp=sharing"> </a>
+                  <img className="register-img" id="img-2" src={require("../../../images/register/2.png")} alt="img_2"/>
+                  <a id="test2" className="tests" href="https://drive.google.com/drive/folders/1UEIJEFMgM2934eE_SxILXlmGpu-zuMau?usp=sharing"> </a>
+                </div>
+                
                 <div data-aos-once="true" data-aos="fade-left">
-                  <Form title="ĐĂNG KÍ GHÉP NHÓM" data={memberRegistForm} formId="member-register-form" onSubmit={handleMemberSubmit} dueDate={moment.duration(moment('2020-08-26').diff(moment()))} handleChangeGender={handleChangeGender} />
+                  <Form 
+                    title="ĐĂNG KÍ GHÉP NHÓM" 
+                    data={memberRegistForm} 
+                    formId="member-register-form" 
+                    onSubmit={handleMemberSubmit} 
+                    dueDate={moment.duration(moment('2020-08-26').diff(moment()))} 
+                    handleChangeGender={handleChangeGender} 
+                    registerLink="https://creatiomarena.typeform.com/to/wYe3pNpQ"
+                  />
                 </div>
            </div>
         </div>
