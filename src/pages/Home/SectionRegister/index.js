@@ -371,7 +371,25 @@ function SectionRegister() {
       isRequired: false,
     },
   ]
+  function checkValidDate(date) {
+    let res = 'invalid date';
+    if (date) {
+      var formats = ['YYYY-MM-DD','DD/MM/YYYY','D/M/YYYY','D/MM/YYYY', 'DD/M/YYYY' ]
+      formats.forEach(function(format) {
+         if (moment(date, format, true).isValid()) {
+           res = moment(date, format, true).format();
+           return false
+         }
+  
+      })
+      return res;
+    }
+    else {
+      return null
+    }
+   
 
+  }
   function checkValidTel(tel) {
     const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
     return re.test(String(tel));
@@ -389,7 +407,7 @@ function handleGroupSubmit(e) {
       var data =  [1, 2, 3].map(function(item)  {
           var data = {
               Fullname: document.getElementById(`group-member${item}-name`).value || null,
-              Birthdate: document.getElementById(`group-member${item}-birthDate`).value || null,
+              Birthdate: checkValidDate(document.getElementById(`group-member${item}-birthDate`).value || null),
               Email: document.getElementById(`group-member${item}-email`).value || null,
               Phone_number: document.getElementById(`group-member${item}-tel`).value || null,
               University: document.getElementById(`group-member${item}-university`).value || null,
@@ -412,7 +430,14 @@ function handleGroupSubmit(e) {
                   )
                   break;
                 }
-               
+                case 'Birthdate': {
+                  if (data[key] === 'invalid date') {
+                    throw new Error(
+                      `${key.replace('_',' ').toLowerCase()} của thành viên ${item} không hợp lệ.`
+                  )
+                  }
+                  break;
+                }
                 default: {
                   break;
                 }
@@ -493,7 +518,8 @@ function handleMemberSubmit(e) {
       var data =  [1, 2].map(function(item)  {
           var data = {
             Fullname: document.getElementById(`member${item}-name`).value || null,
-            Birthdate: document.getElementById(`member${item}-birthDate`).value || null,
+            Birthdate: checkValidDate(document.getElementById(`member${item}-birthDate`).value||null),
+             
             Email: document.getElementById(`member${item}-email`).value || null,
             Phone_number: document.getElementById(`member${item}-tel`).value || null,
             University: document.getElementById(`member${item}-university`).value || null,
@@ -501,7 +527,16 @@ function handleMemberSubmit(e) {
             Gender: (item === 1 && gender1) || (item === 2 && gender2) || null,
             Facebook: document.getElementById(`member${item}-facebook`).value || null,
           }
+          console.log(data.Birthdate)
+
+
+
           for (let key in data) {
+              if (data[key] === 'invalid date' && key === 'Birthdate' && item === 1) {
+                throw new Error(
+                  `Ngày sinh của thành viên ${item} không hợp lệ.`
+                )
+              }
               if (data[key] && item === 2) {
                 switch (key) {
                   case 'Phone_number': {
@@ -509,6 +544,14 @@ function handleMemberSubmit(e) {
                     throw new Error(
                         `${key.replace('_',' ').toLowerCase()} của thành viên ${item} không hợp lệ.`
                     )
+                    break;
+                  }
+                   case 'Birthdate': {
+                    if (data[key] === 'invalid date' ) {
+                      throw new Error(
+                        `Ngày sinh của thành viên ${item} không hợp lệ.`
+                    )
+                    }
                     break;
                   }
                   default: {
