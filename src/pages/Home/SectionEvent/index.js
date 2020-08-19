@@ -16,7 +16,13 @@ function SectionEvent(){
                         Information Day hứa hẹn sẽ giúp các thí sinh thấu hiểu cặn kẽ hơn về <span>yêu cầu</span> và <span>quy trình làm bài</span>, 
                         đồng thời cung cấp nhiều <span>lời khuyên</span> mang tính <span>chuyên môn</span> cũng như những <span>trải nghiệm bổ ích</span>.
                    </p>
-                    <button id="top-regist" type="submit" form="group-regiser-form" >Đăng kí tham dự Information Day</button>
+                    <a 
+                      id="top-regist" 
+                      type="submit" 
+                      form="group-regiser-form"  
+                      href="https://creatiomarena.typeform.com/to/Am4BGRJS">
+                          Đăng kí tham dự Information Day
+                    </a>
                 </div>
                 <div className="img-container" style={{position: "relative"}}>
                     <img className="event-img" id="img-2" src={require("../../../images/events/10.png")} alt="img_2"/>
@@ -37,7 +43,7 @@ function SectionEvent(){
                        phẩm sáng tạo xuất sắc nhất,… tất cả đều là những <span>trải nghiệm</span> vô cùng đáng giá 
                        cho quá trình <span>học hỏi</span> và <span>phát triển</span> bản thân của các <span>Marketers tương lai</span>.
                     </p>
-                    <button id="bot-regist" type="submit" form="group-regiser-form" >Đăng kí tham dự Gala Night</button>
+                    <a id="bot-regist-disabled"  type="submit" form="group-regiser-form" href="#" >Đăng kí tham dự Gala Night</a>
                 </div>
             </div>
         </section>
