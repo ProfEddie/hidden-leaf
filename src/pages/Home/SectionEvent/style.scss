@@ -4,10 +4,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    button {
+    a {
         cursor: pointer;
         transition: all 0.5s;
     }
+
     .img-container {
         
         #img-4{
@@ -57,10 +58,13 @@
                 border-radius: 18px;
                 font-family: AvenirNextLTPro-Bold;
                 width: 444px;
-                height: 48px;
+                height: 41px;
                 border:none;
+                padding-top: 5px;;
                 outline:none;
+                text-align: center;
                 font-size: 25px;
+                 text-decoration: none;
                 -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
                 -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
                 box-shadow:         0px 0px 10px 0px #FFCF00;
@@ -113,10 +117,13 @@
                 border-radius: 18px;
                 font-family: AvenirNextLTPro-Bold;
                 width: 444px;
-                height: 48px;
+                height: 41px;
                 font-size: 25px;
                 border:none;
+                text-align:center;
+                padding-top: 5px;
                 outline:none;
+                text-decoration: none;
                 -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
                 -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
                 box-shadow:         0px 0px 10px 0px #FFCF00;
@@ -128,8 +135,31 @@
                 width: 490px;
                 height: 57px;
             }
+            #bot-regist-disabled {
+                color: white;
+                background-color: #FFCF00;
+                border-radius: 18px;
+                font-family: AvenirNextLTPro-Bold;
+                width: 444px;
+                height: 41px;
+                font-size: 25px;
+                border:none;
+                text-align:center;
+                padding-top: 5px;
+                outline:none;
+                text-decoration: none;
+                background-color: #858585;
+                -moz-box-shadow:   0px 0px 10px 0px #f5f5f5;
+                -webkit-box-shadow: 0px 0px 10px 0px #f5f5f5;
+                box-shadow:         0px 0px 10px 0px #f5f5f5;
+                pointer-events: none;
+                cursor: default;
+                position: absolute;
+                right: 0px;
+            }
         }
     }
+    
 }
 
 @media screen and(max-width: 1255px)
@@ -141,8 +171,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        button {
-            cursor: pointer;
+        a {
         }
       
         #img-1{
@@ -180,7 +209,6 @@
                     border-radius: 18px;
                     font-family: AvenirNextLTPro-Bold;
                     width: 444px;
-                    height: 48px;
                     border:none;
                     outline:none;
                     font-size: 25px;
@@ -250,9 +278,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        button {
-            cursor: pointer;
-        }
+   
       
         #img-1{
             width: 30%;
@@ -289,7 +315,6 @@
                     border-radius: 18px;
                     font-family: AvenirNextLTPro-Bold;
                     width: 444px;
-                    height: 48px;
                     border:none;
                     outline:none;
                     font-size: 25px;
@@ -401,13 +426,18 @@
                     border-radius: 18px;
                     font-family: AvenirNextLTPro-Bold;
                     width: 345px;
-                    height: 48px;
+                    height: 32px;
                     border:none;
                     outline:none;
                     font-size: 18px;
                     -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
                     -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
                     box-shadow:         0px 0px 10px 0px #FFCF00;
+                }
+                #top-regist:active {
+                    background-color: #f5c800;
+                    width: 350px;
+                    height: 40px;
                 }
             }
             #img-2{
@@ -450,13 +480,25 @@
                     border-radius: 18px;
                     font-family: AvenirNextLTPro-Bold;
                     width: 320px;
-                    height: 48px;
+                    height: 32px;
                     font-size: 18px;
                     border:none;
                     outline:none;
                     -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
                     -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
                     box-shadow:         0px 0px 10px 0px #FFCF00;
+                }
+                #bot-regist:active {
+                    background-color: #f5c800;
+                    width: 350px;
+                    height: 40px;
+                }
+                #bot-regist-disabled {
+                    height: 32px;
+                    width: 320px;
+                    font-size: 18px;
+
+
                 }
             }
         }
@@ -509,19 +551,25 @@
                     margin-bottom: 25px;
                     text-align: justify;
                 }
+             
                 #top-regist{
                     color: white;
                     background-color: #FFCF00;
                     border-radius: 18px;
                     font-family: AvenirNextLTPro-Bold;
                     width: 224px;
-                    height: 48px;
+                    height: 24px;
                     border:none;
                     outline:none;
                     font-size: 12px;
                     -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
                     -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
                     box-shadow:         0px 0px 10px 0px #FFCF00;
+                }
+                #top-regist:active {
+                    background-color: #f5c800;
+                    width:250px;
+                    height: 30px;
                 }
             }
             #img-2{
@@ -559,19 +607,29 @@
                     margin-bottom: 25px;
                     
                 }
+                #bot-regist:active {
+                    background-color: #f5c800;
+                    width: 250px;
+                    height: 30px;
+                }
                 #bot-regist{
                     color: white;
                     background-color: #FFCF00;
                     border-radius: 18px;
                     font-family: AvenirNextLTPro-Bold;
                     width: 188px;
-                    height: 48px;
+                    height: 24px;
                     font-size: 12px;
                     border:none;
                     outline:none;
                     -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
                     -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
                     box-shadow:         0px 0px 10px 0px #FFCF00;
+                }
+                #bot-regist-disabled {
+                    width: 188px;
+                    height: 24px;
+                    font-size: 12px;
                 }
             }
         }
@@ -621,18 +679,6 @@
                     text-align: justify;
                 }
                 #top-regist{
-                    color: white;
-                    background-color: #FFCF00;
-                    border-radius: 18px;
-                    font-family: AvenirNextLTPro-Bold;
-                    width: 224px;
-                    height: 48px;
-                    border:none;
-                    outline:none;
-                    font-size: 12px;
-                    -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
-                    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
-                    box-shadow:         0px 0px 10px 0px #FFCF00;
                 }
             }
             #img-2{
@@ -671,18 +717,7 @@
                     
                 }
                 #bot-regist{
-                    color: white;
-                    background-color: #FFCF00;
-                    border-radius: 18px;
-                    font-family: AvenirNextLTPro-Bold;
-                    width: 188px;
-                    height: 48px;
-                    font-size: 12px;
-                    border:none;
-                    outline:none;
-                    -moz-box-shadow:   0px 0px 10px 0px #FFCF00;
-                    -webkit-box-shadow: 0px 0px 10px 0px #FFCF00;
-                    box-shadow:         0px 0px 10px 0px #FFCF00;
+                   
                 }
             }
         }
