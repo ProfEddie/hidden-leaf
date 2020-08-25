@@ -7,7 +7,7 @@ function StyledForm(props) {
 
   return (
     <form className={`form ${active?'active':'inactive'}`} id={props.formId} onSubmit={(e) => props.onSubmit(e)}  >
-        <p id="title" onClick={() =>  props.dueDate && setActive(!active)}>{props.title}</p>
+        <p id="title" onClick={() =>  (props.dueDate > 0) && setActive(!active)}>{props.title}</p>
         <div className="input-container">
           {
             props.data.map((item, index) => {
