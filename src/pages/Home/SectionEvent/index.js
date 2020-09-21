@@ -43,7 +43,8 @@ function SectionEvent(){
                        phẩm sáng tạo xuất sắc nhất,… tất cả đều là những <span>trải nghiệm</span> vô cùng đáng giá 
                        cho quá trình <span>học hỏi</span> và <span>phát triển</span> bản thân của các <span>Marketers tương lai</span>.
                     </p>
-                    <a id="bot-regist-disabled"  type="submit" form="group-regiser-form" href="#" >Đăng kí tham dự Gala Night</a>
+                    <a id="bot-regist"  type="submit" form="group-regiser-form" href="https://creatiomarena.typeform.com/to/zjrZ5sbq
+" >Đăng kí tham dự Gala Night</a>
                 </div>
             </div>
         </section>
