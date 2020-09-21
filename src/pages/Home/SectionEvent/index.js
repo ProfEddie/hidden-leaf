@@ -25,13 +25,13 @@ function SectionEvent(){
                     </a>
                 </div>
                 <div className="img-container" style={{position: "relative"}}>
-                    <img className="event-img" id="img-2" src={require("../../../images/events/10.png")} alt="img_2"/>
+                    <img className="event-img" id="img-2" src={require("../../../images/events/10.jpg")} alt="img_2"/>
                     <img className="event-img" id="img-4" src={require("../../../images/events/2.png")} data-aos-once="true" data-aos="zoom-out"  data-aos-duration="500"  alt="img_4"/>
                 </div>
             </div>
             <div id="bot">
                 <div className="img-container" style={{position: "relative"}}>
-                <img className="event-img" id="img-3" src={require("../../../images/events/11.png")} alt="img_3"/>
+                <img className="event-img" id="img-3" src={require("../../../images/events/11.jpg")} alt="img_3"/>
                 <img className="event-img" id="img-4" src={require("../../../images/events/2.png")} style={{bottom: '5px'}} data-aos-once="true" data-aos="zoom-out" data-aos-duration="500" alt="img_4"/>
                 </div>
                 <div id="bot-text" >
