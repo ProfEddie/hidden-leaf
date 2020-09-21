@@ -26,10 +26,9 @@ function App() {
     AOS.init();
     AOS.refresh();
     console.log('init')
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 3000);
+   
     window.addEventListener('load', function() {
+      setIsLoading(false)
       AOS.refresh();
     });
   });
